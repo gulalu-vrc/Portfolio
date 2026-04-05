@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Doe | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Feather Icons (Lucideの代わりに軽量なアイコンセットを利用) -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  
+  <nav class="glass">
+    <div class="nav-container">
+      <a href="#hero">Home</a>
+      <a href="#works">Works</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="hero" class="section hero-bg">
+      <div class="container text-center fade-in delay-1">
+        <h1 class="gradient-text">John Doe</h1>
+        <h2 class="subtitle">3D Modeler & Technical Artist</h2>
+        <p class="description">
+          Transforming concepts into high-quality 3D assets and developing efficient technical workflows for modern game development.
+        </p>
+        <a href="#works" class="btn glass-btn">
+          View Projects <i data-feather="chevron-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <section id="works" class="section dark-section">
+      <div class="container">
+        <h2 class="section-title fade-in text-center">Selected Works</h2>
+        <div class="works-grid">
+          <!-- Work Card 1 -->
+          <div class="work-card glass fade-in delay-1">
+            <div class="work-thumbnail"></div>
+            <h3>Project Alpha</h3>
+            <p>Character Modeling & Rigging</p>
+          </div>
+          <!-- Work Card 2 -->
+          <div class="work-card glass fade-in delay-2">
+            <div class="work-thumbnail"></div>
+            <h3>Project Beta</h3>
+            <p>HLSL Shaders & Optimization</p>
+          </div>
+          <!-- Work Card 3 -->
+          <div class="work-card glass fade-in delay-3">
+            <div class="work-thumbnail"></div>
+            <h3>Project Gamma</h3>
+            <p>Environment Art</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about-content glass fade-in">
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+              I am a passionate 3D Modeler and Technical Artist dedicated to bridging the gap between art and technology. With a strong foundation in aesthetics and deep technical knowledge, I build scalable pipelines, write shaders, and create optimized 3D assets.
+            </p>
+          </div>
+          <div class="about-skills">
+            <h3>Skills & Tools</h3>
+            <ul class="skill-list">
+              <li>Maya</li>
+              <li>Blender</li>
+              <li>ZBrush</li>
+              <li>Substance Painter</li>
+              <li>Unity</li>
+              <li>Unreal Engine</li>
+              <li>HLSL/GLSL</li>
+              <li>Python</li>
+              <li>C#</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section dark-section contact-section">
+      <div class="container text-center">
+        <h2 class="section-title fade-in">Get In Touch</h2>
+        <p class="description fade-in delay-1" style="margin: 0 auto 40px auto;">
+          I am currently open for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!
+        </p>
+        <div class="contact-links fade-in delay-2">
+          <a href="mailto:hello@example.com" class="btn glass-btn">
+            <i data-feather="mail"></i> Say Hello
+          </a>
+          <a href="https://github.com" target="_blank" class="btn glass-btn">
+            <i data-feather="code"></i> GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 John Doe. Built with HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
