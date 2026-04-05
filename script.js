@@ -24,7 +24,7 @@ const observer = new IntersectionObserver((entries, observer) => {
 fadeElements.forEach(el => observer.observe(el));
 
 // --- ナビゲーションのスムーズスクロール ---
-const navLinks = document.querySelectorAll('.nav-container a, .hero-bg a[href^="#"]');
+const navLinks = document.querySelectorAll('.nav-container a, .hero-bg a[href^="#"], .sidebar-link');
 
 navLinks.forEach(link => {
   link.addEventListener('click', function(e) {
@@ -48,3 +48,31 @@ navLinks.forEach(link => {
     }
   });
 });
+
+// --- サイドバーの ScrollSpy（ハイライト連動） ---
+const workSections = document.querySelectorAll('section[id^="work-"]');
+const sidebarLinks = document.querySelectorAll('.sidebar-link');
+
+const spyOptions = {
+  root: null,
+  rootMargin: '-40% 0px -60% 0px', // 画面の少し上部を通過したセクションをアクティブと判定
+  threshold: 0
+};
+
+const spyObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // 全てのリンクからactiveを外す
+      sidebarLinks.forEach(link => link.classList.remove('active'));
+      
+      // 対象のリンクにactiveを付与
+      const activeId = entry.target.getAttribute('id');
+      const activeLink = document.querySelector(`.sidebar-link[href="#${activeId}"]`);
+      if (activeLink) {
+        activeLink.classList.add('active');
+      }
+    }
+  });
+}, spyOptions);
+
+workSections.forEach(sec => spyObserver.observe(sec));

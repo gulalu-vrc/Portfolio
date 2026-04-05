@@ -11,50 +11,671 @@
 </head>
 <body>
   
-  <nav class="glass">
-    <div class="nav-container">
-      <a href="#hero">Home</a>
-      <a href="#works">Works</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+  <!-- 左サイドバー（展開式ナビゲーション） -->
+  <aside class="sidebar glass">
+    <div class="sidebar-header">
+      <i data-feather="menu" class="sidebar-icon"></i>
+      <span class="sidebar-text">Portfolio</span>
     </div>
-  </nav>
+    
+    <ul class="sidebar-nav main-menu">
+      <li><a href="#hero" class="sidebar-link"><i data-feather="home"></i><span class="sidebar-text">Home</span></a></li>
+      <li><a href="#about" class="sidebar-link"><i data-feather="user"></i><span class="sidebar-text">About</span></a></li>
+      <li><a href="#contact" class="sidebar-link"><i data-feather="mail"></i><span class="sidebar-text">Contact</span></a></li>
+    </ul>
 
-  <main>
+    <div class="sidebar-divider"></div>
+    <div class="sidebar-label"><span class="sidebar-text">Works</span></div>
+    
+    <ul class="sidebar-nav works-menu">
+      <li><a href="#work-precious-harmony" class="sidebar-link"><i data-feather="folder"></i><span class="sidebar-text">PreciousHarmony</span></a></li>
+      <li><a href="#work-virtual-dice-party" class="sidebar-link"><i data-feather="folder"></i><span class="sidebar-text">深海博物館ル・リエー</span></a></li>
+      <li><a href="#work-otemae-univ" class="sidebar-link"><i data-feather="folder"></i><span class="sidebar-text">大手前大学OOキャンパス</span></a></li>
+      <li><a href="#work-sbr-delmin" class="sidebar-link"><i data-feather="folder"></i><span class="sidebar-text">SBR デルミンDJ</span></a></li>
+      <li><a href="#work-club-4d" class="sidebar-link"><i data-feather="folder"></i><span class="sidebar-text">クラブアセットClub4D</span></a></li>
+      <li><a href="#work-innocent-garden" class="sidebar-link"><i data-feather="folder"></i><span class="sidebar-text">黒猫洋品店のドレス</span></a></li>
+      <li><a href="#work-keen-shoes" class="sidebar-link"><i data-feather="folder"></i><span class="sidebar-text">keen靴モデリング</span></a></li>
+    </ul>
+  </aside>
+
+  <!-- メインコンテンツ -->
+  <main class="main-content">
     <section id="hero" class="section hero-bg">
       <div class="container text-center fade-in delay-1">
-        <h1 class="gradient-text">John Doe</h1>
+        <h1 class="gradient-text">Portfolio</h1>
         <h2 class="subtitle">3D Modeler & Technical Artist</h2>
         <p class="description">
           Transforming concepts into high-quality 3D assets and developing efficient technical workflows for modern game development.
         </p>
-        <a href="#works" class="btn glass-btn">
-          View Projects <i data-feather="chevron-down"></i>
-        </a>
+        
+        <div class="works-toc fade-in delay-2">
+          <a href="#work-precious-harmony" class="works-item" title="ゲームワールドPreciousHarmony">
+            <span class="thumb-label">Precious<br>Harmony</span>
+          </a>
+          <a href="#work-virtual-dice-party" class="works-item" title="VirtualDiceParty深海博物館ル・リエー">
+            <span class="thumb-label">深海博物館<br>ル・リエー</span>
+          </a>
+          <a href="#work-otemae-univ" class="works-item" title="大手前大学オープンキャンパス">
+            <span class="thumb-label">大手前大学<br>OC</span>
+          </a>
+          <a href="#work-sbr-delmin" class="works-item" title="Show by rockデルミンDJ">
+            <span class="thumb-label">SB69<br>デルミンDJ</span>
+          </a>
+          <a href="#work-club-4d" class="works-item" title="クラブアセットClub4D">
+            <span class="thumb-label">Club4D</span>
+          </a>
+          <a href="#work-innocent-garden" class="works-item" title="イノセント・ガーデンドレス">
+            <span class="thumb-label">イノセント<br>ガーデン</span>
+          </a>
+          <a href="#work-keen-shoes" class="works-item" title="keen靴モデリング">
+            <span class="thumb-label">keen<br>Shoes</span>
+          </a>
+        </div>
       </div>
     </section>
 
-    <section id="works" class="section dark-section">
-      <div class="container">
-        <h2 class="section-title fade-in text-center">Selected Works</h2>
-        <div class="works-grid">
-          <!-- Work Card 1 -->
-          <div class="work-card glass fade-in delay-1">
-            <div class="work-thumbnail"></div>
-            <h3>Project Alpha</h3>
-            <p>Character Modeling & Rigging</p>
+    <!-- ================= PRECIOUS HARMONY ================= -->
+    <section id="work-precious-harmony" class="work-project-container">
+      <!-- 1枚目：ヒーロー画像とタイトル -->
+      <div class="work-page-section">
+        <div class="work-split-layout">
+          <div class="work-image-col fade-in delay-1">
+            <div class="work-main-image" style="background-image: url('images/PreciousHarmonyTop.png');">
+            </div>
           </div>
-          <!-- Work Card 2 -->
-          <div class="work-card glass fade-in delay-2">
-            <div class="work-thumbnail"></div>
-            <h3>Project Beta</h3>
-            <p>HLSL Shaders & Optimization</p>
+          <div class="work-text-col fade-in delay-2">
+            <h2 class="work-title">ゲームワールド<br>PreciousHarmony</h2>
+            <div class="work-details">
+              <p>ここに「PreciousHarmony」の詳細な概要、制作の経緯、担当箇所などを記載します。</p>
+            </div>
           </div>
-          <!-- Work Card 3 -->
-          <div class="work-card glass fade-in delay-3">
-            <div class="work-thumbnail"></div>
-            <h3>Project Gamma</h3>
-            <p>Environment Art</p>
+        </div>
+      </div>
+
+      <!-- 2枚目：担当範囲と開発体制 -->
+      <div class="work-detail-page dark-section">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">担当範囲 / 開発体制</h3>
+          
+          <div class="detail-layout">
+            <!-- 図のプレースホルダー -->
+            <div class="detail-figure glass">
+              <span>図のプレースホルダー</span>
+            </div>
+            
+            <!-- 体制・担当テキスト -->
+            <div class="detail-info">
+              <div class="team-badge">3人チーム ＋ 制作進行1名</div>
+              
+              <div class="role-grid">
+                <div class="role-box glass">
+                  <h4>【担当】</h4>
+                  <ul class="role-list">
+                    <li>企画立案</li>
+                    <li>ゲームシステム設計</li>
+                    <li>プログラム実装（UdonSharp）</li>
+                    <li>シェーダー制作（HLSL / Amplify）</li>
+                    <li>3Dモデリング</li>
+                    <li>サウンド制作（BGM / SE）</li>
+                  </ul>
+                </div>
+                
+                <div class="role-box glass">
+                  <h4>【他メンバー】</h4>
+                  <ul class="role-list">
+                    <li>脚本 / 企画補助</li>
+                    <li>モーション制作</li>
+                    <li>制作進行</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="highlight-info glass">
+                <p>コアシステムの設計・実装を一貫して担当</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3枚目：技術的アプローチ -->
+      <div class="work-detail-page section">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">技術的アプローチ（演出制御）</h3>
+          
+          <div class="tech-approach-cards">
+            <!-- 課題 -->
+            <div class="tech-card glass">
+              <div class="tech-card-header issue">
+                <i data-feather="alert-circle"></i>
+                <h4>【課題】</h4>
+              </div>
+              <div class="tech-card-body">
+                <p>VRChatではパーティクル頂点を<br>C#から動的制御できない</p>
+              </div>
+            </div>
+            
+            <!-- 矢印 -->
+            <div class="tech-arrow">
+               <i data-feather="arrow-right"></i>
+            </div>
+            
+            <!-- 解決 -->
+            <div class="tech-card glass">
+              <div class="tech-card-header solution">
+                <i data-feather="cpu"></i>
+                <h4>【解決】</h4>
+              </div>
+              <div class="tech-card-body">
+                <p>ジオメトリシェーダーを使用し、<br>光粒子の生成・制御をGPU側で実装</p>
+                <div class="tech-sub-point">
+                  <p>プレイヤー入力をトリガーとして<br>色変化・拡散・発光をリアルタイム制御</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- 矢印 -->
+            <div class="tech-arrow">
+               <i data-feather="arrow-right"></i>
+            </div>
+            
+            <!-- 結果 -->
+            <div class="tech-card glass">
+              <div class="tech-card-header result">
+                <i data-feather="check-circle"></i>
+                <h4>【結果】</h4>
+              </div>
+              <div class="tech-card-body">
+                <ul class="tech-result-list">
+                  <li>CPU負荷を抑えた軽量な演出</li>
+                  <li>高密度な光表現</li>
+                  <li>同期性の高い演出制御を実現</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4枚目：課題と意思決定 / 成果と使用技術 -->
+      <div class="work-detail-page dark-section">
+        <div class="container fade-in">
+          <div class="four-page-layout">
+            <!-- 左カラム：課題と再設計 -->
+            <div class="four-col glass layout-left">
+              <h3 class="four-title issue-title">課題と意思決定 / 再設計</h3>
+              <div class="issue-grid">
+                <div class="issue-card">
+                  <div class="issue-num">①</div>
+                  <div class="issue-content">
+                    <h5>未経験技術 × VRChat制約</h5>
+                    <ul>
+                      <li>UdonSharpの制限環境</li>
+                      <li>シェーダー開発の新規習得</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="issue-card">
+                  <div class="issue-num">②</div>
+                  <div class="issue-content">
+                    <h5>IPとしての表現制約</h5>
+                    <ul>
+                      <li>サンリオの世界観を維持</li>
+                      <li>可愛さとゲーム性の両立</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="issue-card">
+                  <div class="issue-num">③</div>
+                  <div class="issue-content">
+                    <h5>テストで評価が得られない</h5>
+                    <ul>
+                      <li>完成度80%時点で低評価</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="pivot-section">
+                <div class="pivot-arrows">
+                  <p><i data-feather="corner-down-right"></i> 制作進行を追加し、仕様を再検討</p>
+                  <p><i data-feather="corner-down-right"></i> ゲーム性を根本から再設計</p>
+                </div>
+                <div class="highlight-info pivot-highlight">
+                  <p>既存実装の大部分を見直し、方向転換を実施</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 右カラム：成果 / 使用技術 -->
+            <div class="four-col glass layout-right">
+              <h3 class="four-title result-title">成果 / 使用技術</h3>
+              
+              <div class="achievement-section">
+                <h4 class="achievement-heading">【成果】</h4>
+                <ul class="achievement-list">
+                  <li>
+                    <i data-feather="award" class="award-icon"></i>
+                    <span>Sanrio Virtual World Award 唯一受賞</span>
+                  </li>
+                  <li>
+                    <i data-feather="star" class="star-icon"></i>
+                    <span>サンリオVfesにて公開</span>
+                  </li>
+                  <li>
+                    <i data-feather="users" class="users-icon"></i>
+                    <span>累計 約55,000人が来場</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="tech-stack-section">
+                <h4 class="achievement-heading">【使用技術】</h4>
+                <div class="tech-tags">
+                  <span class="tech-tag">Unity</span>
+                  <span class="tech-tag">VRChat SDK</span>
+                  <span class="tech-tag">UdonSharp（C#）</span>
+                  <span class="tech-tag">HLSL / Amplify Shader Editor</span>
+                  <span class="tech-tag">Blender</span>
+                  <span class="tech-tag">Cubase</span>
+                  <span class="tech-tag">Affinity</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VIRTUAL DICE PARTY ================= -->
+    <section id="work-virtual-dice-party" class="work-project-container">
+      <!-- 1枚目：ヒーロー画面 -->
+      <div class="work-page-section">
+        <div class="work-split-layout">
+          <div class="work-image-col fade-in delay-1">
+            <div class="work-main-image">
+              <span>サムネイルが入ります</span>
+            </div>
+          </div>
+          <div class="work-text-col fade-in delay-2">
+            <h2 class="work-title">VirtualDiceParty<br>深海博物館ル・リエー</h2>
+            <div class="work-details">
+              <p>ここに「VirtualDiceParty深海博物館ル・リエー」の詳細な概要、制作の経緯、担当箇所などを記載します。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2枚目：大規模構造 × 効率的モデリング -->
+      <div class="work-detail-page section">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">60エリアを成立させるための設計</h3>
+          <p class="text-center" style="color: #4facfe; margin-top:-30px; margin-bottom:40px; font-weight:bold; letter-spacing:1px;">大規模構造 × 効率的モデリング</p>
+          
+          <!-- 図の見せる内容プレースホルダー -->
+          <div class="image-showcase glass" style="display:flex; justify-content:space-around; padding:20px; border-radius:12px; margin-bottom: 30px; min-height: 200px; align-items:center; text-align:center; color:#888;">
+             <p>全体マップ or 構造図</p>
+             <p>同一モジュールの繰り返し図</p>
+             <p>軽量化・効率化の工夫</p>
+          </div>
+
+          <div class="tech-approach-cards">
+            <!-- 課題 -->
+            <div class="tech-card glass">
+              <div class="tech-card-header issue">
+                <i data-feather="alert-circle"></i>
+                <h4>【課題】</h4>
+              </div>
+              <div class="tech-card-body">
+                <p>60の展示エリアを持つ大規模空間において、<br>制作コストとパフォーマンスの両立が必要だった。</p>
+              </div>
+            </div>
+            
+            <div class="tech-arrow"><i data-feather="arrow-right"></i></div>
+            
+            <!-- 解決アプローチ -->
+            <div class="tech-card glass">
+              <div class="tech-card-header solution">
+                <i data-feather="cpu"></i>
+                <h4>【解決アプローチ】</h4>
+              </div>
+              <div class="tech-card-body">
+                <ul class="role-list">
+                  <li>展示エリアを“モジュール化”し共通構造として設計</li>
+                  <li>同一モデルの再利用による制作工数の大幅削減</li>
+                  <li>ライティング・配置の変化で印象差を演出</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="tech-arrow"><i data-feather="arrow-right"></i></div>
+            
+            <!-- 結果 -->
+            <div class="tech-card glass">
+              <div class="tech-card-header result">
+                <i data-feather="check-circle"></i>
+                <h4>【結果】</h4>
+              </div>
+              <div class="tech-card-body">
+                <ul class="tech-result-list">
+                  <li>短期間で大規模ワールドを構築</li>
+                  <li>VRChat上での動作負荷を抑制</li>
+                  <li>イベント用途として安定運用を実現</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3枚目：反復構造 × 恐怖演出設計 -->
+      <div class="work-detail-page dark-section">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">同じ構造が、徐々に“異質”へ変わる体験設計</h3>
+          <p class="text-center" style="color: #ff9a9e; margin-top:-30px; margin-bottom:40px; font-weight:bold; letter-spacing:1px;">反復構造 × 恐怖演出設計</p>
+          
+          <div class="detail-layout">
+            <!-- 図のプレースホルダー -->
+            <div class="detail-figure glass" style="flex-direction:column; gap:40px;">
+              <p>同じ部屋の比較（初期→後半）</p>
+              <p>展示物の変化</p>
+              <p>照明・色の変化</p>
+            </div>
+            
+            <!-- 演出設計詳細 -->
+            <div class="detail-info">
+              <div class="role-grid" style="flex-direction:column;">
+                <div class="role-box glass">
+                  <h4 style="color:#ff9a9e; border-bottom-color:rgba(255,154,158,0.3);">設計意図</h4>
+                  <p style="color:#ddd; line-height:1.6; padding-left:10px;">同一構造の繰り返しによる“安心感”をベースに、<br>徐々に違和感を増幅させることで恐怖体験へ転換。</p>
+                </div>
+                
+                <div class="role-box glass">
+                  <h4 style="color:#ff9a9e; border-bottom-color:rgba(255,154,158,0.3);">演出手法</h4>
+                  <ul class="role-list">
+                    <li>展示物を段階的に変化（正常 → 異形）</li>
+                    <li>照明の色・明度を変化</li>
+                    <li>空間の密度や配置を歪ませる</li>
+                  </ul>
+                </div>
+                
+                <div class="role-box glass">
+                  <h4 style="color:#ff9a9e; border-bottom-color:rgba(255,154,158,0.3);">体験効果</h4>
+                  <ul class="tech-result-list">
+                    <li style="color:#ff9a9e;">プレイヤーが“気づく恐怖”を誘発</li>
+                    <li style="color:#ff9a9e;">探索の継続動機を維持</li>
+                    <li style="color:#ff9a9e;">物語的な没入感を強化</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4枚目：ライド体験 × Timeline制御 -->
+      <div class="work-detail-page section">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">探索からアトラクションへ</h3>
+          <p class="text-center" style="color: #ffd700; margin-top:-30px; margin-bottom:40px; font-weight:bold; letter-spacing:1px;">ライド体験 × Timeline制御</p>
+          
+          <div class="four-page-layout">
+            <!-- 図のプレースホルダー -->
+            <div class="four-col glass layout-left" style="align-items:center; justify-content:center; text-align:center; color:#888; border: 1px dashed rgba(255, 255, 255, 0.2);">
+              <p>潜水艦ライドのカット</p>
+              <br><br><br>
+              <p>タイムラインのスクショ</p>
+              <br><br><br>
+              <p>演出の流れ図</p>
+            </div>
+
+            <!-- 制御実装詳細 -->
+            <div class="four-col glass layout-right">
+              <div class="issue-grid">
+                <div class="issue-card" style="border-left: 3px solid #ffd700;">
+                  <div class="issue-content">
+                    <h5 style="color:#ffd700; font-size:1.2rem;">クライマックス設計</h5>
+                    <p style="color:#ccc; font-size:0.95rem; margin-top:10px; line-height:1.6;">最終エリアでは潜水艦ライドにより、<br>深海の沈没船を探索するアトラクションを実装。</p>
+                  </div>
+                </div>
+                <div class="issue-card" style="border-left: 3px solid #4facfe;">
+                  <div class="issue-content">
+                    <h5 style="color:#4facfe; font-size:1.2rem;">技術実装</h5>
+                    <ul style="margin-top:10px;">
+                      <li style="color:#ccc;">Unity Timelineによる演出制御</li>
+                      <li style="color:#ccc;">移動、カメラ、エフェクト、音響を同期</li>
+                      <li style="color:#ccc;">プレイヤー操作を排したシネマティック体験</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="issue-card" style="border-left: 3px solid #ff9a9e;">
+                  <div class="issue-content">
+                    <h5 style="color:#ff9a9e; font-size:1.2rem;">演出意図</h5>
+                    <ul style="margin-top:10px;">
+                      <li style="color:#ccc;">探索体験の“報酬”としての演出</li>
+                      <li style="color:#ccc;">世界観のピークを形成</li>
+                      <li style="color:#ccc;">印象に残るエンディングを設計</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OTEMAE UNIV ================= -->
+    <section id="work-otemae-univ" class="work-project-container">
+      <!-- 1枚目：ヒーロー画面 -->
+      <div class="work-page-section">
+        <div class="work-split-layout">
+          <div class="work-image-col fade-in delay-1">
+            <div class="work-main-image">
+              <span>サムネイルが入ります</span>
+            </div>
+          </div>
+          <div class="work-text-col fade-in delay-2">
+            <h2 class="work-title">大手前大学<br>OPキャンパス</h2>
+            <div class="work-details">
+              <p>ここに「大手前大学オープンキャンパス用ワールド」の詳細な概要、制作の経緯、担当箇所などを記載します。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2枚目：空間設計・演出 -->
+      <div class="work-detail-page section">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">複数の空間をつなぐ構成と導線設計</h3>
+          <p class="text-center" style="color: #4facfe; margin-top:-30px; margin-bottom:40px; font-weight:bold; letter-spacing:1px;">空間設計・演出</p>
+          
+          <div class="detail-layout">
+            <div class="detail-figure glass" style="flex-direction:column; gap:20px; align-items:center;">
+              <p style="color:#ccc;">コンクリート調の無機質な螺旋階段</p>
+              <br><br>
+              <p style="color:#ccc;">温かみのある屋上庭園</p>
+              <br><br>
+              <p style="color:#ccc;">伝統的な茶室空間</p>
+            </div>
+            
+            <div class="detail-info">
+              <div class="role-grid" style="flex-direction:column;">
+                <div class="role-box glass" style="border-left: 3px solid #4facfe;">
+                  <h4 style="color:#4facfe;">統合と導線</h4>
+                  <p style="color:#ddd; line-height:1.6; margin-top:10px;">本ワールドでは、大きく雰囲気の異なる3つの空間を一つに統合しています。<br>これらを不自然さなく接続するため、<b>エレベーターから始まる導線設計</b>を採用しました。</p>
+                </div>
+                
+                <div class="role-box glass" style="border-left: 3px solid #ff9a9e;">
+                  <h4 style="color:#ff9a9e;">場面転換の演出</h4>
+                  <p style="color:#ddd; line-height:1.6; margin-top:10px;">エレベーターによる「場面転換」を演出の起点とすることで、プレイヤーに違和感を与えず空間の切り替えを実現しています。</p>
+                </div>
+                
+                <div class="role-box glass" style="border-left: 3px solid #ffd700;">
+                  <h4 style="color:#ffd700;">制御スクリプト</h4>
+                  <p style="color:#ddd; line-height:1.6; margin-top:10px;">また、簡易的なスクリプトを用いて、演出の発火や遷移タイミングの制御をシームレスに行っています。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3枚目：デザイン・モデリング -->
+      <div class="work-detail-page dark-section">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">建築再現とデザイン対応力</h3>
+          <p class="text-center" style="color: #ff9a9e; margin-top:-30px; margin-bottom:40px; font-weight:bold; letter-spacing:1px;">デザイン・モデリング</p>
+
+          <!-- コンテクストブロック -->
+          <div class="glass" style="padding: 30px; border-radius: 12px; margin-bottom: 40px;">
+            <p style="color:#eee; font-size:1.05rem; line-height:1.8;">
+              クライアントからの要望として、<b>安藤忠雄風の建築表現</b>が求められました。<br>
+              特に螺旋階段では、コンクリートの質感や光の入り方にこだわり、シンプルながら印象的な空間を目指しています。<br><br>
+              また、茶室エリアでは、大学内に実在する伝統的な茶室を参考に再現を行い、空間の説得力を高めました。
+            </p>
+          </div>
+          
+          <h4 style="color: #fff; margin-bottom: 20px; font-size: 1.2rem;">【制作フロー】</h4>
+          <div class="tech-approach-cards" style="margin-top: 20px;">
+            <div class="tech-card glass" style="padding: 20px; text-align:center; flex:1;">
+              <i data-feather="layout" style="color:#4facfe; width:32px; height:32px; margin-bottom:10px;"></i>
+              <h5 style="color:#fff; font-size:1rem;">デザイン作成</h5>
+            </div>
+            
+            <div class="tech-arrow"><i data-feather="chevron-right"></i></div>
+            
+            <div class="tech-card glass" style="padding: 20px; text-align:center; flex:1;">
+              <i data-feather="box" style="color:#ffd700; width:32px; height:32px; margin-bottom:10px;"></i>
+              <h5 style="color:#fff; font-size:1rem;">モデリング進行</h5>
+            </div>
+            
+            <div class="tech-arrow"><i data-feather="chevron-right"></i></div>
+            
+            <div class="tech-card glass" style="padding: 20px; text-align:center; flex:1;">
+              <i data-feather="cpu" style="color:#ff9a9e; width:32px; height:32px; margin-bottom:10px;"></i>
+              <h5 style="color:#fff; font-size:1rem;">AIブラッシュアップ</h5>
+              <p style="font-size:0.8rem; color:#ccc; margin-top:5px;">(Gemini活用)</p>
+            </div>
+            
+            <div class="tech-arrow"><i data-feather="chevron-right"></i></div>
+            
+            <div class="tech-card glass" style="padding: 20px; text-align:center; flex:1;">
+              <i data-feather="tool" style="color:#00f2fe; width:32px; height:32px; margin-bottom:10px;"></i>
+              <h5 style="color:#fff; font-size:1rem;">再モデリング調整</h5>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- 4枚目：技術・制作条件への対応 -->
+      <div class="work-detail-page section">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">技術選定と制約への対応力</h3>
+          <p class="text-center" style="color: #ffd700; margin-top:-30px; margin-bottom:40px; font-weight:bold; letter-spacing:1px;">技術・制作条件への対応</p>
+          
+          <div class="four-page-layout">
+            <!-- 左カラム：制約と対応 -->
+            <div class="four-col glass layout-left">
+              <div class="issue-grid">
+                <div class="issue-card" style="border-left: 3px solid #ff6b6b; padding:25px;">
+                  <div class="issue-content">
+                    <h5 style="color:#ff6b6b; font-size:1.1rem; margin-bottom:15px;"><i data-feather="alert-triangle" style="width:20px;height:20px;vertical-align:bottom;margin-right:5px;"></i>制作条件・制約</h5>
+                    <p style="color:#ccc; font-size:0.95rem; line-height:1.6;">権利上の制約により、クライアントに「有料アセットの購入を依頼することができない」という厳しい条件がありました。</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="pivot-section" style="margin-top: 20px;">
+                <h5 style="color:#fff; font-size:1.1rem; margin-bottom:15px;">対応アプローチ</h5>
+                <div class="pivot-arrows">
+                  <p><i data-feather="corner-down-right"></i> <b>植物：</b>無料アセットを積極活用</p>
+                  <p><i data-feather="corner-down-right"></i> <b>建築・主要物：</b>すべて自作モデリング構成</p>
+                </div>
+                <div class="highlight-info pivot-highlight">
+                  <p>ライトベイク（ベイクライティング）に注力し、<br>無理のないアセット環境下でも自然で説得力のある光表現を実現。</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 右カラム：使用ツール -->
+            <div class="four-col glass layout-right">
+              <div class="tech-stack-section">
+                <h3 class="achievement-heading">【使用ツール】</h3>
+                <div class="tech-tags" style="gap:15px; flex-direction:column; margin-top:20px;">
+                  <span class="tech-tag" style="font-size:1rem; padding:15px 20px; display:flex; align-items:center;"><b>Blender</b> <span style="color:#888; margin-left:auto;">（モデリング）</span></span>
+                  <span class="tech-tag" style="font-size:1rem; padding:15px 20px; display:flex; align-items:center;"><b>Unity</b> <span style="color:#888; margin-left:auto;">（実装・ライティング・演出）</span></span>
+                  <span class="tech-tag" style="font-size:1rem; padding:15px 20px; display:flex; align-items:center;"><b>Substance Painter</b> <span style="color:#888; margin-left:auto;">（テクスチャ制作）</span></span>
+                  <span class="tech-tag" style="font-size:1rem; padding:15px 20px; display:flex; align-items:center;"><b>Gravity</b> <span style="color:#888; margin-left:auto;">（デザイン補助）</span></span>
+                  <span class="tech-tag" style="font-size:1rem; padding:15px 20px; display:flex; align-items:center;"><b>Gemini / AI</b> <span style="color:#888; margin-left:auto;">（デザインブラッシュアップ）</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work-sbr-delmin" class="work-page-section">
+      <div class="work-split-layout">
+        <div class="work-image-col fade-in delay-1">
+          <div class="work-main-image">
+            <span>サムネイルが入ります</span>
+          </div>
+        </div>
+        <div class="work-text-col fade-in delay-2">
+          <h2 class="work-title">Show by rock<br>デルミンDJ</h2>
+          <div class="work-details">
+            <p>ここに「Show by rockデルミンDJ」の詳細な概要、制作の経緯、担当箇所などを記載します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work-club-4d" class="work-page-section">
+      <div class="work-split-layout">
+        <div class="work-image-col fade-in delay-1">
+          <div class="work-main-image">
+            <span>サムネイルが入ります</span>
+          </div>
+        </div>
+        <div class="work-text-col fade-in delay-2">
+          <h2 class="work-title">クラブアセット<br>Club4D</h2>
+          <div class="work-details">
+            <p>ここに「クラブアセットClub4D」の詳細な概要、制作の経緯、担当箇所などを記載します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work-innocent-garden" class="work-page-section">
+      <div class="work-split-layout">
+        <div class="work-image-col fade-in delay-1">
+          <div class="work-main-image">
+            <span>サムネイルが入ります</span>
+          </div>
+        </div>
+        <div class="work-text-col fade-in delay-2">
+          <h2 class="work-title">黒猫洋品店<br>イノセント・ガーデンドレス</h2>
+          <div class="work-details">
+            <p>ここに「黒猫洋品店のイノセント・ガーデンドレス」の詳細な概要、制作の経緯、担当箇所などを記載します。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work-keen-shoes" class="work-page-section">
+      <div class="work-split-layout">
+        <div class="work-image-col fade-in delay-1">
+          <div class="work-main-image">
+            <span>サムネイルが入ります</span>
+          </div>
+        </div>
+        <div class="work-text-col fade-in delay-2">
+          <h2 class="work-title">keen<br>靴モデリング</h2>
+          <div class="work-details">
+            <p>ここに「keen靴モデリング」の詳細な概要、制作の経緯、担当箇所などを記載します。</p>
           </div>
         </div>
       </div>
