@@ -38,25 +38,32 @@
       <li><a href="#work-virtual-dice-party" class="sidebar-link"><img src="images/icons/Sea.png" alt=""
             class="sidebar-custom-icon"><span class="sidebar-text">深海博物館ル・リエー</span></a></li>
       <li><a href="#work-otemae-univ" class="sidebar-link"><img src="images/icons/School.png" alt=""
-            class="sidebar-custom-icon"><span class="sidebar-text">大手前大学OOキャンパス</span></a></li>
+            class="sidebar-custom-icon"><span class="sidebar-text">大手前大学オープンキャンパス</span></a></li>
       <li><a href="#work-sbr-delmin" class="sidebar-link"><img src="images/icons/DJ2.png" alt=""
-            class="sidebar-custom-icon"><span class="sidebar-text">SBR デルミンDJ</span></a></li>
+            class="sidebar-custom-icon"><span class="sidebar-text">デルミンDJ</span></a></li>
       <li><a href="#work-club-4d" class="sidebar-link"><img src="images/icons/DJ1.png" alt=""
-            class="sidebar-custom-icon"><span class="sidebar-text">クラブアセットClub4D</span></a></li>
+            class="sidebar-custom-icon"><span class="sidebar-text">Club4D</span></a></li>
       <li><a href="#work-innocent-garden" class="sidebar-link"><img src="images/icons/kuroneko.png" alt=""
-            class="sidebar-custom-icon"><span class="sidebar-text">黒猫洋品店のドレス</span></a></li>
+            class="sidebar-custom-icon"><span class="sidebar-text">イノセントガーデンドレス</span></a></li>
       <li><a href="#work-keen-shoes" class="sidebar-link"><img src="images/icons/Shoes.png" alt=""
-            class="sidebar-custom-icon"><span class="sidebar-text">keen靴モデリング</span></a></li>
+            class="sidebar-custom-icon"><span class="sidebar-text">Keen靴モデリング</span></a></li>
     </ul>
   </aside>
 
   <!-- メインコンテンツ -->
   <main class="main-content">
     <section id="hero" class="hero-bg"
-      style="min-height: 100vh; padding: 0; margin: 0; background-image: url('images/PreciousHarmonyTop.png'); background-size: cover; background-position: center; position: relative; display: flex; align-items: center; justify-content: center;">
-      <!-- 暗部オーバーレイ -->
+      style="min-height: 100vh; padding: 0; margin: 0; background-color: #000; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+
+      <!-- 背景動画 (z-index:0) -->
+      <video autoplay muted loop playsinline poster="images/PreciousHarmonyTop.png"
+        style="position: absolute; top:0; left:0; width:100%; height:100%; object-fit: cover; z-index: 0;">
+        <source src="images/hero-video.mp4" type="video/mp4">
+      </video>
+
+      <!-- 暗部オーバーレイ (z-index:1) -->
       <div
-        style="position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0.85) 100%); z-index: 1;">
+        style="position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(to right, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0.9) 100%); z-index: 1;">
       </div>
 
       <div class="container fade-in delay-1"
