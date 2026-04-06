@@ -172,8 +172,9 @@ a:hover {
   font-family: "Times New Roman", Times, serif;
   font-size: 1.4rem;
   color: #fff;
-  line-height: 1.6;
+  line-height: 1.8;
 }
+
 
 @media (max-width: 900px) {
   .work-page-section {
@@ -238,13 +239,15 @@ a:hover {
   margin-top: 25px;
   padding-top: 15px;
   overflow-x: auto;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 .works-item {
   width: 130px;
   height: 130px;
-  background: rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 0, 0, 0.85);
+  /* 1pxの隙間から画像が漏れないよう、土台を暗くする */
+  background-clip: padding-box;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -257,6 +260,8 @@ a:hover {
   transition: all 0.3s;
   padding-bottom: 12px;
   flex-shrink: 0;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 1);
+  /* 最下端の1pxを物理的に塗りつぶす */
 }
 
 .works-item:hover {

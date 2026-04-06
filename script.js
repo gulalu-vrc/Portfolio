@@ -27,16 +27,16 @@ fadeElements.forEach(el => observer.observe(el));
 const navLinks = document.querySelectorAll('.nav-container a, .hero-bg a[href^="#"], .sidebar-link');
 
 navLinks.forEach(link => {
-  link.addEventListener('click', function(e) {
+  link.addEventListener('click', function (e) {
     const targetId = this.getAttribute('href');
     // "#" のみのリンクなどを除外
     if (targetId && targetId.startsWith('#') && targetId.length > 1) {
       e.preventDefault();
       const targetElement = document.querySelector(targetId);
-      
+
       if (targetElement) {
         // 固定ヘッダーの高さを考慮したスクロール
-        const headerOffset = 60; 
+        const headerOffset = 60;
         const elementPosition = targetElement.getBoundingClientRect().top;
         const offsetPosition = elementPosition + window.scrollY - headerOffset;
 
@@ -64,7 +64,7 @@ const spyObserver = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       // 全てのリンクからactiveを外す
       sidebarLinks.forEach(link => link.classList.remove('active'));
-      
+
       // 対象のリンクにactiveを付与
       const activeId = entry.target.getAttribute('id');
       const activeLink = document.querySelector(`.sidebar-link[href="#${activeId}"]`);
