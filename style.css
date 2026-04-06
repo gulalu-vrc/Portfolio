@@ -18,7 +18,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
 }
 
 body {
@@ -80,7 +79,7 @@ a:hover {
 /* Work Split Layout (Full Bleed) */
 .work-page-section {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh; /* min-heightからheightに変更して厳密に1画面に収める */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -204,6 +203,8 @@ a:hover {
 .hero-bg {
   position: relative;
   background: radial-gradient(circle at 50% 50%, #1a2a3a 0%, #0d0d0d 100%);
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 .gradient-text {
@@ -435,7 +436,7 @@ footer p {
 
 .work-detail-page {
   min-height: 100vh;
-  padding: 100px 20px;
+  padding: 60px 20px;
   background-color: var(--bg-darker);
   display: flex;
   align-items: center;
@@ -444,7 +445,7 @@ footer p {
 .detail-page-title {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 50px;
+  margin-bottom: 30px; /* Reduced from 50px */
   background: linear-gradient(90deg, #fff, #88cfef);
   -webkit-background-clip: text;
   background-clip: text;
@@ -850,6 +851,170 @@ footer p {
   background: rgba(0, 242, 254, 0.2);
   transform: translateY(-2px);
 }
+
+/* Feedback & Changes Page */
+.feedback-grid-split {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Reduced from 60px */
+}
+
+.feedback-top-row {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Reduced from 25px */
+}
+
+.feedback-bubble-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Increased columns to reduce height */
+  gap: 15px;
+}
+
+.feedback-bubble {
+  background: rgba(255, 107, 107, 0.05);
+  border-radius: 12px;
+  padding: 12px 15px; /* Reduced padding */
+  border-left: 4px solid #ff6b6b;
+  display: flex;
+  gap: 10px;
+  align-items: center; /* Center vertically for cleaner look */
+}
+
+.feedback-bubble i {
+  color: #ff6b6b;
+  margin-top: 3px;
+}
+
+.feedback-bubble p {
+  color: #eee;
+  margin: 0;
+  font-size: 0.9rem; /* Reduced font size */
+}
+
+.changes-bottom-row {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.change-detailed-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Reduced from 30px */
+}
+
+.change-detailed-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.change-detailed-card:hover {
+  background: rgba(255, 255, 255, 0.07);
+  transform: translateY(-10px);
+  border-color: rgba(0, 242, 254, 0.3);
+}
+
+.change-card-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+.change-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.change-card-content {
+  padding: 20px; /* Reduced from 25px */
+}
+
+.change-card-content h5 {
+  color: #00f2fe;
+  font-size: 1.1rem; /* Reduced font size */
+  margin-bottom: 8px; /* Reduced margin */
+  letter-spacing: 1px;
+}
+
+.change-card-content p {
+  color: #ccc;
+  font-size: 0.85rem; /* Reduced font size */
+  line-height: 1.5;
+}
+
+/* Results Section */
+.results-container-split {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+}
+
+.results-photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.photo-item-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+.photo-item-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.photo-item-card:hover img {
+  transform: scale(1.15);
+}
+
+.photo-item-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.9));
+  color: #fff;
+  font-size: 0.9rem;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.photo-item-card:hover .photo-item-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .results-container-split {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .feedback-bubble-list {
+    grid-template-columns: 1fr;
+  }
+  .change-detailed-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 @media (max-width: 900px) {
   .four-page-layout {

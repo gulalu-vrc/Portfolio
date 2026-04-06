@@ -251,70 +251,105 @@
         <div class="work-split-layout">
           <div class="work-image-col fade-in delay-1">
             <div class="work-main-image"
-              style="background-image: url('images/PreciousHarmony_Thumb_CrystalUp_169_20241218.png');">
+              style="background-image: url('images/PreciousHarmony/PreciousHarmonyTop.png');">
             </div>
           </div>
           <div class="work-text-col fade-in delay-2">
             <h2 class="work-title" style="margin-bottom: 50px;">
-              <img src="images/PreciousHarmonyLogo.png" alt="PreciousHarmony"
+              <img src="images/PreciousHarmony/PreciousHarmonyLogo.png" alt="PreciousHarmony"
                 style="max-width: 100%; height: auto; max-height: 140px; display: block;">
             </h2>
             <div class="work-details">
-              <p>Sanrio Virtual World Award 2025受賞作品<br>
+              <p>Sanrio Virtual World Award 2024受賞作品<br>
                 <br>
                 音楽ゲーム × タワーディフェンスを融合した<br>
                 協力型リズムアクション<br>
-
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- 2枚目：担当範囲と開発体制 -->
+      <!-- 2枚目：企画概要とチームメンバー -->
       <div class="work-detail-page dark-section">
         <div class="container fade-in">
-          <h3 class="detail-page-title">担当範囲 / 開発体制</h3>
+          <div class="results-container-split" style="grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: start;">
+            <!-- 左側：企画概要 -->
+            <div class="overview-col">
+              <h3 class="detail-page-title" style="text-align: left; margin-bottom: 20px;">企画概要</h3>
+              <div class="glass"
+                style="margin-bottom: 15px; overflow: hidden; border-radius: 12px; width: 60%; margin-left: auto; margin-right: auto; aspect-ratio: 16 / 9;">
+                <!-- Reduced width and centered -->
+                <img src="images/PreciousHarmony/GSKwXwbagAAmZwL.jpg" alt="SanrioVirtualWorldAward2024"
+                  style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              </div>
+              <div class="overview-text">
+                <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 12px;">
+                  <strong>Sanrio Virtual World Award 2024</strong><br>
+                  サンリオのVRイベント「Sanrio Virtual Festival 2025」に向けたコンテンツ公募企画。<br>
+                  盤面に楽器を演奏するキャラクターを配置し、幽霊から森を守るタワーディフェンスゲームの企画書とデモゲームを提出し受賞<br>
+                  その後、株式会社サンリオから開発費、キャラクター3Dモデル、ボイス収録の支援を受けて制作しました。
+                </p>
 
-          <div class="detail-layout">
-            <!-- 図のプレースホルダー -->
-            <div class="detail-figure glass">
-              <span>図のプレースホルダー</span>
+                <!-- サンプルゲーム画像欄 -->
+                <div class="glass"
+                  style="margin-bottom: 15px; overflow: hidden; border-radius: 8px; border: 1px solid rgba(255, 215, 0, 0.3); width: 40%; margin-left: auto; margin-right: auto; aspect-ratio: 16 / 9; position: relative;">
+                  <!-- Reduced width and centered -->
+                  <img src="images/PreciousHarmony/tutorial_forest.png" alt="サンプルゲーム画像"
+                    style="width: 100%; height: 100%; object-fit: cover; display: block; opacity: 0.9;">
+                  <div
+                    style="background: rgba(255, 215, 0, 0.1); padding: 3px 10px; font-size: 0.7rem; color: #ffd700; text-align: center; position: absolute; bottom: 0; width: 100%; backdrop-filter: blur(4px);">
+                    提出したサンプルゲームのスクリーンショット
+                  </div>
+                </div>
+
+              </div>
             </div>
 
-            <!-- 体制・担当テキスト -->
-            <div class="detail-info">
-              <div class="team-badge">3人チーム ＋ 制作進行1名</div>
-
-              <div class="role-grid">
-                <div class="role-box glass">
-                  <h4>【担当】</h4>
-                  <ul class="role-list">
-                    <li>企画立案</li>
-                    <li>ゲームシステム設計</li>
-                    <li>プログラム実装（UdonSharp）</li>
-                    <li>シェーダー制作（HLSL / Amplify）</li>
-                    <li>3Dモデリング</li>
-                    <li>サウンド制作（BGM / SE）</li>
+            <!-- 右側：チームメンバー -->
+            <div class="team-col">
+              <h3 class="detail-page-title" style="text-align: left; margin-bottom: 20px;">チームメンバー</h3>
+              <div class="role-grid" style="grid-template-columns: 1fr; gap: 20px;">
+                <!-- 自身の担当 -->
+                <div class="role-box glass" style="border-top: 3px solid var(--accent-color); padding: 20px;">
+                  <h4 style="color: var(--accent-color); margin-bottom: 10px;">【私の担当】</h4>
+                  <ul class="role-list" style="margin-bottom: 10px;">
+                    <li>企画</li>
+                    <li>ゲーム設計</li>
+                    <li>実装</li>
+                    <li>シェーダー</li>
+                    <li>サウンド制作</li>
                   </ul>
+                  <p style="font-size: 0.85rem; color: var(--accent-color); font-weight: bold;">（コアシステムを担当）</p>
                 </div>
 
-                <div class="role-box glass">
-                  <h4>【他メンバー】</h4>
-                  <ul class="role-list">
-                    <li>脚本 / 企画補助</li>
-                    <li>モーション制作</li>
-                    <li>制作進行</li>
+                <!-- チームメンバー -->
+                <div class="role-box glass" style="padding: 20px;">
+                  <h4 style="margin-bottom: 15px;">【メンバー】</h4>
+                  <ul class="role-list" style="list-style: none; padding: 0;">
+                    <li style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                      <img src="images/icons/ヒゲの男性のアイコン素材.png" alt="男性"
+                        style="width: 32px; height: 32px; border-radius: 50%;">
+                      <span style="font-size: 0.95rem;"><strong>企画補助 / 脚本</strong></span>
+                    </li>
+                    <li style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                      <img src="images/icons/OL風の人物アイコン.png" alt="OL"
+                        style="width: 32px; height: 32px; border-radius: 50%;">
+                      <span style="font-size: 0.95rem;"><strong>アニメーション担当</strong></span>
+                    </li>
+                    <li style="display: flex; align-items: center; gap: 10px;">
+                      <img src="images/icons/サラリーマン.png" alt="サラリーマン"
+                        style="width: 32px; height: 32px; border-radius: 50%;">
+                      <span style="font-size: 0.95rem;"><strong>進行管理 / 企画補助</strong></span>
+                    </li>
                   </ul>
                 </div>
-              </div>
-
-              <div class="highlight-info glass">
-                <p>コアシステムの設計・実装を一貫して担当</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
 
       <!-- 3枚目：技術的アプローチ -->
       <div class="work-detail-page section">
@@ -375,90 +410,137 @@
         </div>
       </div>
 
-      <!-- 4枚目：課題と意思決定 / 成果と使用技術 -->
+      <!-- 4枚目：企画の変更 -->
       <div class="work-detail-page dark-section">
         <div class="container fade-in">
-          <div class="four-page-layout">
-            <!-- 左カラム：課題と再設計 -->
-            <div class="four-col glass layout-left">
-              <h3 class="four-title issue-title">課題と意思決定 / 再設計</h3>
-              <div class="issue-grid">
-                <div class="issue-card">
-                  <div class="issue-num">①</div>
-                  <div class="issue-content">
-                    <h5>未経験技術 × VRChat制約</h5>
-                    <ul>
-                      <li>UdonSharpの制限環境</li>
-                      <li>シェーダー開発の新規習得</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="issue-card">
-                  <div class="issue-num">②</div>
-                  <div class="issue-content">
-                    <h5>IPとしての表現制約</h5>
-                    <ul>
-                      <li>サンリオの世界観を維持</li>
-                      <li>可愛さとゲーム性の両立</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="issue-card">
-                  <div class="issue-num">③</div>
-                  <div class="issue-content">
-                    <h5>テストで評価が得られない</h5>
-                    <ul>
-                      <li>完成度80%時点で低評価</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+          <h3 class="detail-page-title">企画の変更</h3>
 
-              <div class="pivot-section">
-                <div class="pivot-arrows">
-                  <p><i data-feather="corner-down-right"></i> 制作進行を追加し、仕様を再検討</p>
-                  <p><i data-feather="corner-down-right"></i> ゲーム性を根本から再設計</p>
+          <div class="feedback-grid-split">
+            <!-- 上段：テスターフィードバック -->
+            <div class="feedback-top-row">
+              <div style="display: flex; align-items: baseline; gap: 20px; flex-wrap: wrap;">
+                <h4 style="color: #ff6b6b; font-size: 1.2rem; margin-bottom: 5px;">【テスターからのフィードバック】</h4>
+                <p style="color: #ff6b6b; font-weight: bold; font-size: 1.1rem; opacity: 0.9;">「あまり良いフィードバックが得られない」</p>
+              </div>
+              <div class="feedback-bubble-list">
+                <div class="feedback-bubble">
+                  <i data-feather="help-circle"></i>
+                  <p>何をすればいいかわからない</p>
                 </div>
-                <div class="highlight-info pivot-highlight">
-                  <p>既存実装の大部分を見直し、方向転換を実施</p>
+                <div class="feedback-bubble">
+                  <i data-feather="eye-off"></i>
+                  <p>ストーリーが頭に入ってこない</p>
+                </div>
+                <div class="feedback-bubble">
+                  <i data-feather="meh"></i>
+                  <p>ゲーム部分が面白くない</p>
                 </div>
               </div>
             </div>
 
-            <!-- 右カラム：成果 / 使用技術 -->
-            <div class="four-col glass layout-right">
-              <h3 class="four-title result-title">成果 / 使用技術</h3>
+            <!-- 中段：企画変更の矢印 -->
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 5px; margin: 5px 0;">
+              <p style="color: #ffd700; font-weight: bold; font-size: 1rem; letter-spacing: 2px;">企画を大きく変更</p>
+              <i data-feather="arrow-down" style="color: #ffd700; width: 30px; height: 30px;"></i>
+            </div>
 
+            <!-- 下段：具体的な変更点 -->
+            <div class="changes-bottom-row">
+              <h4 style="color: #00f2fe; font-size: 1.2rem; margin-bottom: 5px;">【変更点】</h4>
+              <div class="change-detailed-grid">
+                <!-- ① チュートリアル -->
+                <div class="change-detailed-card">
+                  <div class="change-card-img">
+                    <img src="images/PreciousHarmony/tutorial_forest.png" alt="チュートリアル追加">
+                  </div>
+                  <div class="change-card-content">
+                    <h5>① チュートリアル追加</h5>
+                    <p>森エリアに操作導線を設計し、「次に何をすべきか」を視覚的に誘導。</p>
+                  </div>
+                </div>
+                <!-- ② ナビキャラ -->
+                <div class="change-detailed-card">
+                  <div class="change-card-img">
+                    <img src="images/PreciousHarmony/navigation_character.png" alt="ナビゲーションキャラクター">
+                  </div>
+                  <div class="change-card-content">
+                    <h5>② ナビゲーションキャラ追加</h5>
+                    <p>世界観説明を補助するキャラクターを配置し、物語への没入感を向上。</p>
+                  </div>
+                </div>
+                <!-- ③ 再設計 -->
+                <div class="change-detailed-card">
+                  <div class="change-card-img">
+                    <img src="images/PreciousHarmony/game_impact.png" alt="ゲーム性の再設計">
+                  </div>
+                  <div class="change-card-content">
+                    <h5>③ ゲーム性の再設計</h5>
+                    <p>複雑なシステムを廃止し、「叩くと楽しい」体験に要素を集約。</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5枚目：成果 -->
+      <div class="work-detail-page">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">成果</h3>
+
+          <div class="results-container-split">
+            <!-- 左側：実績と技術 -->
+            <div class="results-info-col">
               <div class="achievement-section">
-                <h4 class="achievement-heading">【成果】</h4>
+                <h4 class="achievement-heading">【実績】</h4>
                 <ul class="achievement-list">
                   <li>
                     <i data-feather="award" class="award-icon"></i>
-                    <span>Sanrio Virtual World Award 唯一受賞</span>
+                    <span>サンリオVfes2025にて一ヶ月間公開</span>
                   </li>
                   <li>
                     <i data-feather="star" class="star-icon"></i>
-                    <span>サンリオVfesにて公開</span>
+                    <span>Vfes2026、VirtualPuroLand限定コンテツとして継続して公開</span>
                   </li>
                   <li>
                     <i data-feather="users" class="users-icon"></i>
-                    <span>累計 約55,000人が来場</span>
+                    <span>累計来場者数 約55,000人</span>
                   </li>
                 </ul>
               </div>
 
-              <div class="tech-stack-section">
+              <div class="tech-stack-section" style="margin-top: 40px;">
                 <h4 class="achievement-heading">【使用技術】</h4>
                 <div class="tech-tags">
                   <span class="tech-tag">Unity</span>
                   <span class="tech-tag">VRChat SDK</span>
-                  <span class="tech-tag">UdonSharp（C#）</span>
-                  <span class="tech-tag">HLSL / Amplify Shader Editor</span>
+                  <span class="tech-tag">UdonSharp</span>
+                  <span class="tech-tag">HLSL / ASE</span>
                   <span class="tech-tag">Blender</span>
                   <span class="tech-tag">Cubase</span>
                   <span class="tech-tag">Affinity</span>
                 </div>
               </div>
+            </div>
+
+            <!-- 右側：ユーザーの様子 -->
+            <div class="results-photo-col">
+              <h4 class="achievement-heading">【ユーザーの様子】</h4>
+              <div class="results-photo-gallery">
+                <div class="photo-item-card">
+                  <img src="images/precious_harmony_update/users_playing.png" alt="ユーザー体験 1">
+                  <div class="photo-item-overlay">仲間と一緒に協力プレイ</div>
+                </div>
+                <div class="photo-item-card">
+                  <img src="images/precious_harmony_update/users_playing.png" alt="ユーザー体験 2">
+                  <div class="photo-item-overlay">没入感のあるVR演出</div>
+                </div>
+              </div>
+              <p style="color: #666; font-size: 0.8rem; margin-top: 15px; text-align: right;">【メタバースイベント「Sanrio
+                Virtual Festival 2025」体験レポート 4Gamer.net<br>
+                https://www.4gamer.net/games/794/G079439/20250214049/】</p>
             </div>
           </div>
         </div>
