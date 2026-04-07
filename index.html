@@ -1148,42 +1148,331 @@
       </div>
     </section>
 
-    <section id="work-club-4d" class="work-page-section">
-      <div class="work-split-layout">
-        <div class="work-image-col fade-in delay-1">
-          <div class="work-main-image"
-            style="background-image: url('images/Club4D/VRChat_2024-04-23_16-43-17.694_1920x1080-1024x576.webp');">
+    <!-- ================= CLUB 4D ================= -->
+    <section id="work-club-4d" class="work-project-container">
+      <!-- 1枚目：ヒーロー画面 -->
+      <div class="work-page-section">
+        <div class="work-split-layout">
+          <div class="work-image-col fade-in delay-1">
+            <div class="work-main-image"
+              style="background-image: url('images/Club4D/VRChat_2024-04-23_16-43-17.694_1920x1080-1024x576.webp');">
+            </div>
+          </div>
+          <div class="work-text-col fade-in delay-2">
+            <h2 class="work-title">クラブアセット<br>Club4D</h2>
+            <p class="work-period">制作期間：約3か月 (2023.03 - 2023.05)</p>
+            <hr class="work-divider">
+            <div class="work-details">
+              <p>VRChat向けの商用クラブアセット「Club4D」のシステム設計および演出実装を担当。<br>
+                <br>
+                高価格帯ながら多くのユーザーに支持され、地上波テレビ番組やアーティストのMVなど、<br>
+                実際のプロダクトとして幅広いシーンで活用されています。
+              </p>
+            </div>
           </div>
         </div>
-        <div class="work-text-col fade-in delay-2">
-          <h2 class="work-title">クラブアセット<br>Club4D</h2>
-          <p class="work-period">制作期間：約3か月 (2023.03 - 2023.05)</p>
-          <hr class="work-divider">
-          <div class="work-details">
-            <p>ここに「クラブアセットClub4D」の詳細な概要、制作の経緯、担当箇所などを記載します。</p>
+      </div>
+
+      <!-- 2枚目：実績 -->
+      <div class="work-detail-page section">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">実運用プロダクトとしての実績</h3>
+
+          <div class="results-container-split" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+            <!-- 左側：販売実績 -->
+            <div class="overview-col">
+              <div class="achievement-section">
+                <h4 class="achievement-heading">【販売実績】</h4>
+                <div class="glass"
+                  style="padding: 30px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #ffd700;">
+                  <p style="font-size: 1.1rem; color: #fff; margin-bottom: 10px;">Booth価格：<b>7,000円</b>（高価格帯）</p>
+                  <p style="font-size: 2rem; color: #ffd700; font-weight: bold; margin-bottom: 5px;">累計販売数：262本</p>
+                  <p style="font-size: 0.9rem; color: #ccc;">多くのユーザーに継続的に使用されている信頼のプロダクト</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 右側：メディア・外部実績 -->
+            <div class="results-photo-col">
+              <div class="achievement-section">
+                <h4 class="achievement-heading">【メディア・外部実績】</h4>
+                <ul class="achievement-list">
+                  <li
+                    style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; margin-bottom: 15px; border-left: 3px solid #4facfe; list-style: none; display: flex; align-items: center;">
+                    <i data-feather="monitor" style="color:#4facfe; margin-right:15px; min-width: 24px;"></i>
+                    <span><b>テレビ朝日「金曜日のメタバース」</b><br>番組内にて紹介されました</span>
+                  </li>
+                  <li
+                    style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; border-left: 3px solid #ff9a9e; list-style: none; display: flex; align-items: center;">
+                    <i data-feather="play-circle" style="color:#ff9a9e; margin-right:15px; min-width: 24px;"></i>
+                    <span><b>音楽ユニット MOSAIC.WAV</b><br>公式MVの撮影舞台として登場</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3枚目：設計思想・こだわり -->
+      <div class="work-detail-page dark-section">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">設計思想・こだわり</h3>
+
+          <div class="tech-approach-cards" style="margin-top: 40px;">
+            <!-- 運用の簡略化 -->
+            <div class="tech-card glass">
+              <div class="tech-card-header solution" style="color: #4facfe; border-bottom-color: rgba(79, 172, 254, 0.3);">
+                <i data-feather="user-check"></i>
+                <h4 style="margin-left: 10px;">少人数でも成立するライブ演出設計</h4>
+              </div>
+              <div class="tech-card-body">
+                <ul class="role-list">
+                  <li style="color: #ccc; margin-bottom: 10px;">ライティングスタッフが少なくても成立するようオートメーション化</li>
+                  <li style="color: #ccc;">直感的に扱えるUI・操作フローを重視し、専門知識不要で演出可能</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="tech-arrow"><i data-feather="plus"></i></div>
+
+            <!-- 音楽同期 -->
+            <div class="tech-card glass">
+              <div class="tech-card-header solution" style="color: #00f2fe; border-bottom-color: rgba(0, 242, 254, 0.3);">
+                <i data-feather="activity"></i>
+                <h4 style="margin-left: 10px;">音楽と完全同期する演出</h4>
+              </div>
+              <div class="tech-card-body">
+                <ul class="role-list">
+                  <li style="color: #ccc; margin-bottom: 10px;">BPM・音に連動するシェーダーを実装し、空間全体を変化させる</li>
+                  <li style="color: #ccc;">視覚と音の一体化による没入感を圧倒的に強化</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="highlight-info"
+            style="margin-top: 50px; text-align: center; border-left: none; border-right: 4px solid #00f2fe; background: linear-gradient(-90deg, rgba(0, 242, 254, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);">
+            <p style="font-size: 1.3rem; letter-spacing: 2px;">「オペレーションコストを下げつつ、演出クオリティを担保」</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4枚目：技術的ポイント -->
+      <div class="work-detail-page section">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">技術的ポイント</h3>
+
+          <div class="four-page-layout">
+            <!-- 左側：技術詳細 -->
+            <div class="four-col glass layout-left">
+              <div class="issue-grid">
+                <div class="issue-card" style="border-left: 3px solid #4facfe;">
+                  <div class="issue-content">
+                    <h5 style="color:#4facfe; font-size: 1.2rem; margin-bottom: 10px;">シェーダー設計</h5>
+                    <ul style="list-style: none; padding: 0;">
+                      <li style="color: #ccc; margin-bottom: 8px;">・Amplify Shader Editorを使用したノードベースでの高速開発</li>
+                      <li style="color: #ccc;">・音楽に応じて動的に変化する高負荷耐性と表現力を両立</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="issue-card" style="border-left: 3px solid #ff9a9e;">
+                  <div class="issue-content">
+                    <h5 style="color:#ff9a9e; font-size: 1.2rem; margin-bottom: 10px;">プログラミング</h5>
+                    <ul style="list-style: none; padding: 0;">
+                      <li style="color: #ccc; margin-bottom: 8px;">・リアルタイム制御に対応した低遅延な演出システム</li>
+                      <li style="color: #ccc;">・現場運用を想定した徹底的な安定性と軽量化の追求</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 右側：チーム構成 -->
+            <div class="four-col glass layout-right">
+              <h4 class="achievement-heading" style="margin-bottom: 20px;">【チーム構成】</h4>
+              <div class="tech-tags" style="gap:20px; flex-direction:column; margin-top:10px;">
+                <div
+                  style="background: rgba(0, 242, 254, 0.1); border: 1px solid #00f2fe; padding: 20px; border-radius: 12px;">
+                  <span style="color: #00f2fe; font-weight: bold; font-size: 1.1rem;">プログラム / シェーダー</span>
+                  <p style="color: #fff; margin-top: 5px;">担当：<b>ぐらる</b></p>
+                </div>
+                <div style="background: rgba(255,255,255,0.05); padding: 15px 20px; border-radius: 12px;">
+                  <span style="color: #eee; font-weight: bold;">モデリング</span>
+                  <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">担当：外部メンバー</p>
+                </div>
+                <div style="background: rgba(255,255,255,0.05); padding: 15px 20px; border-radius: 12px;">
+                  <span style="color: #eee; font-weight: bold;">音響 / 企画</span>
+                  <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">担当：外部メンバー</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="work-innocent-garden" class="work-page-section">
-      <div class="work-split-layout">
-        <div class="work-image-col fade-in delay-1">
-          <div class="work-main-image"
-            style="background-image: url('images/InnocentGardenDress/70b4bab5-3aa1-460f-9003-bc069671b822.png');">
+    <section id="work-innocent-garden" class="work-project-container">
+      <!-- 1枚目：ヒーロー画面 -->
+      <div class="work-page-section">
+        <div class="work-split-layout">
+          <div class="work-image-col fade-in delay-1">
+            <div class="work-main-image"
+              style="background-image: url('images/InnocentGardenDress/70b4bab5-3aa1-460f-9003-bc069671b822.png');">
+            </div>
+          </div>
+          <div class="work-text-col fade-in delay-2">
+            <h2 class="work-title">黒猫洋品店<br>イノセント・ガーデンドレス</h2>
+            <p class="work-period">制作期間：約2週間 (2024.03)</p>
+            <hr class="work-divider">
+            <div class="work-details">
+              <p>黒猫洋品店合同会社様よりご依頼を受け、<br>
+                イラストをもとに3D衣装モデルの制作を担当しました。<br>
+                <br>
+                キャラクターデザインの繊細なニュアンスを3Dで再現しつつ、<br>
+                VRChatでの運用に適した軽量・高機能な設計を実現。
+              </p>
+            </div>
           </div>
         </div>
-        <div class="work-text-col fade-in delay-2">
-          <h2 class="work-title">黒猫洋品店<br>イノセント・ガーデンドレス</h2>
-          <p class="work-period">制作期間：約2か月 (2024.06 - 2024.07)</p>
-          <hr class="work-divider">
-          <div class="work-details">
-            <p>黒猫洋品店合同会社様よりご依頼を受け、<br>
-              イラストをもとに3D衣装モデルの制作を担当しました。<br>
-              <br>
-              デザインの再現性を重視しつつ、<br>
-              ユーザーが自由に色を変更できる仕様を実装しています。
-            </p>
+      </div>
+
+      <!-- 2枚目：元イラストと完成モデルの比較 -->
+      <div class="work-detail-page section">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">再現性と立体化の追求</h3>
+          <p class="text-center"
+            style="color: #4facfe; margin-top:-30px; margin-bottom:40px; font-weight:bold; letter-spacing:1px;">
+            元イラストと完成モデルの比較</p>
+
+          <div class="detail-layout">
+            <div class="detail-figure glass"
+              style="flex: 1; border: none; overflow: hidden; background: url('images/InnocentGardenDress/579ed4b4-d6d3-4e55-ac9a-f599118d7ad8.jpg') center/cover; min-height: 500px; border-radius: 12px;">
+              <div
+                style="position: absolute; bottom: 0; left: 0; width: 100%; background: rgba(0,0,0,0.5); padding: 10px; color: #fff; font-size: 0.8rem; text-align: center;">
+                制作した3Dモデル (全身表示)
+              </div>
+            </div>
+
+            <div class="detail-info" style="flex: 0.8; justify-content: center;">
+              <div class="role-grid" style="flex-direction:column; gap:20px;">
+                <div class="role-box glass" style="border-left: 3px solid #ff9a9e;">
+                  <h4 style="color:#ff9a9e;">原案の解釈</h4>
+                  <p style="color:#ddd; line-height:1.6; margin-top:10px;">
+                    イラストの透明感や柔らかな質感を、ポリゴン構造とテクスチャの組み合わせによって高精度に再現。</p>
+                </div>
+
+                <div class="role-box glass" style="border-left: 3px solid #ffd700;">
+                  <h4 style="color:#ffd700;">制作ツール</h4>
+                  <ul class="role-list" style="padding-top:10px;">
+                    <li>Blender (モデリング)</li>
+                    <li>Substance Painter (テクスチャ制作)</li>
+                    <li>Unity (VRChat実装/セットアップ)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3枚目：フィードバックと改善 (1・2) -->
+      <div class="work-detail-page dark-section">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">クリエイターフィードバックと改善</h3>
+
+          <div class="tech-approach-cards" style="margin-top: 40px;">
+            <!-- ① 形状の再解釈 -->
+            <div class="tech-card glass" style="border-top: 3px solid #4facfe;">
+              <div class="tech-card-header solution" style="border-bottom: none; color: #4facfe;">
+                <i data-feather="edit-3"></i>
+                <h4 style="font-size: 1.1rem;">① 形状の再解釈（ビスチェの紐）</h4>
+              </div>
+              <div class="tech-card-body">
+                <div style="background: rgba(0,0,0,0.3); padding: 10px; border-radius: 8px; margin-bottom: 15px;">
+                  <p style="color: #ff9a9e; font-size: 0.85rem; font-weight: bold;">【FB】編み紐は布の端と端をつなぐ構造として再現してほしい</p>
+                </div>
+                <ul class="role-list" style="font-size: 0.9rem; color: #ccc;">
+                  <li>紐の配置を再設計し、布構造に基づいた配置に修正</li>
+                  <li>クロス本数や終端処理を調整し、違和感のない立体構造へ改善</li>
+                </ul>
+                <div class="tech-sub-point" style="margin-top: 15px; border-left-color: #4facfe;">
+                  <p style="color: #fff; font-size: 0.9rem;"><b>結果:</b> 装飾ではなく「構造として成立するデザイン」へ</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- ② テクスチャ・質感の強化 -->
+            <div class="tech-card glass" style="border-top: 3px solid #ffd700;">
+              <div class="tech-card-header solution" style="border-bottom: none; color: #ffd700;">
+                <i data-feather="layers"></i>
+                <h4 style="font-size: 1.1rem;">② テクスチャ・質感の強化</h4>
+              </div>
+              <div class="tech-card-body">
+                <div style="background: rgba(0,0,0,0.3); padding: 10px; border-radius: 8px; margin-bottom: 15px;">
+                  <p style="color: #ff9a9e; font-size: 0.85rem; font-weight: bold;">【FB】テクスチャ表現をもう一段リッチにしたい</p>
+                </div>
+                <ul class="role-list" style="font-size: 0.85rem; color: #ccc;">
+                  <li>グラデーション追加による金属感の強化</li>
+                  <li>ノーマルマップ追加による凹凸表現の強化</li>
+                  <li>ベルベット・レースなど素材ごとの質感差を調整</li>
+                  <li>模様や装飾を再設計し情報量を最適化</li>
+                </ul>
+                <div class="tech-sub-point" style="margin-top: 15px; border-left-color: #ffd700;">
+                  <p style="color: #fff; font-size: 0.9rem;"><b>結果:</b> 「2Dではできない非常にリッチな表現」を実現</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4枚目：最終調整と完成 -->
+      <div class="work-detail-page section">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">最終調整と完成</h3>
+
+          <div class="four-page-layout">
+            <!-- 左カラム：③ 色改変・仕様設計 -->
+            <div class="four-col glass layout-left">
+              <h5
+                style="color:#00f2fe; font-size:1.1rem; margin-bottom:20px; border-bottom:1px solid rgba(0,242,254,0.3); padding-bottom:10px;">
+                <i data-feather="settings" style="width:18px;vertical-align:middle;margin-right:8px;"></i>③ 色改変・仕様設計の調整
+              </h5>
+
+              <div style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                <p style="color: #ff9a9e; font-size: 0.85rem; font-weight: bold;">【FB】色変更の見え方の最適化・運用面も考慮</p>
+              </div>
+
+              <ul style="padding-left:15px; margin-bottom:20px;">
+                <li style="color:#ccc; margin-bottom:10px; font-size:0.9rem;">白黒テクスチャ＋マテリアルカラーによる色変更方式</li>
+                <li style="color:#ccc; margin-bottom:10px; font-size:0.9rem;">容量削減（4Kテクスチャ削減）を実現</li>
+                <li style="color:#ccc; font-size:0.9rem;">マテリアル分割によりパーツ単位で色変更可能に</li>
+              </ul>
+
+              <div class="issue-card"
+                style="border-left: 3px solid #00f2fe; padding:20px; background:rgba(0, 242, 254, 0.05); margin-top: auto;">
+                <p style="color:#fff; font-size: 0.95rem; font-weight: bold;">
+                  品質・軽量化・カスタマイズ性を両立した設計を実現
+                </p>
+              </div>
+            </div>
+
+            <!-- 右カラム：完成写真 -->
+            <div class="four-col glass layout-right">
+              <h5 style="color:#fff; font-size:1.1rem; margin-bottom:20px;">完成衣装ギャラリー</h5>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; flex: 1;">
+                <div
+                  style="border-radius: 8px; overflow: hidden; background: url('images/InnocentGardenDress/56c00fcd-5757-4601-aa97-84cdc020dfad.jpg') center/cover;">
+                </div>
+                <div
+                  style="border-radius: 8px; overflow: hidden; background: url('images/InnocentGardenDress/5926a805-91a0-4138-ae60-4f14dd8ab7af.jpg') center/cover;">
+                </div>
+                <div
+                  style="border-radius: 8px; overflow: hidden; background: url('images/InnocentGardenDress/e111caf0-45cf-4a24-a3bb-e7ae2f346e06.jpg') center/cover; grid-column: span 2;">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
