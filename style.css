@@ -152,11 +152,28 @@ a:hover {
 .work-title {
   font-family: "Times New Roman", Times, serif;
   font-size: 4rem;
-  margin-bottom: 80px;
+  margin-bottom: 30px; /* Reduced to accommodate period and divider */
   font-weight: 400;
   line-height: 1.2;
   text-align: left;
   color: #fff;
+}
+
+.work-period {
+  font-family: inherit;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 15px;
+  margin-left: 2vw;
+  letter-spacing: 1px;
+}
+
+.work-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+  width: 80%; /* Don't span full width to keep it elegant */
+  margin-bottom: 40px;
+  margin-left: 2vw;
 }
 
 .work-details {

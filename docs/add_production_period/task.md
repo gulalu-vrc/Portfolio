@@ -1,0 +1,11 @@
+- [/] `style.css` に制作期間と区切り線のスタイルを追加する
+- [ ] `index.html` に制作期間と区切り線のHTMLを追加する
+    - [ ] Precious Harmony
+    - [ ] VirtualDiceParty
+    - [ ] 大手前大学OC
+    - [ ] デルミンDJ
+    - [ ] Club4D
+    - [ ] イノセント・ガーデンドレス
+    - [ ] Keen靴モデリング
+- [ ] 追加された表示をブラウザツールで確認する
+- [ ] `Walkthrough` を作成する

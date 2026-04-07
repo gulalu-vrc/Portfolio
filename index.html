@@ -255,10 +255,12 @@
             </div>
           </div>
           <div class="work-text-col fade-in delay-2">
-            <h2 class="work-title" style="margin-bottom: 50px;">
+            <h2 class="work-title" style="margin-bottom: 30px;">
               <img src="images/PreciousHarmony/PreciousHarmonyLogo.png" alt="PreciousHarmony"
                 style="max-width: 100%; height: auto; max-height: 140px; display: block;">
             </h2>
+            <p class="work-period">制作期間：役3か月(2024.09 - 2024.12)</p>
+            <hr class="work-divider">
             <div class="work-details">
               <p>Sanrio Virtual World Award 2024受賞作品<br>
                 <br>
@@ -348,14 +350,16 @@
             </div>
           </div>
         </div>
-      </div>      <!-- 2.5枚目：ゲームシステム・演出 -->
+      </div> <!-- 2.5枚目：ゲームシステム・演出 -->
       <div class="work-detail-page section">
         <div class="container fade-in">
           <h3 class="detail-page-title">ゲームシステム・演出設計</h3>
-          <div class="results-container-split" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; display: grid;">
+          <div class="results-container-split"
+            style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; display: grid;">
             <!-- 左側：音楽との同期 -->
             <div class="overview-col">
-              <h4 style="color: var(--accent-color); margin-bottom: 20px; font-size: 1.2rem; display: flex; align-items: center; gap: 10px;">
+              <h4
+                style="color: var(--accent-color); margin-bottom: 20px; font-size: 1.2rem; display: flex; align-items: center; gap: 10px;">
                 <i data-feather="music"></i>音楽との同期設計
               </h4>
               <div class="glass" style="padding: 25px;">
@@ -377,7 +381,8 @@
 
             <!-- 右側：フィードバック設計 -->
             <div class="team-col">
-              <h4 style="color: #ff9a9e; margin-bottom: 20px; font-size: 1.2rem; display: flex; align-items: center; gap: 10px;">
+              <h4
+                style="color: #ff9a9e; margin-bottom: 20px; font-size: 1.2rem; display: flex; align-items: center; gap: 10px;">
                 <i data-feather="target"></i>フィードバック設計
               </h4>
               <div class="glass" style="padding: 25px;">
@@ -408,8 +413,9 @@
       <div class="work-detail-page dark-section">
         <div class="container fade-in">
           <h3 class="detail-page-title">技術的アプローチ</h3>
-          
-          <div class="tech-approach-layout" style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 40px; margin-top: 20px;">
+
+          <div class="tech-approach-layout"
+            style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 40px; margin-top: 20px;">
             <!-- 左側：課題と方針 -->
             <div class="tech-strategy">
               <div class="tech-card glass" style="margin-bottom: 20px;">
@@ -439,7 +445,8 @@
             <!-- 右側：実装フローと成果 -->
             <div class="tech-implementation">
               <div class="glass" style="padding: 25px; height: 100%;">
-                <h4 style="color: #fff; margin-bottom: 20px; font-size: 1.1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
+                <h4
+                  style="color: #fff; margin-bottom: 20px; font-size: 1.1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
                   【実装】演出制御処理フロー
                 </h4>
                 <div class="flow-diagram" style="display: flex; flex-direction: column; gap: 10px;">
@@ -447,26 +454,31 @@
                     <span style="font-size: 0.7rem; color: #888; display: block;">STEP 01</span>
                     <p style="font-size: 0.9rem; font-weight: bold;">プレイヤー入力・リズム判定</p>
                   </div>
-                  <div style="text-align: center; color: #888;"><i data-feather="arrow-down" style="width: 16px;"></i></div>
+                  <div style="text-align: center; color: #888;"><i data-feather="arrow-down" style="width: 16px;"></i>
+                  </div>
                   <div class="flow-step glass" style="padding: 10px 15px; border-left: 4px solid var(--accent-color);">
                     <span style="font-size: 0.7rem; color: #888; display: block;">STEP 02</span>
                     <p style="font-size: 0.9rem; font-weight: bold;">UdonSharp (C#) でイベント処理</p>
                   </div>
-                  <div style="text-align: center; color: #888;"><i data-feather="arrow-down" style="width: 16px;"></i></div>
+                  <div style="text-align: center; color: #888;"><i data-feather="arrow-down" style="width: 16px;"></i>
+                  </div>
                   <div class="flow-step glass" style="padding: 10px 15px; border-left: 4px solid #ffd700;">
                     <span style="font-size: 0.7rem; color: #888; display: block;">STEP 03</span>
                     <p style="font-size: 0.9rem; font-weight: bold;">Shaderへパラメータ送信 (GPU)</p>
                   </div>
-                  <div style="text-align: center; color: #888;"><i data-feather="arrow-down" style="width: 16px;"></i></div>
+                  <div style="text-align: center; color: #888;"><i data-feather="arrow-down" style="width: 16px;"></i>
+                  </div>
                   <div class="flow-step glass" style="padding: 10px 15px; border-left: 4px solid #ff9a9e;">
                     <span style="font-size: 0.7rem; color: #888; display: block;">STEP 04</span>
                     <p style="font-size: 0.9rem; font-weight: bold;">光粒子の色・動き・発光をリアルタイム制御</p>
                   </div>
                 </div>
 
-                <div class="tech-result-box" style="margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+                <div class="tech-result-box"
+                  style="margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
                   <h5 style="color: #00f2fe; margin-bottom: 10px; font-size: 1rem;">【成果】</h5>
-                  <ul class="tech-result-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.85rem;">
+                  <ul class="tech-result-list"
+                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.85rem;">
                     <li>工数削減 (ノードベース活用)</li>
                     <li>柔軟な表現力 (HLSL併用)</li>
                     <li style="grid-column: span 2;">軽量かつリアルタイムな演出制御を実現</li>
@@ -631,6 +643,8 @@
           </div>
           <div class="work-text-col fade-in delay-2">
             <h2 class="work-title">VirtualDiceParty<br>深海博物館ル・リエー</h2>
+            <p class="work-period">制作期間：約3ヶ月 (2025.07 - 2025.10)</p>
+            <hr class="work-divider">
             <div class="work-details">
               <p>VRChatの大型イベント「VirtualDiceParty」の展示会場として制作したワールド。<br>
                 <br>
@@ -821,6 +835,8 @@
           </div>
           <div class="work-text-col fade-in delay-2">
             <h2 class="work-title">大手前大学<br>オープンキャンパス</h2>
+            <p class="work-period">制作期間：約2ヶ月 (2025.12 - 2026.01)</p>
+            <hr class="work-divider">
             <div class="work-details">
               <p>本ワールドは、大手前大学のオープンキャンパス向けに制作したVR空間です。<br>
                 <br>
@@ -998,6 +1014,8 @@
           </div>
           <div class="work-text-col fade-in delay-2">
             <h2 class="work-title">Show by rock<br>デルミンDJ</h2>
+            <p class="work-period">制作期間：約2ヶ月 (2025.11 - 2025.12)</p>
+            <hr class="work-divider">
             <div class="work-details">
               <p>サンリオ「SHOW BY ROCK!!」の世界観を再現したワールド内の地下ライブハウスにて、キャラクター「デルミン」がDJパフォーマンスを行うライブ演出を制作。<br>
                 <br>
@@ -1139,6 +1157,8 @@
         </div>
         <div class="work-text-col fade-in delay-2">
           <h2 class="work-title">クラブアセット<br>Club4D</h2>
+          <p class="work-period">制作期間：約3か月 (2023.03 - 2023.05)</p>
+          <hr class="work-divider">
           <div class="work-details">
             <p>ここに「クラブアセットClub4D」の詳細な概要、制作の経緯、担当箇所などを記載します。</p>
           </div>
@@ -1155,8 +1175,15 @@
         </div>
         <div class="work-text-col fade-in delay-2">
           <h2 class="work-title">黒猫洋品店<br>イノセント・ガーデンドレス</h2>
+          <p class="work-period">制作期間：約2か月 (2024.06 - 2024.07)</p>
+          <hr class="work-divider">
           <div class="work-details">
-            <p>ここに「黒猫洋品店のイノセント・ガーデンドレス」の詳細な概要、制作の経緯、担当箇所などを記載します。</p>
+            <p>黒猫洋品店合同会社様よりご依頼を受け、<br>
+              イラストをもとに3D衣装モデルの制作を担当しました。<br>
+              <br>
+              デザインの再現性を重視しつつ、<br>
+              ユーザーが自由に色を変更できる仕様を実装しています。
+            </p>
           </div>
         </div>
       </div>
@@ -1174,6 +1201,8 @@
           </div>
           <div class="work-text-col fade-in delay-2">
             <h2 class="work-title">keen<br>靴モデリング</h2>
+            <p class="work-period">制作期間：VketSummer:2024.06、VketWinter:2024.10</p>
+            <hr class="work-divider">
             <div class="work-details">
               <p>ここに「keen靴モデリング」の詳細な概要、制作の経緯、担当箇所などを記載します。</p>
             </div>
