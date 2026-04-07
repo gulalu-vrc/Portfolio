@@ -348,62 +348,130 @@
             </div>
           </div>
         </div>
-      </div>
-
-
-      <!-- 3枚目：技術的アプローチ -->
+      </div>      <!-- 2.5枚目：ゲームシステム・演出 -->
       <div class="work-detail-page section">
         <div class="container fade-in">
-          <h3 class="detail-page-title">技術的アプローチ（演出制御）</h3>
-
-          <div class="tech-approach-cards">
-            <!-- 課題 -->
-            <div class="tech-card glass">
-              <div class="tech-card-header issue">
-                <i data-feather="alert-circle"></i>
-                <h4>【課題】</h4>
-              </div>
-              <div class="tech-card-body">
-                <p>VRChatではパーティクル頂点を<br>C#から動的制御できない</p>
-              </div>
-            </div>
-
-            <!-- 矢印 -->
-            <div class="tech-arrow">
-              <i data-feather="arrow-right"></i>
-            </div>
-
-            <!-- 解決 -->
-            <div class="tech-card glass">
-              <div class="tech-card-header solution">
-                <i data-feather="cpu"></i>
-                <h4>【解決】</h4>
-              </div>
-              <div class="tech-card-body">
-                <p>ジオメトリシェーダーを使用し、<br>光粒子の生成・制御をGPU側で実装</p>
-                <div class="tech-sub-point">
-                  <p>プレイヤー入力をトリガーとして<br>色変化・拡散・発光をリアルタイム制御</p>
+          <h3 class="detail-page-title">ゲームシステム・演出設計</h3>
+          <div class="results-container-split" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; display: grid;">
+            <!-- 左側：音楽との同期 -->
+            <div class="overview-col">
+              <h4 style="color: var(--accent-color); margin-bottom: 20px; font-size: 1.2rem; display: flex; align-items: center; gap: 10px;">
+                <i data-feather="music"></i>音楽との同期設計
+              </h4>
+              <div class="glass" style="padding: 25px;">
+                <ul class="role-list" style="margin-bottom: 20px;">
+                  <li>敵のスポーンタイミング</li>
+                  <li>プレイヤーの攻撃判定処理</li>
+                  <li>盤面上キャラクターの演奏アニメーション</li>
+                  <li>効果音（SE）の発音タイミング</li>
+                  <li>パーティクル等のエフェクト再生</li>
+                </ul>
+                <div class="highlight-info" style="margin-top: 20px; border-left-color: #ffd700;">
+                  <p style="font-size: 0.95rem; color: #eee; line-height: 1.6;">
+                    ゲーム内で発生するすべてのイベントを「小節・拍単位」で管理。<br>
+                    すべての挙動をリズムに同期させることで、操作・演出・音が一体となった体験を実現しました。
+                  </p>
                 </div>
               </div>
             </div>
 
-            <!-- 矢印 -->
-            <div class="tech-arrow">
-              <i data-feather="arrow-right"></i>
+            <!-- 右側：フィードバック設計 -->
+            <div class="team-col">
+              <h4 style="color: #ff9a9e; margin-bottom: 20px; font-size: 1.2rem; display: flex; align-items: center; gap: 10px;">
+                <i data-feather="target"></i>フィードバック設計
+              </h4>
+              <div class="glass" style="padding: 25px;">
+                <p style="color: #ddd; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
+                  プレイヤーのアクションに対する「気持ちよさ」を最大化するため、ステージや対象ごとに個別の演出を設計しています。
+                </p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                  <div class="role-box glass" style="padding: 15px; border-top: 2px solid #ff9a9e;">
+                    <h5 style="color: #fff; margin-bottom: 8px; font-size: 0.9rem;">バリエーション</h5>
+                    <p style="color: #ff9a9e; font-weight: bold; font-size: 1.1rem;">全4ステージ × 3種</p>
+                  </div>
+                  <div class="role-box glass" style="padding: 15px; border-top: 2px solid #00f2fe;">
+                    <h5 style="color: #fff; margin-bottom: 8px; font-size: 0.9rem;">専用コンポーネント</h5>
+                    <p style="color: #00f2fe; font-weight: bold; font-size: 1.1rem;">SE & Particle</p>
+                  </div>
+                </div>
+                <p style="margin-top: 15px; font-size: 0.85rem; color: #888;">
+                  各クリスタルを叩いた際、ステージの雰囲気に合わせた最適な視覚・聴覚フィードバックを実装。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 3枚目：技術的アプローチ -->
+      <div class="work-detail-page dark-section">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">技術的アプローチ</h3>
+          
+          <div class="tech-approach-layout" style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 40px; margin-top: 20px;">
+            <!-- 左側：課題と方針 -->
+            <div class="tech-strategy">
+              <div class="tech-card glass" style="margin-bottom: 20px;">
+                <div class="tech-card-header issue">
+                  <i data-feather="alert-circle"></i>
+                  <h4>【課題】VRChatの制約</h4>
+                </div>
+                <div class="tech-card-body">
+                  <p style="font-size: 0.9rem;">・パーティクル頂点をC#から制御不可<br>・処理負荷に対する厳格な制約</p>
+                  <p style="margin-top: 10px; color: var(--accent-color); font-weight: bold;">→ 軽量かつ制御可能な演出手法が必要</p>
+                </div>
+              </div>
+              <div class="tech-card glass">
+                <div class="tech-card-header solution">
+                  <i data-feather="layers"></i>
+                  <h4>【方針】手法の使い分け</h4>
+                </div>
+                <div class="tech-card-body">
+                  <ul class="role-list" style="font-size: 0.85rem;">
+                    <li><strong>Node-based (Amplify Shader):</strong> 軽量な処理、Vertex/Fragシェーダーで完結する表現</li>
+                    <li><strong>HLSL (Geometry Shader):</strong> 点群表現や動的な粒子生成など、高度な制御が必要な処理</li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
-            <!-- 結果 -->
-            <div class="tech-card glass">
-              <div class="tech-card-header result">
-                <i data-feather="check-circle"></i>
-                <h4>【結果】</h4>
-              </div>
-              <div class="tech-card-body">
-                <ul class="tech-result-list">
-                  <li>CPU負荷を抑えた軽量な演出</li>
-                  <li>高密度な光表現</li>
-                  <li>同期性の高い演出制御を実現</li>
-                </ul>
+            <!-- 右側：実装フローと成果 -->
+            <div class="tech-implementation">
+              <div class="glass" style="padding: 25px; height: 100%;">
+                <h4 style="color: #fff; margin-bottom: 20px; font-size: 1.1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
+                  【実装】演出制御処理フロー
+                </h4>
+                <div class="flow-diagram" style="display: flex; flex-direction: column; gap: 10px;">
+                  <div class="flow-step glass" style="padding: 10px 15px; border-left: 4px solid #fff;">
+                    <span style="font-size: 0.7rem; color: #888; display: block;">STEP 01</span>
+                    <p style="font-size: 0.9rem; font-weight: bold;">プレイヤー入力・リズム判定</p>
+                  </div>
+                  <div style="text-align: center; color: #888;"><i data-feather="arrow-down" style="width: 16px;"></i></div>
+                  <div class="flow-step glass" style="padding: 10px 15px; border-left: 4px solid var(--accent-color);">
+                    <span style="font-size: 0.7rem; color: #888; display: block;">STEP 02</span>
+                    <p style="font-size: 0.9rem; font-weight: bold;">UdonSharp (C#) でイベント処理</p>
+                  </div>
+                  <div style="text-align: center; color: #888;"><i data-feather="arrow-down" style="width: 16px;"></i></div>
+                  <div class="flow-step glass" style="padding: 10px 15px; border-left: 4px solid #ffd700;">
+                    <span style="font-size: 0.7rem; color: #888; display: block;">STEP 03</span>
+                    <p style="font-size: 0.9rem; font-weight: bold;">Shaderへパラメータ送信 (GPU)</p>
+                  </div>
+                  <div style="text-align: center; color: #888;"><i data-feather="arrow-down" style="width: 16px;"></i></div>
+                  <div class="flow-step glass" style="padding: 10px 15px; border-left: 4px solid #ff9a9e;">
+                    <span style="font-size: 0.7rem; color: #888; display: block;">STEP 04</span>
+                    <p style="font-size: 0.9rem; font-weight: bold;">光粒子の色・動き・発光をリアルタイム制御</p>
+                  </div>
+                </div>
+
+                <div class="tech-result-box" style="margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+                  <h5 style="color: #00f2fe; margin-bottom: 10px; font-size: 1rem;">【成果】</h5>
+                  <ul class="tech-result-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.85rem;">
+                    <li>工数削減 (ノードベース活用)</li>
+                    <li>柔軟な表現力 (HLSL併用)</li>
+                    <li style="grid-column: span 2;">軽量かつリアルタイムな演出制御を実現</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -420,7 +488,8 @@
             <div class="feedback-top-row">
               <div style="display: flex; align-items: baseline; gap: 20px; flex-wrap: wrap;">
                 <h4 style="color: #ff6b6b; font-size: 1.2rem; margin-bottom: 5px;">【テスターからのフィードバック】</h4>
-                <p style="color: #ff6b6b; font-weight: bold; font-size: 1.1rem; opacity: 0.9;">「あまり良いフィードバックが得られない」</p>
+                <p style="color: #ff6b6b; font-weight: bold; font-size: 1.1rem; opacity: 0.9;">「あまり良いフィードバックが得られなかった」
+                </p>
               </div>
               <div class="feedback-bubble-list">
                 <div class="feedback-bubble">
@@ -515,7 +584,7 @@
               <div class="user-enjoy-extra" style="margin-top: 30px;">
                 <div class="glass"
                   style="overflow: hidden; border-radius: 12px; border: 1px solid rgba(0, 242, 254, 0.2);">
-                  <img src="images/PreciousHarmony/users_playing.png" alt="User Experience"
+                  <img src="images/PreciousHarmony/G1UN_LcbQAER1xK.jpg" alt="User Experience"
                     style="width: 100%; display: block;">
                   <div
                     style="background: rgba(0, 242, 254, 0.1); padding: 8px; font-size: 0.8rem; color: var(--accent-color); text-align: center; backdrop-filter: blur(4px);">
@@ -523,6 +592,9 @@
                   </div>
                 </div>
               </div>
+              <p style="color: #666; font-size: 0.8rem; margin-top: 15px; text-align: right;">【ローソク@VRC@rosoku_candle】
+              </p>
+
             </div>
 
             <!-- 右側：ユーザーの様子 -->
@@ -530,17 +602,18 @@
               <h4 class="achievement-heading">【ユーザーの様子】</h4>
               <div class="results-photo-gallery">
                 <div class="photo-item-card">
-                  <img src="images/precious_harmony_update/users_playing.png" alt="ユーザー体験 1">
+                  <img src="images/PreciousHarmony/006.jpg" alt="ユーザー体験 1">
                   <div class="photo-item-overlay">仲間と一緒に協力プレイ</div>
                 </div>
                 <div class="photo-item-card">
-                  <img src="images/precious_harmony_update/users_playing.png" alt="ユーザー体験 2">
+                  <img src="images/PreciousHarmony/008.jpg" alt="ユーザー体験 2">
                   <div class="photo-item-overlay">没入感のあるVR演出</div>
                 </div>
               </div>
               <p style="color: #666; font-size: 0.8rem; margin-top: 15px; text-align: right;">【メタバースイベント「Sanrio
                 Virtual Festival 2025」体験レポート 4Gamer.net<br>
-                https://www.4gamer.net/games/794/G079439/20250214049/】</p>
+                https://www.4gamer.net/games/794/G079439/20250214049/】
+              </p>
             </div>
           </div>
         </div>
