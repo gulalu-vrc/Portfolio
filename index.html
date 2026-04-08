@@ -47,6 +47,8 @@
             class="sidebar-custom-icon"><span class="sidebar-text">イノセントガーデンドレス</span></a></li>
       <li><a href="#work-keen-shoes" class="sidebar-link"><img src="images/icons/Shoes.png" alt=""
             class="sidebar-custom-icon"><span class="sidebar-text">Keen靴モデリング</span></a></li>
+      <li><a href="#work-atelier-panda" class="sidebar-link"><img src="images/icons/panda.png" alt=""
+            class="sidebar-custom-icon"><span class="sidebar-text">アトリエパンダ(BOOTH)</span></a></li>
     </ul>
   </aside>
 
@@ -237,6 +239,10 @@
             <a href="#work-keen-shoes" class="works-item" title="keen靴モデリング"
               style="width: 160px; background-image: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 15%, transparent 70%), url('images/Keen/34617-408-e47ebb71340f6cb9ae4ca0e258c7a8e7-1920x1080.webp'); background-size: cover; background-position: center;">
               <span class="thumb-label">keen<br>Shoes</span>
+            </a>
+            <a href="#work-atelier-panda" class="works-item" title="アトリエパンダ (BOOTH)"
+              style="width: 160px; background-image: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 15%, transparent 70%), url('images/AtelierPanda/thumb.png'); background-size: cover; background-position: center;">
+              <span class="thumb-label">アトリエ<br>パンダ</span>
             </a>
           </div>
         </div>
@@ -856,35 +862,44 @@
             style="color: #4facfe; margin-top:-30px; margin-bottom:40px; font-weight:bold; letter-spacing:1px;">空間設計・演出
           </p>
 
-          <div class="detail-layout">
-            <div class="detail-figure glass" style="flex-direction:column; gap:20px; align-items:center;">
-              <p style="color:#ccc;">コンクリート調の無機質な螺旋階段</p>
-              <br><br>
-              <p style="color:#ccc;">温かみのある屋上庭園</p>
-              <br><br>
-              <p style="color:#ccc;">伝統的な茶室空間</p>
+          <div class="detail-layout" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+            <!-- 左上: 統合と導線 -->
+            <div class="role-box glass"
+              style="border-left: 4px solid #4facfe; padding: 40px; display: flex; flex-direction: column; justify-content: center;">
+              <h4 style="color:#4facfe; font-size: 1.5rem; margin-bottom: 20px;">統合と導線</h4>
+              <p style="color:#ddd; line-height:1.8; font-size: 1.1rem;">
+                本ワールドでは、大きく雰囲気の異なる3つの空間を一つに統合しています。<br>これらを不自然さなく接続するため、<b>エレベーターから始まる導線設計</b>を採用しました。
+              </p>
             </div>
 
-            <div class="detail-info">
-              <div class="role-grid" style="flex-direction:column;">
-                <div class="role-box glass" style="border-left: 3px solid #4facfe;">
-                  <h4 style="color:#4facfe;">統合と導線</h4>
-                  <p style="color:#ddd; line-height:1.6; margin-top:10px;">
-                    本ワールドでは、大きく雰囲気の異なる3つの空間を一つに統合しています。<br>これらを不自然さなく接続するため、<b>エレベーターから始まる導線設計</b>を採用しました。</p>
-                </div>
+            <!-- 右上: 画像1 (螺旋階段) -->
+            <div class="glass"
+              style="overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); position: relative; aspect-ratio: 16 / 9;">
+              <img src="images/Otemae/1.webp" alt="螺旋階段"
+                style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              <div
+                style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: rgba(0,0,0,0.5); text-align: center; font-size: 0.9rem; color: #ccc; backdrop-filter: blur(5px);">
+                無機質な螺旋階段</div>
+            </div>
 
-                <div class="role-box glass" style="border-left: 3px solid #ff9a9e;">
-                  <h4 style="color:#ff9a9e;">場面転換の演出</h4>
-                  <p style="color:#ddd; line-height:1.6; margin-top:10px;">
-                    エレベーターによる「場面転換」を演出の起点とすることで、プレイヤーに違和感を与えず空間の切り替えを実現しています。</p>
-                </div>
+            <!-- 左下: 画像4 (屋上庭園) -->
+            <div class="glass"
+              style="overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); position: relative; aspect-ratio: 16 / 9;">
+              <img src="images/Otemae/4.webp" alt="屋上庭園"
+                style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              <div
+                style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: rgba(0,0,0,0.5); text-align: center; font-size: 0.9rem; color: #ccc; backdrop-filter: blur(5px);">
+                温かみのある屋上庭園</div>
+            </div>
 
-                <div class="role-box glass" style="border-left: 3px solid #ffd700;">
-                  <h4 style="color:#ffd700;">制御スクリプト</h4>
-                  <p style="color:#ddd; line-height:1.6; margin-top:10px;">
-                    また、簡易的なスクリプトを用いて、演出の発火や遷移タイミングの制御をシームレスに行っています。</p>
-                </div>
-              </div>
+            <!-- 右下: 画像7 (茶室) -->
+            <div class="glass"
+              style="overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); position: relative; aspect-ratio: 16 / 9;">
+              <img src="images/Otemae/7.webp" alt="茶室"
+                style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              <div
+                style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: rgba(0,0,0,0.5); text-align: center; font-size: 0.9rem; color: #ccc; backdrop-filter: blur(5px);">
+                伝統的な茶室空間</div>
             </div>
           </div>
         </div>
@@ -909,93 +924,131 @@
 
           <h4 style="color: #fff; margin-bottom: 20px; font-size: 1.2rem;">【制作フロー】</h4>
           <div class="tech-approach-cards" style="margin-top: 20px;">
-            <div class="tech-card glass" style="padding: 20px; text-align:center; flex:1;">
-              <i data-feather="layout" style="color:#4facfe; width:32px; height:32px; margin-bottom:10px;"></i>
-              <h5 style="color:#fff; font-size:1rem;">デザイン作成</h5>
+            <div class="tech-card glass"
+              style="padding: 20px; text-align:center; flex:1; display: flex; flex-direction: column; gap: 10px;">
+              <i data-feather="layout" style="color:#4facfe; width:32px; height:32px; margin-bottom:5px;"></i>
+              <h5 style="color:#fff; font-size:1rem; margin-bottom: 5px;">デザイン作成</h5>
+              <div style="display: flex; flex-direction: column; gap: 8px; margin-top: auto;">
+                <img src="images/Otemae/1.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 4/3; object-fit: cover;"
+                  alt="デザイン1">
+                <img src="images/Otemae/2.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 4/3; object-fit: cover;"
+                  alt="デザイン2">
+              </div>
             </div>
 
             <div class="tech-arrow"><i data-feather="chevron-right"></i></div>
 
-            <div class="tech-card glass" style="padding: 20px; text-align:center; flex:1;">
-              <i data-feather="box" style="color:#ffd700; width:32px; height:32px; margin-bottom:10px;"></i>
-              <h5 style="color:#fff; font-size:1rem;">モデリング進行</h5>
+            <div class="tech-card glass"
+              style="padding: 20px; text-align:center; flex:1; display: flex; flex-direction: column; gap: 10px;">
+              <i data-feather="box" style="color:#ffd700; width:32px; height:32px; margin-bottom:5px;"></i>
+              <h5 style="color:#fff; font-size:1rem; margin-bottom: 5px;">モデリング進行</h5>
+              <div style="display: flex; flex-direction: column; gap: 8px; margin-top: auto;">
+                <img src="images/Otemae/3.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 4/3; object-fit: cover;"
+                  alt="モデリング1">
+                <img src="images/Otemae/4.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 4/3; object-fit: cover;"
+                  alt="モデリング2">
+              </div>
             </div>
 
             <div class="tech-arrow"><i data-feather="chevron-right"></i></div>
 
-            <div class="tech-card glass" style="padding: 20px; text-align:center; flex:1;">
-              <i data-feather="cpu" style="color:#ff9a9e; width:32px; height:32px; margin-bottom:10px;"></i>
-              <h5 style="color:#fff; font-size:1rem;">AIブラッシュアップ</h5>
-              <p style="font-size:0.8rem; color:#ccc; margin-top:5px;">(Gemini活用)</p>
+            <div class="tech-card glass"
+              style="padding: 20px; text-align:center; flex:1; display: flex; flex-direction: column; gap: 10px;">
+              <i data-feather="cpu" style="color:#ff9a9e; width:32px; height:32px; margin-bottom:5px;"></i>
+              <h5 style="color:#fff; font-size:1rem; margin-bottom: 0;">AIブラッシュアップ</h5>
+              <p style="font-size:0.8rem; color:#ccc; margin-top:0; margin-bottom: 5px;">(Gemini活用)</p>
+              <div style="display: flex; flex-direction: column; gap: 8px; margin-top: auto;">
+                <img src="images/Otemae/5.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 4/3; object-fit: cover;"
+                  alt="AI1">
+                <img src="images/Otemae/6.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 4/3; object-fit: cover;"
+                  alt="AI2">
+              </div>
             </div>
 
             <div class="tech-arrow"><i data-feather="chevron-right"></i></div>
 
-            <div class="tech-card glass" style="padding: 20px; text-align:center; flex:1;">
-              <i data-feather="tool" style="color:#00f2fe; width:32px; height:32px; margin-bottom:10px;"></i>
-              <h5 style="color:#fff; font-size:1rem;">再モデリング調整</h5>
+            <div class="tech-card glass"
+              style="padding: 20px; text-align:center; flex:1; display: flex; flex-direction: column; gap: 10px;">
+              <i data-feather="tool" style="color:#00f2fe; width:32px; height:32px; margin-bottom:5px;"></i>
+              <h5 style="color:#fff; font-size:1rem; margin-bottom: 5px;">再モデリング調整</h5>
+              <div style="display: flex; flex-direction: column; gap: 8px; margin-top: auto;">
+                <img src="images/Otemae/7.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 4/3; object-fit: cover;"
+                  alt="調整1">
+                <img src="images/Otemae/1.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 4/3; object-fit: cover;"
+                  alt="調整2">
+              </div>
             </div>
           </div>
 
         </div>
       </div>
 
-      <!-- 4枚目：技術・制作条件への対応 -->
+      <!-- 4枚目：軽量化と表現を両立したライティング設計 -->
       <div class="work-detail-page section">
         <div class="container fade-in">
-          <h3 class="detail-page-title">技術選定と制約への対応力</h3>
+          <h3 class="detail-page-title">軽量化と表現を両立したライティング設計</h3>
           <p class="text-center"
-            style="color: #ffd700; margin-top:-30px; margin-bottom:40px; font-weight:bold; letter-spacing:1px;">
-            技術・制作条件への対応</p>
+            style="color: #00f2fe; margin-top:-30px; margin-bottom:40px; font-weight:bold; letter-spacing:1px; font-size: 1.5rem;">
+            多環境対応の中でも、印象的な光表現を実現</p>
 
-          <div class="four-page-layout">
-            <!-- 左カラム：制約と対応 -->
-            <div class="four-col glass layout-left">
-              <div class="issue-grid">
-                <div class="issue-card" style="border-left: 3px solid #ff6b6b; padding:25px;">
-                  <div class="issue-content">
-                    <h5 style="color:#ff6b6b; font-size:1.1rem; margin-bottom:15px;"><i data-feather="alert-triangle"
-                        style="width:20px;height:20px;vertical-align:bottom;margin-right:5px;"></i>制作条件・制約</h5>
-                    <p style="color:#ccc; font-size:0.95rem; line-height:1.6;">
-                      権利上の制約により、クライアントに「有料アセットの購入を依頼することができない」という厳しい条件がありました。</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="pivot-section" style="margin-top: 20px;">
-                <h5 style="color:#fff; font-size:1.1rem; margin-bottom:15px;">対応アプローチ</h5>
-                <div class="pivot-arrows">
-                  <p><i data-feather="corner-down-right"></i> <b>植物：</b>無料アセットを積極活用</p>
-                  <p><i data-feather="corner-down-right"></i> <b>建築・主要物：</b>すべて自作モデリング構成</p>
-                </div>
-                <div class="highlight-info pivot-highlight">
-                  <p>ライトベイク（ベイクライティング）に注力し、<br>無理のないアセット環境下でも自然で説得力のある光表現を実現。</p>
-                </div>
+          <div class="four-page-layout" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+            <!-- 左上: 技術解説 -->
+            <div class="role-box glass"
+              style="padding: 40px; display: flex; flex-direction: column; justify-content: center; border-left: 4px solid #00f2fe;">
+              <p style="color:#eee; font-size:1rem; line-height:1.8; margin-bottom: 20px;">
+                本ワールドはオープンキャンパス用途のため、VR・PC・Android・iOSなど幅広い環境での動作が前提となっています。<br><br>
+                そのため、リアルタイムライトの多用は避けつつ、軽量化を維持しながらも印象的な光表現を実現する必要がありました。<br><br>
+                そこで、ステンドグラスや障子から差し込む光をシェーダーで再現する手法を採用しました。
+              </p>
+              <!-- 補足事項 -->
+              <div style="margin-top: auto; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.1);">
+                <ul style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 8px;">
+                  <li style="color: #888; font-size: 0.85rem; display: flex; align-items: center; gap: 8px;">
+                    <i data-feather="zap" style="width: 14px; color: #ffd700;"></i> リアルタイムライトを使用せずに表現
+                  </li>
+                  <li style="color: #888; font-size: 0.85rem; display: flex; align-items: center; gap: 8px;">
+                    <i data-feather="smartphone" style="width: 14px; color: #4facfe;"></i> 複数環境での安定動作を考慮
+                  </li>
+                </ul>
               </div>
             </div>
 
-            <!-- 右カラム：使用ツール -->
-            <div class="four-col glass layout-right">
-              <div class="tech-stack-section">
-                <h3 class="achievement-heading">【使用ツール】</h3>
-                <div class="tech-tags" style="gap:15px; flex-direction:column; margin-top:20px;">
-                  <span class="tech-tag"
-                    style="font-size:1rem; padding:15px 20px; display:flex; align-items:center;"><b>Blender</b> <span
-                      style="color:#888; margin-left:auto;">（モデリング）</span></span>
-                  <span class="tech-tag"
-                    style="font-size:1rem; padding:15px 20px; display:flex; align-items:center;"><b>Unity</b> <span
-                      style="color:#888; margin-left:auto;">（実装・ライティング・演出）</span></span>
-                  <span class="tech-tag"
-                    style="font-size:1rem; padding:15px 20px; display:flex; align-items:center;"><b>Substance
-                      Painter</b> <span style="color:#888; margin-left:auto;">（テクスチャ制作）</span></span>
-                  <span class="tech-tag"
-                    style="font-size:1rem; padding:15px 20px; display:flex; align-items:center;"><b>Gravity</b> <span
-                      style="color:#888; margin-left:auto;">（デザイン補助）</span></span>
-                  <span class="tech-tag"
-                    style="font-size:1rem; padding:15px 20px; display:flex; align-items:center;"><b>Gemini / AI</b>
-                    <span style="color:#888; margin-left:auto;">（デザインブラッシュアップ）</span></span>
-                </div>
-              </div>
+            <!-- 右上: 画像1 (ステンドグラス) -->
+            <div class="glass"
+              style="overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); position: relative; aspect-ratio: 16 / 9;">
+              <img src="images/Otemae/2.webp" alt="ステンドグラス"
+                style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              <div
+                style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 8px; background: rgba(0,0,0,0.5); text-align: center; font-size: 0.8rem; color: #ccc; backdrop-filter: blur(5px);">
+                ステンドグラスの光表現</div>
+            </div>
+
+            <!-- 左下: 画像2 (Amplify Shader) -->
+            <div class="glass"
+              style="overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); position: relative; aspect-ratio: 16 / 9;">
+              <img src="images/Otemae/5.webp" alt="Amplify Shader"
+                style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              <div
+                style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 8px; background: rgba(0,0,0,0.5); text-align: center; font-size: 0.8rem; color: #ccc; backdrop-filter: blur(5px);">
+                Amplify Shaderによる実装</div>
+            </div>
+
+            <!-- 右下: 画像3 (茶室) -->
+            <div class="glass"
+              style="overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); position: relative; aspect-ratio: 16 / 9;">
+              <img src="images/Otemae/3.webp" alt="茶室"
+                style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              <div
+                style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 8px; background: rgba(0,0,0,0.5); text-align: center; font-size: 0.8rem; color: #ccc; backdrop-filter: blur(5px);">
+                茶室における光の演出</div>
             </div>
           </div>
         </div>
@@ -1042,11 +1095,19 @@
                 style="color:#00f2fe; font-size:1.1rem; margin-bottom:15px; border-bottom:1px solid rgba(0,242,254,0.3); padding-bottom:10px;">
                 <i data-feather="clock" style="width:18px;vertical-align:middle;margin-right:8px;"></i>長尺ライブを成立させる設計
               </h5>
-              <ul style="padding-left:15px;">
+              <ul style="padding-left:15px; margin-bottom: 20px;">
                 <li style="color:#ccc; margin-bottom:12px; font-size:0.95rem;">
                   30分×2セットという長時間演出に対応するため、Timelineの構造を整理・最適化</li>
                 <li style="color:#ccc; font-size:0.95rem;">トラック構成や制御単位をルール化し、編集・再利用がしやすい設計に</li>
               </ul>
+              <div style="display: flex; flex-direction: column; gap: 10px; margin-top: auto;">
+                <img src="images/Delmin/bce53ba90fe4405d1efa9dbc87269586-kix.39i7ol7jbin9.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover;"
+                  alt="演出設計1">
+                <img src="images/Delmin/bce53ba90fe4405d1efa9dbc87269586-kix.gyqo5y1aqot6.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover;"
+                  alt="演出設計2">
+              </div>
             </div>
             <!-- BOX 2 -->
             <div class="issue-card glass" style="border-left: 3px solid #ff6b6b; padding:25px; flex-direction:column;">
@@ -1054,10 +1115,18 @@
                 style="color:#ff6b6b; font-size:1.1rem; margin-bottom:15px; border-bottom:1px solid rgba(255,107,107,0.3); padding-bottom:10px;">
                 <i data-feather="video" style="width:18px;vertical-align:middle;margin-right:8px;"></i>既存素材を活かした演出構築
               </h5>
-              <ul style="padding-left:15px;">
+              <ul style="padding-left:15px; margin-bottom: 20px;">
                 <li style="color:#ccc; margin-bottom:12px; font-size:0.95rem;">既存の映像素材を活用し、短期間で高密度な空間演出を実現</li>
                 <li style="color:#ccc; font-size:0.95rem;">楽曲ごとに映像の色味を調整し、音と視覚の統一感を強化</li>
               </ul>
+              <div style="display: flex; flex-direction: column; gap: 10px; margin-top: auto;">
+                <img src="images/Delmin/bce53ba90fe4405d1efa9dbc87269586-kix.hkoggk9kpn0g-1.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover;"
+                  alt="素材活用1">
+                <img src="images/Delmin/bce53ba90fe4405d1efa9dbc87269586-kix.pst1lxahq6oe.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover;"
+                  alt="素材活用2">
+              </div>
             </div>
             <!-- BOX 3 -->
             <div class="issue-card glass" style="border-left: 3px solid #ffd700; padding:25px; flex-direction:column;">
@@ -1065,12 +1134,20 @@
                 style="color:#ffd700; font-size:1.1rem; margin-bottom:15px; border-bottom:1px solid rgba(255,215,0,0.3); padding-bottom:10px;">
                 <i data-feather="refresh-cw" style="width:18px;vertical-align:middle;margin-right:8px;"></i>素材の再利用と変化の演出
               </h5>
-              <ul style="padding-left:15px;">
+              <ul style="padding-left:15px; margin-bottom: 20px;">
                 <li style="color:#ccc; margin-bottom:12px; font-size:0.95rem;">同一素材をBPMに合わせて再生速度を変化<br><span
                     style="color:#ffd700; font-size:0.85rem; margin-top:5px; display:inline-block;">→
                     少ない素材でも異なる印象を演出</span></li>
                 <li style="color:#ccc; font-size:0.95rem;">コストを抑えつつ、単調さを防ぐ演出設計</li>
               </ul>
+              <div style="display: flex; flex-direction: column; gap: 10px; margin-top: auto;">
+                <img src="images/Delmin/bce53ba90fe4405d1efa9dbc87269586-kix.x25gctg9kiu5.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover;"
+                  alt="効率化1">
+                <img src="images/Delmin/bce53ba90fe4405d1efa9dbc87269586-kix.z5oy2q6h51k.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover;"
+                  alt="効率化2">
+              </div>
             </div>
             <!-- BOX 4 -->
             <div class="issue-card glass" style="border-left: 3px solid #ff9a9e; padding:25px; flex-direction:column;">
@@ -1078,10 +1155,18 @@
                 style="color:#ff9a9e; font-size:1.1rem; margin-bottom:15px; border-bottom:1px solid rgba(255,154,158,0.3); padding-bottom:10px;">
                 <i data-feather="zap" style="width:18px;vertical-align:middle;margin-right:8px;"></i>観客を飽きさせない工夫
               </h5>
-              <ul style="padding-left:15px;">
+              <ul style="padding-left:15px; margin-bottom: 20px;">
                 <li style="color:#ccc; margin-bottom:12px; font-size:0.95rem;">楽曲の展開に合わせてパーティクル演出を挿入</li>
                 <li style="color:#ccc; font-size:0.95rem;">視覚的なピークを意図的に設計し、体験の緩急をコントロール</li>
               </ul>
+              <div style="display: flex; flex-direction: column; gap: 10px; margin-top: auto;">
+                <img src="images/Delmin/bce53ba90fe4405d1efa9dbc87269586-kix.39i7ol7jbin9.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover;"
+                  alt="没入感1">
+                <img src="images/Delmin/bce53ba90fe4405d1efa9dbc87269586-kix.pst1lxahq6oe.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover;"
+                  alt="没入感2">
+              </div>
             </div>
           </div>
         </div>
@@ -1160,7 +1245,7 @@
           </div>
           <div class="work-text-col fade-in delay-2">
             <h2 class="work-title">クラブアセット<br>Club4D</h2>
-            <p class="work-period">制作期間：約3か月 (2023.03 - 2023.05)</p>
+            <p class="work-period">制作期間：約3か月 (2024.03 - 2024.05)</p>
             <hr class="work-divider">
             <div class="work-details">
               <p>VRChat向けの商用クラブアセット「Club4D」のシステム設計および演出実装を担当。<br>
@@ -1222,7 +1307,8 @@
           <div class="tech-approach-cards" style="margin-top: 40px;">
             <!-- 運用の簡略化 -->
             <div class="tech-card glass">
-              <div class="tech-card-header solution" style="color: #4facfe; border-bottom-color: rgba(79, 172, 254, 0.3);">
+              <div class="tech-card-header solution"
+                style="color: #4facfe; border-bottom-color: rgba(79, 172, 254, 0.3);">
                 <i data-feather="user-check"></i>
                 <h4 style="margin-left: 10px;">少人数でも成立するライブ演出設計</h4>
               </div>
@@ -1238,7 +1324,8 @@
 
             <!-- 音楽同期 -->
             <div class="tech-card glass">
-              <div class="tech-card-header solution" style="color: #00f2fe; border-bottom-color: rgba(0, 242, 254, 0.3);">
+              <div class="tech-card-header solution"
+                style="color: #00f2fe; border-bottom-color: rgba(0, 242, 254, 0.3);">
                 <i data-feather="activity"></i>
                 <h4 style="margin-left: 10px;">音楽と完全同期する演出</h4>
               </div>
@@ -1323,7 +1410,7 @@
           </div>
           <div class="work-text-col fade-in delay-2">
             <h2 class="work-title">黒猫洋品店<br>イノセント・ガーデンドレス</h2>
-            <p class="work-period">制作期間：約2週間 (2024.03)</p>
+            <p class="work-period">制作期間：約1ヶ月 (2025.06-2025.07)</p>
             <hr class="work-divider">
             <div class="work-details">
               <p>黒猫洋品店合同会社様よりご依頼を受け、<br>
@@ -1639,6 +1726,73 @@
       </div>
     </section>
 
+    <!-- ================= ATELIER PANDA (BOOTH) ================= -->
+    <section id="work-atelier-panda" class="work-project-container">
+      <!-- 1枚目：ヒーロー画面 -->
+      <div class="work-page-section">
+        <div class="work-split-layout">
+          <div class="work-image-col fade-in delay-1">
+            <div class="work-main-image" style="background-image: url('images/AtelierPanda/hero.png');">
+            </div>
+          </div>
+          <div class="work-text-col fade-in delay-2">
+            <h2 class="work-title">アトリエパンダ<br>(Atelier Panda)</h2>
+            <p class="work-period">制作期間：継続的制作 (2024.01 - Present)</p>
+            <hr class="work-divider">
+            <div class="work-details">
+              <p>BOOTHにてオリジナル3D衣装やアセットの販売を行っているショップです。<br>
+                <br>
+                「VR空間での自分らしさを彩る」をコンセプトに、<br>
+                細部までこだわり抜いた高品質なアイテムを展開しています。
+              </p>
+              <div style="margin-top: 40px; margin-left: 2vw;">
+                <a href="https://panda12.booth.pm/" target="_blank" class="btn glass-btn"
+                  style="color: #fff; padding: 15px 40px; font-size: 1.1rem; letter-spacing: 2px;">
+                  <i data-feather="shopping-cart" style="margin-right: 10px;"></i>BOOTHショップを訪れる
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2枚目：代表作とコンセプト -->
+      <div class="work-detail-page section">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">ショップコンセプト ＆ 代表作</h3>
+
+          <div class="detail-layout">
+            <div class="detail-figure glass"
+              style="flex: 1.2; border: none; overflow: hidden; background: url('images/AtelierPanda/item_miko.png') center/cover; min-height: 500px; border-radius: 12px;">
+              <div
+                style="position: absolute; bottom: 0; left: 0; width: 100%; background: rgba(0,0,0,0.6); padding: 15px; color: #fff; font-size: 0.9rem; text-align: center; backdrop-filter: blur(5px);">
+                代表作：巫女装束セット (Original 3D Model)
+              </div>
+            </div>
+
+            <div class="detail-info" style="flex: 1; justify-content: center;">
+              <div class="role-grid" style="flex-direction:column; gap:30px;">
+                <div class="role-box glass" style="border-left: 4px solid #00f2fe; padding: 30px;">
+                  <h4 style="color:#00f2fe; font-size: 1.4rem;">こだわり抜いた質感</h4>
+                  <p style="color:#ddd; line-height:1.8; margin-top:15px; font-size: 1.05rem;">
+                    Substance Painterをフル活用し、布の柔らかさや装飾の緻密さを再現。<br>
+                    VR空間での見え方を徹底的に研究し、どの角度から見ても美しいシルエットを追求しています。
+                  </p>
+                </div>
+
+                <div class="role-box glass" style="border-left: 4px solid #ff9a9e; padding: 30px;">
+                  <h4 style="color:#ff9a9e; font-size: 1.4rem;">幅広いカスタマイズ性</h4>
+                  <p style="color:#ddd; line-height:1.8; margin-top:15px; font-size: 1.05rem;">
+                    多くのユーザーに使っていただけるよう、多数のアバターへの対応や、<br>
+                    シェーダーを活用したカラー改変のしやすさを重視して設計しています。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
