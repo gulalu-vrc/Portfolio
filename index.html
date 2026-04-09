@@ -47,7 +47,7 @@
             class="sidebar-custom-icon"><span class="sidebar-text">イノセントガーデンドレス</span></a></li>
       <li><a href="#work-keen-shoes" class="sidebar-link"><img src="images/icons/Shoes.png" alt=""
             class="sidebar-custom-icon"><span class="sidebar-text">Keen靴モデリング</span></a></li>
-      <li><a href="#work-atelier-panda" class="sidebar-link"><img src="images/icons/panda.png" alt=""
+      <li><a href="#work-atelier-panda" class="sidebar-link"><img src="images/icons/boothIcon.png" alt=""
             class="sidebar-custom-icon"><span class="sidebar-text">アトリエパンダ(BOOTH)</span></a></li>
     </ul>
   </aside>
@@ -601,9 +601,9 @@
               <!-- ユーザー体験の追加画像 -->
               <div class="user-enjoy-extra" style="margin-top: 30px;">
                 <div class="glass"
-                  style="overflow: hidden; border-radius: 12px; border: 1px solid rgba(0, 242, 254, 0.2);">
+                  style="overflow: hidden; border-radius: 12px; border: 1px solid rgba(0, 242, 254, 0.2); aspect-ratio: 16/9;">
                   <img src="images/PreciousHarmony/G1UN_LcbQAER1xK.jpg" alt="User Experience"
-                    style="width: 100%; display: block;">
+                    style="width: 100%; height: 100%; object-fit: cover; display: block;">
                   <div
                     style="background: rgba(0, 242, 254, 0.1); padding: 8px; font-size: 0.8rem; color: var(--accent-color); text-align: center; backdrop-filter: blur(4px);">
                     来場者が実際に体験・交流している様子
@@ -617,8 +617,7 @@
 
             <!-- 右側：ユーザーの様子 -->
             <div class="results-photo-col">
-              <h4 class="achievement-heading">【ユーザーの様子】</h4>
-              <div class="results-photo-gallery">
+              <div class="results-photo-gallery" style="width: 80%;">
                 <div class="photo-item-card">
                   <img src="images/PreciousHarmony/006.jpg" alt="ユーザー体験 1">
                   <div class="photo-item-overlay">仲間と一緒に協力プレイ</div>
@@ -1182,7 +1181,7 @@
 
           <div class="detail-layout" style="gap:40px;">
             <!-- 技術詳細側 -->
-            <div class="detail-info" style="flex: 1.5;">
+            <div class="detail-info" style="flex: 0.7;">
               <div class="role-grid" style="flex-direction:column; gap:20px;">
                 <div class="role-box glass" style="border-left: 3px solid #4facfe;">
                   <h4 style="color:#4facfe;">ライブハウス構造の最適化</h4>
@@ -1212,21 +1211,32 @@
               </div>
             </div>
 
-            <!-- 成果ブロック -->
-            <div class="detail-figure glass"
-              style="flex: 1; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding: 40px; border-top: 4px solid #00f2fe;">
-              <i data-feather="award" style="color:#00f2fe; width:56px; height:56px; margin-bottom:20px;"></i>
-              <h4 style="color:#00f2fe; font-size:1.5rem; margin-bottom:30px; letter-spacing:2px;">成果</h4>
-              <ul style="list-style:none; padding:0; margin:0; text-align:left;">
-                <li style="color:#fff; font-size:1.1rem; margin-bottom:20px; display:flex; align-items:flex-start;">
-                  <i data-feather="users" style="min-width:24px; color:#4facfe; margin-right:15px; margin-top:2px;"></i>
-                  <span>イベント期間中<br><b style="font-size:1.3rem;">約27,000人</b> が来場</span>
-                </li>
-                <li style="color:#fff; font-size:1.1rem; display:flex; align-items:flex-start;">
-                  <i data-feather="star" style="min-width:24px; color:#ff9a9e; margin-right:15px; margin-top:2px;"></i>
-                  <span>長尺にも関わらず、没入感を維持したライブ体験を提供</span>
-                </li>
-              </ul>
+            <!-- 成果ブロック (十字区切りグリッド) -->
+            <div class="results-cross-grid glass" style="flex: 2.2; border-top: 4px solid #00f2fe;">
+              <!-- 左上: テキスト枠 -->
+              <div class="grid-cell text-cell">
+                <i data-feather="award" style="color:#00f2fe; width:40px; height:40px; margin-bottom:15px;"></i>
+                <h4 style="color:#00f2fe; font-size:1.2rem; margin-bottom:15px; letter-spacing:2px;">成果</h4>
+                <ul style="list-style:none; padding:0; margin:0; text-align:left;">
+                  <li style="color:#fff; font-size:0.95rem; margin-bottom:12px; display:flex; align-items:flex-start;">
+                    <i data-feather="users"
+                      style="min-width:18px; color:#4facfe; margin-right:10px; margin-top:2px;"></i>
+                    <span>イベント期間中<br><b style="font-size:1.1rem;">約27,000人</b> が来場</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- 右上: 画像1 -->
+              <div class="grid-cell img-cell">
+                <img src="images/Delmin/bce53ba90fe4405d1efa9dbc87269586-kix.39i7ol7jbin9.webp" alt="成果1">
+              </div>
+              <!-- 左下: 画像2 -->
+              <div class="grid-cell img-cell">
+                <img src="images/Delmin/bce53ba90fe4405d1efa9dbc87269586-kix.hkoggk9kpn0g-1.webp" alt="成果2">
+              </div>
+              <!-- 右下: 画像3 -->
+              <div class="grid-cell img-cell">
+                <img src="images/Delmin/bce53ba90fe4405d1efa9dbc87269586-kix.pst1lxahq6oe.webp" alt="成果3">
+              </div>
             </div>
           </div>
         </div>
@@ -1258,82 +1268,89 @@
         </div>
       </div>
 
-      <!-- 2枚目：実績 -->
-      <div class="work-detail-page section">
-        <div class="container fade-in">
-          <h3 class="detail-page-title">実運用プロダクトとしての実績</h3>
 
-          <div class="results-container-split" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
-            <!-- 左側：販売実績 -->
-            <div class="overview-col">
-              <div class="achievement-section">
-                <h4 class="achievement-heading">【販売実績】</h4>
-                <div class="glass"
-                  style="padding: 30px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #ffd700;">
-                  <p style="font-size: 1.1rem; color: #fff; margin-bottom: 10px;">Booth価格：<b>7,000円</b>（高価格帯）</p>
-                  <p style="font-size: 2rem; color: #ffd700; font-weight: bold; margin-bottom: 5px;">累計販売数：262本</p>
-                  <p style="font-size: 0.9rem; color: #ccc;">多くのユーザーに継続的に使用されている信頼のプロダクト</p>
-                </div>
-              </div>
-            </div>
 
-            <!-- 右側：メディア・外部実績 -->
-            <div class="results-photo-col">
-              <div class="achievement-section">
-                <h4 class="achievement-heading">【メディア・外部実績】</h4>
-                <ul class="achievement-list">
-                  <li
-                    style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; margin-bottom: 15px; border-left: 3px solid #4facfe; list-style: none; display: flex; align-items: center;">
-                    <i data-feather="monitor" style="color:#4facfe; margin-right:15px; min-width: 24px;"></i>
-                    <span><b>テレビ朝日「金曜日のメタバース」</b><br>番組内にて紹介されました</span>
-                  </li>
-                  <li
-                    style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 8px; border-left: 3px solid #ff9a9e; list-style: none; display: flex; align-items: center;">
-                    <i data-feather="play-circle" style="color:#ff9a9e; margin-right:15px; min-width: 24px;"></i>
-                    <span><b>音楽ユニット MOSAIC.WAV</b><br>公式MVの撮影舞台として登場</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 3枚目：設計思想・こだわり -->
+      <!-- 2枚目：設計思想・こだわり -->
       <div class="work-detail-page dark-section">
         <div class="container fade-in">
           <h3 class="detail-page-title">設計思想・こだわり</h3>
 
-          <div class="tech-approach-cards" style="margin-top: 40px;">
-            <!-- 運用の簡略化 -->
-            <div class="tech-card glass">
-              <div class="tech-card-header solution"
-                style="color: #4facfe; border-bottom-color: rgba(79, 172, 254, 0.3);">
-                <i data-feather="user-check"></i>
-                <h4 style="margin-left: 10px;">少人数でも成立するライブ演出設計</h4>
-              </div>
-              <div class="tech-card-body">
-                <ul class="role-list">
-                  <li style="color: #ccc; margin-bottom: 10px;">ライティングスタッフが少なくても成立するようオートメーション化</li>
-                  <li style="color: #ccc;">直感的に扱えるUI・操作フローを重視し、専門知識不要で演出可能</li>
-                </ul>
+          <div
+            style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:20px; margin-top: 40px;">
+            <!-- Point 1 -->
+            <div class="issue-card glass" style="border-left: 3px solid #4facfe; padding:25px; flex-direction:column;">
+              <h5
+                style="color:#4facfe; font-size:1.1rem; margin-bottom:15px; border-bottom:1px solid rgba(79,172,254,0.3); padding-bottom:10px;">
+                <i data-feather="zap" style="width:18px;vertical-align:middle;margin-right:8px;"></i>運用のオートメーション化
+              </h5>
+              <ul style="padding-left:15px; margin-bottom: 20px;">
+                <li style="color:#ccc; font-size:0.95rem;">ライティングスタッフが少なくても成立するようオートメーション化を徹底</li>
+              </ul>
+              <div style="display: flex; flex-direction: column; gap: 10px; margin-top: auto;">
+                <img src="images/Club4D/VRChat_2024-04-23_16-43-17.694_1920x1080-1024x576.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover;"
+                  alt="オートメーション1">
+                <img src="images/Club4D/VRChat_2024-04-23_16-43-17.694_1920x1080-1024x576.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover;"
+                  alt="オートメーション2">
               </div>
             </div>
 
-            <div class="tech-arrow"><i data-feather="plus"></i></div>
-
-            <!-- 音楽同期 -->
-            <div class="tech-card glass">
-              <div class="tech-card-header solution"
-                style="color: #00f2fe; border-bottom-color: rgba(0, 242, 254, 0.3);">
-                <i data-feather="activity"></i>
-                <h4 style="margin-left: 10px;">音楽と完全同期する演出</h4>
+            <!-- Point 2 -->
+            <div class="issue-card glass" style="border-left: 3px solid #00f2fe; padding:25px; flex-direction:column;">
+              <h5
+                style="color:#00f2fe; font-size:1.1rem; margin-bottom:15px; border-bottom:1px solid rgba(0,242,254,0.3); padding-bottom:10px;">
+                <i data-feather="mouse-pointer"
+                  style="width:18px;vertical-align:middle;margin-right:8px;"></i>直感的なUI・操作フロー
+              </h5>
+              <ul style="padding-left:15px; margin-bottom: 20px;">
+                <li style="color:#ccc; font-size:0.95rem;">専門知識不要で演出可能な、直感的に扱えるUI・操作フローを重視</li>
+              </ul>
+              <div style="display: flex; flex-direction: column; gap: 10px; margin-top: auto;">
+                <img src="images/Club4D/VRChat_2024-04-23_16-43-17.694_1920x1080-1024x576.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover;"
+                  alt="UI操作1">
+                <img src="images/Club4D/VRChat_2024-04-23_16-43-17.694_1920x1080-1024x576.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover;"
+                  alt="UI操作2">
               </div>
-              <div class="tech-card-body">
-                <ul class="role-list">
-                  <li style="color: #ccc; margin-bottom: 10px;">BPM・音に連動するシェーダーを実装し、空間全体を変化させる</li>
-                  <li style="color: #ccc;">視覚と音の一体化による没入感を圧倒的に強化</li>
-                </ul>
+            </div>
+
+            <!-- Point 3 -->
+            <div class="issue-card glass" style="border-left: 3px solid #4facfe; padding:25px; flex-direction:column;">
+              <h5
+                style="color:#4facfe; font-size:1.1rem; margin-bottom:15px; border-bottom:1px solid rgba(79,172,254,0.3); padding-bottom:10px;">
+                <i data-feather="activity" style="width:18px;vertical-align:middle;margin-right:8px;"></i>音連動シェーダー
+              </h5>
+              <ul style="padding-left:15px; margin-bottom: 20px;">
+                <li style="color:#ccc; font-size:0.95rem;">BPM・音に連動するシェーダーを実装し、空間全体をダイナミックに変化</li>
+              </ul>
+              <div style="display: flex; flex-direction: column; gap: 10px; margin-top: auto;">
+                <img src="images/Club4D/VRChat_2024-04-23_16-43-17.694_1920x1080-1024x576.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover;"
+                  alt="シェーダー1">
+                <img src="images/Club4D/VRChat_2024-04-23_16-43-17.694_1920x1080-1024x576.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover;"
+                  alt="シェーダー2">
+              </div>
+            </div>
+
+            <!-- Point 4 -->
+            <div class="issue-card glass" style="border-left: 3px solid #00f2fe; padding:25px; flex-direction:column;">
+              <h5
+                style="color:#00f2fe; font-size:1.1rem; margin-bottom:15px; border-bottom:1px solid rgba(0,242,254,0.3); padding-bottom:10px;">
+                <i data-feather="eye" style="width:18px;vertical-align:middle;margin-right:8px;"></i>没入感の強化
+              </h5>
+              <ul style="padding-left:15px; margin-bottom: 20px;">
+                <li style="color:#ccc; font-size:0.95rem;">視覚と音の一体化を追求し、圧倒的な没入感を実現</li>
+              </ul>
+              <div style="display: flex; flex-direction: column; gap: 10px; margin-top: auto;">
+                <img src="images/Club4D/VRChat_2024-04-23_16-43-17.694_1920x1080-1024x576.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover;"
+                  alt="没入感1">
+                <img src="images/Club4D/VRChat_2024-04-23_16-43-17.694_1920x1080-1024x576.webp"
+                  style="width: 100%; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover;"
+                  alt="没入感2">
               </div>
             </div>
           </div>
@@ -1345,7 +1362,7 @@
         </div>
       </div>
 
-      <!-- 4枚目：技術的ポイント -->
+      <!-- 3枚目：技術的ポイント -->
       <div class="work-detail-page section">
         <div class="container fade-in">
           <h3 class="detail-page-title">技術的ポイント</h3>
@@ -1380,18 +1397,100 @@
               <h4 class="achievement-heading" style="margin-bottom: 20px;">【チーム構成】</h4>
               <div class="tech-tags" style="gap:20px; flex-direction:column; margin-top:10px;">
                 <div
-                  style="background: rgba(0, 242, 254, 0.1); border: 1px solid #00f2fe; padding: 20px; border-radius: 12px;">
-                  <span style="color: #00f2fe; font-weight: bold; font-size: 1.1rem;">プログラム / シェーダー</span>
-                  <p style="color: #fff; margin-top: 5px;">担当：<b>ぐらる</b></p>
+                  style="background: rgba(0, 242, 254, 0.1); border: 1px solid #00f2fe; padding: 20px; border-radius: 12px; display: flex; align-items: center; gap: 15px;">
+                  <img src="images/icons/人物アイコン.png"
+                    style="width: 40px; height: 40px; border-radius: 50%; background: rgba(0, 242, 254, 0.2); padding: 5px;"
+                    alt="パンダアイコン">
+                  <div>
+                    <p style="color: #fff; margin-top: 2px;">私の担当</p>
+                    <span style="color: #00f2fe; font-weight: bold; font-size: 1.1rem; display: block;">プログラム /
+                      シェーダー開発</span>
+                  </div>
                 </div>
-                <div style="background: rgba(255,255,255,0.05); padding: 15px 20px; border-radius: 12px;">
-                  <span style="color: #eee; font-weight: bold;">モデリング</span>
-                  <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">担当：外部メンバー</p>
+                <div
+                  style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; display: flex; align-items: center; gap: 15px;">
+                  <img src="images/icons/カエルの無料アイコン4.png"
+                    style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.1); padding: 5px;"
+                    alt="カエルアイコン">
+                  <div>
+                    <span style="color: #eee; font-weight: bold; display: block;">モデリング</span>
+                  </div>
                 </div>
-                <div style="background: rgba(255,255,255,0.05); padding: 15px 20px; border-radius: 12px;">
-                  <span style="color: #eee; font-weight: bold;">音響 / 企画</span>
-                  <p style="color: #888; font-size: 0.9rem; margin-top: 5px;">担当：外部メンバー</p>
+                <div
+                  style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; display: flex; align-items: center; gap: 15px;">
+                  <img src="images/icons/ロボットアイコン1.png"
+                    style="width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.1); padding: 5px;"
+                    alt="ロボットアイコン">
+                  <div>
+                    <span style="color: #eee; font-weight: bold; display: block;">音響</span>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 4枚目：実績 -->
+      <div class="work-detail-page section">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">実運用プロダクトとしての実績</h3>
+
+          <div class="results-container-split" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+            <!-- 左側：販売実績 -->
+            <div class="overview-col">
+              <div class="achievement-section">
+                <h4 class="achievement-heading">【販売実績】</h4>
+                <div class="glass"
+                  style="padding: 30px; border-radius: 12px; margin-bottom: 20px; border-left: 4px solid #ffd700;">
+                  <p style="font-size: 1.1rem; color: #fff; margin-bottom: 10px;">Booth価格：<b>7,000円</b>（高価格帯）</p>
+                  <p style="font-size: 2rem; color: #ffd700; font-weight: bold; margin-bottom: 5px;">累計販売数：262本</p>
+                  <p style="font-size: 0.9rem; color: #ccc;">多くのユーザーに継続的に使用されている信頼のプロダクト</p>
+                </div>
+                <!-- 販売実績画像3枚 -->
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 20px;">
+                  <img src="images/Club4D/VRChat_2024-04-23_16-43-17.694_1920x1080-1024x576.webp"
+                    style="width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 1/1; object-fit: cover;"
+                    alt="販売実績1">
+                  <img src="images/Club4D/VRChat_2024-04-23_16-43-17.694_1920x1080-1024x576.webp"
+                    style="width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 1/1; object-fit: cover;"
+                    alt="販売実績2">
+                  <img src="images/Club4D/VRChat_2024-04-23_16-43-17.694_1920x1080-1024x576.webp"
+                    style="width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 1/1; object-fit: cover;"
+                    alt="販売実績3">
+                </div>
+              </div>
+            </div>
+
+            <!-- 右側：メディア・外部実績 -->
+            <div class="results-photo-col">
+              <div class="achievement-section">
+                <h4 class="achievement-heading">【メディア・外部実績】</h4>
+                <ul class="achievement-list">
+                  <li
+                    style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 12px; margin-bottom: 20px; border-left: 3px solid #4facfe; list-style: none; display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 20px;">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                      <i data-feather="monitor" style="color:#4facfe; margin-right:15px; min-width: 24px;"></i>
+                      <span><b>テレビ朝日「金曜日のメタバース」</b><br>番組内にて紹介されました</span>
+                    </div>
+                    <div
+                      style="width: 45%; border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); flex-shrink: 0;">
+                      <img src="images/Club4D/VRChat_2024-04-23_16-43-17.694_1920x1080-1024x576.webp"
+                        style="width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block;" alt="メディア実績1">
+                    </div>
+                  </li>
+                  <li
+                    style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 12px; border-left: 3px solid #ff9a9e; list-style: none; display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 20px;">
+                    <div style="display: flex; align-items: center; flex: 1;">
+                      <i data-feather="play-circle" style="color:#ff9a9e; margin-right:15px; min-width: 24px;"></i>
+                      <span><b>音楽ユニット MOSAIC.WAV</b><br>公式MVの撮影舞台として登場</span>
+                    </div>
+                    <div
+                      style="width: 45%; border-radius: 8px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); flex-shrink: 0;">
+                      <img src="images/Club4D/VRChat_2024-04-23_16-43-17.694_1920x1080-1024x576.webp"
+                        style="width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block;" alt="メディア実績2">
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -1728,22 +1827,55 @@
 
     <!-- ================= ATELIER PANDA (BOOTH) ================= -->
     <section id="work-atelier-panda" class="work-project-container">
-      <!-- 1枚目：ヒーロー画面 -->
-      <div class="work-page-section">
-        <div class="work-split-layout">
-          <div class="work-image-col fade-in delay-1">
-            <div class="work-main-image" style="background-image: url('images/AtelierPanda/hero.png');">
+      <!-- 1枚目：ヒーロー画面（動的背景＋元構成） -->
+      <div class="work-page-section" style="position: relative; overflow: hidden; background: #0a0a0a;">
+        <!-- アニメーション背景マーキー -->
+        <div class="panda-marquee-bg">
+          <!-- 上段: 右へ移動 -->
+          <div class="marquee-row upper">
+            <div class="marquee-content">
+              <img src="images/AtelierPanda/1.png" alt="Panda 1">
+              <img src="images/AtelierPanda/2.png" alt="Panda 2">
+              <img src="images/AtelierPanda/3.png" alt="Panda 3">
+              <img src="images/AtelierPanda/4.png" alt="Panda 4">
+            </div>
+            <div class="marquee-content">
+              <img src="images/AtelierPanda/1.png" alt="Panda 1">
+              <img src="images/AtelierPanda/2.png" alt="Panda 2">
+              <img src="images/AtelierPanda/3.png" alt="Panda 3">
+              <img src="images/AtelierPanda/4.png" alt="Panda 4">
             </div>
           </div>
+          <!-- 下段: 左へ移動 -->
+          <div class="marquee-row lower">
+            <div class="marquee-content">
+              <img src="images/AtelierPanda/5.png" alt="Panda 5">
+              <img src="images/AtelierPanda/6.png" alt="Panda 6">
+              <img src="images/AtelierPanda/7.png" alt="Panda 7">
+              <img src="images/AtelierPanda/8.png" alt="Panda 8">
+            </div>
+            <div class="marquee-content">
+              <img src="images/AtelierPanda/5.png" alt="Panda 5">
+              <img src="images/AtelierPanda/6.png" alt="Panda 6">
+              <img src="images/AtelierPanda/7.png" alt="Panda 7">
+              <img src="images/AtelierPanda/8.png" alt="Panda 8">
+            </div>
+          </div>
+          <div class="marquee-overlay"></div>
+        </div>
+
+        <div class="work-split-layout" style="position: relative; z-index: 10;">
+
           <div class="work-text-col fade-in delay-2">
-            <h2 class="work-title">アトリエパンダ<br>(Atelier Panda)</h2>
-            <p class="work-period">制作期間：継続的制作 (2024.01 - Present)</p>
+            <h2 class="work-title">Boothショップ<br>Atelier Panda</h2>
+            <p class="work-period">2022.12 - </p>
             <hr class="work-divider">
             <div class="work-details">
-              <p>BOOTHにてオリジナル3D衣装やアセットの販売を行っているショップです。<br>
+              <p>興味を持ったテーマを起点に制作し、<br>
+                新しい技術や表現を実践的に取り入れる場として運営しています。<br>
                 <br>
-                「VR空間での自分らしさを彩る」をコンセプトに、<br>
-                細部までこだわり抜いた高品質なアイテムを展開しています。
+                単なる作品制作ではなく、<br>
+                ユーザーに選ばれるプロダクトへ改善し続けることを重視しています。
               </p>
               <div style="margin-top: 40px; margin-left: 2vw;">
                 <a href="https://panda12.booth.pm/" target="_blank" class="btn glass-btn"
@@ -1755,36 +1887,85 @@
           </div>
         </div>
       </div>
+      </div>
 
-      <!-- 2枚目：代表作とコンセプト -->
+      <!-- 2枚目：代表作 ＆ 技術プロジェクト -->
       <div class="work-detail-page section">
         <div class="container fade-in">
-          <h3 class="detail-page-title">ショップコンセプト ＆ 代表作</h3>
-
-          <div class="detail-layout">
-            <div class="detail-figure glass"
-              style="flex: 1.2; border: none; overflow: hidden; background: url('images/AtelierPanda/item_miko.png') center/cover; min-height: 500px; border-radius: 12px;">
-              <div
-                style="position: absolute; bottom: 0; left: 0; width: 100%; background: rgba(0,0,0,0.6); padding: 15px; color: #fff; font-size: 0.9rem; text-align: center; backdrop-filter: blur(5px);">
-                代表作：巫女装束セット (Original 3D Model)
+          <div class="results-container-split" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: stretch;">
+            <!-- 左カラム：代表商品｜花鳥風月巫女ドレス -->
+            <div class="overview-col" style="display: flex; flex-direction: column;">
+              <h3 class="detail-page-title" style="text-align: left; font-size: 1.8rem; margin-bottom: 20px;">
+                代表商品｜花鳥風月巫女ドレス</h3>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
+                <div class="glass"
+                  style="aspect-ratio: 1/1; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,154,158,0.3);">
+                  <img src="images/AtelierPanda/item_miko.png" alt="花鳥風月巫女ドレス1"
+                    style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="glass"
+                  style="aspect-ratio: 1/1; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,154,158,0.3);">
+                  <img src="images/AtelierPanda/Miko2.png" alt="花鳥風月巫女ドレス2"
+                    style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+              </div>
+              <div class="role-grid" style="flex-direction: column; gap: 15px; flex: 1;">
+                <div class="role-box glass" style="padding: 20px; border-left: 4px solid #ff9a9e; flex: 1;">
+                  <h4 style="color: #ff9a9e; font-size: 1rem; margin-bottom: 10px;">【開発ストーリー】</h4>
+                  <p style="font-size: 0.85rem; color: #ccc; line-height: 1.6;">
+                    初回リリース時は売上が伸び悩むも、BOOTHで売れている衣装を分析。デザインと仕様を大幅にブラッシュアップしました。</p>
+                </div>
+                <div class="role-box glass" style="padding: 20px; border-left: 4px solid #ffd700; flex: 1;">
+                  <h4 style="color: #ffd700; font-size: 1rem; margin-bottom: 10px;">【改善ポイント】</h4>
+                  <ul class="role-list" style="font-size: 0.85rem; color: #ccc;">
+                    <li>黒を基調としたカラーリングへ変更</li>
+                    <li>対応アバター数を大幅に増加</li>
+                    <li>ユーザー層に合わせたデザイン調整</li>
+                  </ul>
+                </div>
+                <div class="role-box glass" style="padding: 20px; border-left: 4px solid #00f2fe;">
+                  <h4 style="color: #00f2fe; font-size: 1.1rem; margin-bottom: 5px;">【結果】</h4>
+                  <p style="font-size: 0.9rem; color: #fff; font-weight: bold;">
+                    ユーザーに刺さるプロダクトへ改善。<br>分析 → 改善 → 成果のサイクルを確立
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div class="detail-info" style="flex: 1; justify-content: center;">
-              <div class="role-grid" style="flex-direction:column; gap:30px;">
-                <div class="role-box glass" style="border-left: 4px solid #00f2fe; padding: 30px;">
-                  <h4 style="color:#00f2fe; font-size: 1.4rem;">こだわり抜いた質感</h4>
-                  <p style="color:#ddd; line-height:1.8; margin-top:15px; font-size: 1.05rem;">
-                    Substance Painterをフル活用し、布の柔らかさや装飾の緻密さを再現。<br>
-                    VR空間での見え方を徹底的に研究し、どの角度から見ても美しいシルエットを追求しています。
-                  </p>
+            <!-- 右カラム：技術プロジェクト｜デスクトップフルトラシステム -->
+            <div class="overview-col" style="display: flex; flex-direction: column;">
+              <h3 class="detail-page-title" style="text-align: left; font-size: 1.8rem; margin-bottom: 20px;">
+                技術開発｜デスクトップフルトラ</h3>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
+                <div class="glass"
+                  style="aspect-ratio: 1/1; overflow: hidden; border-radius: 12px; border: 1px solid rgba(0,242,254,0.3);">
+                  <img src="images/AtelierPanda/desktop_fbt_system.png" alt="デスクトップフルトラ1"
+                    style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
-
-                <div class="role-box glass" style="border-left: 4px solid #ff9a9e; padding: 30px;">
-                  <h4 style="color:#ff9a9e; font-size: 1.4rem;">幅広いカスタマイズ性</h4>
-                  <p style="color:#ddd; line-height:1.8; margin-top:15px; font-size: 1.05rem;">
-                    多くのユーザーに使っていただけるよう、多数のアバターへの対応や、<br>
-                    シェーダーを活用したカラー改変のしやすさを重視して設計しています。
+                <div class="glass"
+                  style="aspect-ratio: 1/1; overflow: hidden; border-radius: 12px; border: 1px solid rgba(0,242,254,0.3);">
+                  <img src="images/AtelierPanda/desktop_fbt_system_2.png" alt="デスクトップフルトラ2"
+                    style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+              </div>
+              <div class="role-grid" style="flex-direction: column; gap: 15px; flex: 1;">
+                <div class="role-box glass" style="padding: 20px; border-left: 4px solid #4facfe; flex: 1;">
+                  <h4 style="color: #4facfe; font-size: 1rem; margin-bottom: 10px;">【概要】</h4>
+                  <p style="font-size: 0.85rem; color: #ccc; line-height: 1.6;">
+                    mocopiを使用し、OSC通信を通してVR機器なしでVRChatと接続するUnityネイティブアプリを開発。</p>
+                </div>
+                <div class="role-box glass" style="padding: 20px; border-left: 4px solid #ffd700; flex: 1;">
+                  <h4 style="color: #ffd700; font-size: 1rem; margin-bottom: 10px;">【技術ポイント】</h4>
+                  <ul class="role-list" style="font-size: 0.85rem; color: #ccc;">
+                    <li>OSCによるリアルタイム通信</li>
+                    <li>Unityでの入力処理・アバター制御</li>
+                    <li>VR機器非依存のトラッキング環境構築</li>
+                  </ul>
+                </div>
+                <div class="role-box glass" style="padding: 20px; border-left: 4px solid #ff9a9e;">
+                  <h4 style="color: #ff9a9e; font-size: 1.1rem; margin-bottom: 5px;">【実績】</h4>
+                  <p style="font-size: 1.1rem; color: #fff; font-weight: bold;">
+                    Twitterいいね数：約2000<br>販売数：約1000本
                   </p>
                 </div>
               </div>
