@@ -1288,3 +1288,136 @@ footer p {
     width: 100%;
   }
 }
+
+/* ================= ABYSSAL MUSEUM DESIGN GRID ================= */
+.abyssal-design-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.abyssal-design-item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+  height: 100%;
+}
+
+.abyssal-design-item h4 {
+  font-size: 1.15rem;
+  color: var(--accent-color);
+  border-left: 3px solid var(--accent-color);
+  padding-left: 15px;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.vertical-image-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.vertical-image-stack img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.vertical-image-stack img:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 242, 254, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Response: Grid stacking */
+@media (max-width: 1100px) {
+  .abyssal-design-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+/* ================= ABYSSAL MUSEUM 2x2 GALLERY & FLOW ================= */
+.abyssal-gallery-unit {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.abyssal-gallery-unit h4 {
+  font-size: 1rem;
+  color: #ff9a9e; /* Section theme color (Pink/Red) */
+  border-left: 3px solid #ff9a9e;
+  padding-left: 12px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.image-grid-2x2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+
+.image-grid-2x2 img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.image-grid-2x2 img:hover {
+  transform: scale(1.05);
+  border-color: #ff9a9e;
+  z-index: 10;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Vertical flow for comparative images */
+.abyssal-gallery-flow {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.gallery-flow-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+}
+
+.gallery-flow-column img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.gallery-flow-column img:hover {
+  transform: translateY(-5px);
+  border-color: #ff9a9e;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.flow-arrow {
+  color: #ff9a9e;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 5px rgba(255, 154, 158, 0.3));
+}

@@ -668,12 +668,34 @@
             style="color: #4facfe; margin-top:-30px; margin-bottom:40px; font-weight:bold; letter-spacing:1px;">大規模構造 ×
             効率的モデリング</p>
 
-          <!-- 図の見せる内容プレースホルダー -->
-          <div class="image-showcase glass"
-            style="display:flex; justify-content:space-around; padding:20px; border-radius:12px; margin-bottom: 30px; min-height: 200px; align-items:center; text-align:center; color:#888;">
-            <p>全体マップ or 構造図</p>
-            <p>同一モジュールの繰り返し図</p>
-            <p>軽量化・効率化の工夫</p>
+          <!-- 図の見せる内容：3つの解説ブロック -->
+          <div class="abyssal-design-grid">
+            <!-- 設計の全体マップ or 構造図 -->
+            <div class="abyssal-design-item glass">
+              <h4>設計の全体マップ or 構造図</h4>
+              <div class="vertical-image-stack">
+                <img src="images/深海MAP.jpg" alt="全体マップ 構造図 1">
+                <img src="images/sinkai-768x432.jpg" alt="全体マップ 構造図 2">
+              </div>
+            </div>
+
+            <!-- 同一モジュールの繰り返し図 -->
+            <div class="abyssal-design-item glass">
+              <h4>同一モジュールの繰り返し図</h4>
+              <div class="vertical-image-stack">
+                <img src="images/sinkai-768x432.jpg" alt="リピートモジュール 1">
+                <img src="images/深海MAP.jpg" alt="リピートモジュール 2">
+              </div>
+            </div>
+
+            <!-- 軽量化・効率化の工夫 -->
+            <div class="abyssal-design-item glass">
+              <h4>軽量化・効率化の工夫</h4>
+              <div class="vertical-image-stack">
+                <img src="images/深海MAP.jpg" alt="軽量化・効率化 1">
+                <img src="images/sinkai-768x432.jpg" alt="軽量化・効率化 2">
+              </div>
+            </div>
           </div>
 
           <div class="tech-approach-cards">
@@ -734,11 +756,25 @@
             恐怖演出設計</p>
 
           <div class="detail-layout">
-            <!-- 図のプレースホルダー -->
-            <div class="detail-figure glass" style="flex-direction:column; gap:40px;">
-              <p>同じ部屋の比較（初期→後半）</p>
-              <p>展示物の変化</p>
-              <p>照明・色の変化</p>
+            <!-- 図のギャラリー：垂直フロー（計4枚 ＋ 矢印） -->
+            <div class="detail-figure glass" style="flex-direction:column; gap:20px; padding: 25px; align-items: stretch; justify-content: center;">
+              <div class="abyssal-gallery-unit">
+                <div class="abyssal-gallery-flow">
+                  <!-- 左カラム -->
+                  <div class="gallery-flow-column">
+                    <img src="images/深海MAP.jpg" alt="反復構造の演出 1">
+                    <div class="flow-arrow"><i data-feather="arrow-down"></i></div>
+                    <img src="images/Club4D/VRChat_2024-04-23_16-43-17.694_1920x1080-1024x576.webp" alt="反復構造の演出 3">
+                  </div>
+                  <!-- 右カラム -->
+                  <div class="gallery-flow-column">
+                    <img src="images/sinkai-768x432.jpg" alt="反復構造の演出 2">
+                    <div class="flow-arrow"><i data-feather="arrow-down"></i></div>
+                    <img src="images/Club4D/VRChat_2024-04-26_21-25-26.532_3840x2160-768x432.webp" alt="反復構造の演出 4">
+                  </div>
+                </div>
+                <p style="color: #888; font-size: 0.85rem; margin-top: 10px; text-align: center;">同じ部屋の比較（初期→後半） / 展示物の変化 / 照明・色の変化</p>
+              </div>
             </div>
 
             <!-- 演出設計詳細 -->
@@ -782,14 +818,15 @@
             Timeline制御</p>
 
           <div class="four-page-layout">
-            <!-- 図のプレースホルダー -->
-            <div class="four-col glass layout-left"
-              style="align-items:center; justify-content:center; text-align:center; color:#888; border: 1px dashed rgba(255, 255, 255, 0.2);">
-              <p>潜水艦ライドのカット</p>
-              <br><br><br>
-              <p>タイムラインのスクショ</p>
-              <br><br><br>
-              <p>演出の流れ図</p>
+            <!-- 図のギャラリー：2x2グリッド 4枚 -->
+            <div class="four-col glass layout-left" style="padding: 25px; align-items: stretch; justify-content: center;">
+              <div class="image-grid-2x2">
+                <img src="images/深海MAP.jpg" alt="潜水艦ライドのカット">
+                <img src="images/sinkai-768x432.jpg" alt="タイムラインのスクショ">
+                <img src="images/Club4D/VRChat_2024-04-23_16-43-17.694_1920x1080-1024x576.webp" alt="演出の流れ 1">
+                <img src="images/Club4D/VRChat_2024-04-26_21-25-26.532_3840x2160-768x432.webp" alt="演出の流れ 2">
+              </div>
+              <p style="color: #888; font-size: 0.85rem; margin-top: 15px; text-align: center;">潜水艦ライド / Timeline制御 / 演出フロー</p>
             </div>
 
             <!-- 制御実装詳細 -->
