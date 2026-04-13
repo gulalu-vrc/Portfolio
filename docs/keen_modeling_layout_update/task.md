@@ -1,0 +1,5 @@
+- [x] `docs/keen_modeling_layout_update/` への `implementation_plan.md` 保存（済）
+- [x] `index.html` の「制作・技術」セクションを十字グリッド（2x2）に刷新
+- [x] 各スロットへの2枚組仮画像の割り当て
+- [x] 変更内容の確認（ブラウザ・コード）
+- [x] `walkthrough.md` の作成と `docs/` への保存

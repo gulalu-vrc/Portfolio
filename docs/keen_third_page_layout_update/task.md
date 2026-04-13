@@ -1,0 +1,5 @@
+- [x] `docs/keen_third_page_layout_update/` への `implementation_plan.md` 保存（済）
+- [x] `index.html` の「使用ツール」セクションの削除とギャラリーの追加
+- [x] ギャラリーへの4枚の仮画像の割り当て
+- [x] 変更内容の確認
+- [x] `walkthrough.md` の作成と `docs/` への保存

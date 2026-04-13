@@ -1,0 +1,4 @@
+- [x] `docs/keen_shader_images/` フォルダの作成と `implementation_plan.md` の保存
+- [x] `index.html` の「カラーバリエーション対応シェーダー」セクションのレイアウト調整
+- [x] 変更内容の確認
+- [x] `walkthrough.md` の作成と `docs/` への保存
