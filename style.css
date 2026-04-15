@@ -163,6 +163,15 @@ a:hover {
   font-family: inherit;
   font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 5px;
+  margin-left: 2vw;
+  letter-spacing: 1px;
+}
+
+.work-client {
+  font-family: inherit;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
   margin-bottom: 15px;
   margin-left: 2vw;
   letter-spacing: 1px;
