@@ -49,6 +49,8 @@
             class="sidebar-custom-icon"><span class="sidebar-text">Keen靴モデリング</span></a></li>
       <li><a href="#work-atelier-panda" class="sidebar-link"><img src="images/icons/BoothIcon.png" alt=""
             class="sidebar-custom-icon"><span class="sidebar-text">アトリエパンダ(BOOTH)</span></a></li>
+      <li><a href="#work-illustrations" class="sidebar-link"><img src="images/icons/Illustration.png" alt=""
+            class="sidebar-custom-icon"><span class="sidebar-text">イラストレーション</span></a></li>
     </ul>
   </aside>
 
@@ -244,6 +246,10 @@
               style="width: 160px; background-image: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 15%, transparent 70%), url('images/AtelierPanda/thumb.png'); background-size: cover; background-position: center;">
               <span class="thumb-label">アトリエ<br>パンダ</span>
             </a>
+            <a href="#work-illustrations" class="works-item" title="イラストレーションギャラリー"
+              style="width: 160px; background-image: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.85) 15%, transparent 70%), url('images/Illustrations/illust1.png'); background-size: cover; background-position: center;">
+              <span class="thumb-label">イラスト<br>レーション</span>
+            </a>
           </div>
         </div>
 
@@ -287,33 +293,26 @@
           <div class="results-container-split" style="grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: start;">
             <!-- 左側：企画概要 -->
             <div class="overview-col">
-              <h3 class="detail-page-title" style="text-align: left; margin-bottom: 20px;">企画概要</h3>
-              <div class="glass"
-                style="margin-bottom: 15px; overflow: hidden; border-radius: 12px; width: 60%; margin-left: auto; margin-right: auto; aspect-ratio: 16 / 9;">
-                <!-- Reduced width and centered -->
-                <img src="images/PreciousHarmony/GSKwXwbagAAmZwL.jpg" alt="SanrioVirtualWorldAward2024"
-                  style="width: 100%; height: 100%; object-fit: cover; display: block;">
-              </div>
+              <h3 class="detail-page-title" style="text-align: left; margin-bottom: 20px;">プロジェクト詳細</h3>
+              
               <div class="overview-text">
-                <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 12px;">
-                  <strong>Sanrio Virtual World Award 2024</strong><br>
-                  サンリオのVRイベント「Sanrio Virtual Festival 2025」に向けたコンテンツ公募企画。<br>
-                  盤面に楽器を演奏するキャラクターを配置し、幽霊から森を守るタワーディフェンスゲームの企画書とデモゲームを提出し受賞<br>
-                  その後、株式会社サンリオから開発費、キャラクター3Dモデル、ボイス収録の支援を受けて制作しました。
-                </p>
-
-                <!-- サンプルゲーム画像欄 -->
-                <div class="glass"
-                  style="margin-bottom: 15px; overflow: hidden; border-radius: 8px; border: 1px solid rgba(255, 215, 0, 0.3); width: 40%; margin-left: auto; margin-right: auto; aspect-ratio: 16 / 9; position: relative;">
-                  <!-- Reduced width and centered -->
-                  <img src="images/PreciousHarmony/Slide.png" alt="サンプルゲーム画像"
-                    style="width: 100%; height: 100%; object-fit: cover; display: block; opacity: 0.9;">
-                  <div
-                    style="background: rgba(255, 215, 0, 0.1); padding: 3px 10px; font-size: 0.7rem; color: #ffd700; text-align: center; position: absolute; bottom: 0; width: 100%; backdrop-filter: blur(4px);">
-                    提出したサンプルゲームのスクリーンショット
-                  </div>
+                <!-- 企画概要 Section -->
+                <div class="glass" style="padding: 25px; margin-bottom: 30px; border-left: 4px solid var(--accent-color);">
+                  <h4 style="color: var(--accent-color); font-size: 1.2rem; margin-bottom: 15px;">【企画概要】</h4>
+                  <p style="font-size: 1rem; line-height: 1.8; color: #fff; margin-bottom: 0;">
+                    サンリオのVRイベント「Sanrio Virtual Festival 2025」に向けたコンテンツ公募企画にて、企画書およびデモゲームを提出し受賞。<br>
+                    その後、株式会社サンリオより開発費・キャラクター3Dモデル・ボイス収録の提供を受け、正式コンテンツとして制作。
+                  </p>
                 </div>
 
+                <!-- ゲーム内容 Section -->
+                <div class="glass" style="padding: 25px; border-left: 4px solid #ff9a9e;">
+                  <h4 style="color: #ff9a9e; font-size: 1.2rem; margin-bottom: 15px;">【ゲーム内容】</h4>
+                  <p style="font-size: 1rem; line-height: 1.8; color: #fff; margin-bottom: 0;">
+                    盤面にキャラクターを配置し、リズムに合わせて演奏しながら敵を撃退する、音楽ゲーム × タワーディフェンスの協力型ゲーム。<br>
+                    プレイヤー自身も操作により演奏へ参加し、複数人で演奏しているような体験を目指した。
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -322,36 +321,60 @@
               <h3 class="detail-page-title" style="text-align: left; margin-bottom: 20px;">チームメンバー</h3>
               <div class="role-grid" style="display: flex; flex-direction: column; gap: 20px;">
                 <!-- 自身の担当 -->
-                <div class="role-box glass" style="border-top: 3px solid var(--accent-color); padding: 20px;">
-                  <h4 style="color: var(--accent-color); margin-bottom: 10px;">【私の担当】</h4>
+                <!-- 自身の担当 -->
+                <div class="role-box glass" style="border-top: 3px solid var(--accent-color); padding: 25px;">
+                  <h4 style="color: var(--accent-color); margin-bottom: 20px;">【私の担当】</h4>
                   <ul class="role-list" style="margin-bottom: 10px;">
-                    <li>企画</li>
-                    <li>ゲーム設計</li>
-                    <li>実装</li>
-                    <li>シェーダー</li>
-                    <li>サウンド制作</li>
+                    <li style="margin-bottom: 15px;">
+                      <strong>企画</strong>
+                      <span class="role-detail">コアとなるゲームシステム、リズム同期のロジック、全体的な演出フローの設計を担当。</span>
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                      <strong>ゲーム設計</strong>
+                      <span class="role-detail">タワーディフェンスと音ゲーを融合させたステージ難易度曲線や報酬系の構築。</span>
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                      <strong>実装</strong>
+                      <span class="role-detail">UdonSharpを用いたゲーム内全システムのコーディング、およびギミック実装。</span>
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                      <strong>シェーダー</strong>
+                      <span class="role-detail">Amplify ShaderやHLSLを用いた、音楽に同期するクリスタルやエフェクトの制作。</span>
+                    </li>
+                    <li>
+                      <strong>サウンド制作</strong>
+                      <span class="role-detail">Cubaseを用いたBGM制作、および効果音の選定・加工。</span>
+                    </li>
                   </ul>
-                  <p style="font-size: 0.85rem; color: var(--accent-color); font-weight: bold;">（コアシステムを担当）</p>
                 </div>
 
                 <!-- チームメンバー -->
-                <div class="role-box glass" style="padding: 20px;">
-                  <h4 style="margin-bottom: 15px;">【メンバー】</h4>
+                <div class="role-box glass" style="padding: 25px;">
+                  <h4 style="margin-bottom: 20px;">【メンバー】</h4>
                   <ul class="role-list" style="list-style: none; padding: 0;">
-                    <li style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                    <li style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 20px;">
                       <img src="images/icons/ヒゲの男性のアイコン素材.png" alt="男性"
-                        style="width: 32px; height: 32px; border-radius: 50%;">
-                      <span style="font-size: 0.95rem;"><strong>企画補助 / 脚本</strong></span>
+                        style="width: 40px; height: 40px; border-radius: 50%; margin-top: 4px;">
+                      <div>
+                        <span style="font-size: 1rem; display: block;"><strong>企画補助 / 脚本</strong></span>
+                        <span class="role-detail">世界観設定の深掘りと、ナレーションおよびチュートリアルのテキスト制作を担当。</span>
+                      </div>
                     </li>
-                    <li style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
+                    <li style="display: flex; align-items: flex-start; gap: 15px; margin-bottom: 20px;">
                       <img src="images/icons/OL風の人物アイコン.png" alt="OL"
-                        style="width: 32px; height: 32px; border-radius: 50%;">
-                      <span style="font-size: 0.95rem;"><strong>アニメーション担当</strong></span>
+                        style="width: 40px; height: 40px; border-radius: 50%; margin-top: 4px;">
+                      <div>
+                        <span style="font-size: 1rem; display: block;"><strong>アニメーション担当</strong></span>
+                        <span class="role-detail">サンリオキャラクターのダンスモーションおよび、3Dモデルのセットアップを担当。</span>
+                      </div>
                     </li>
-                    <li style="display: flex; align-items: center; gap: 10px;">
+                    <li style="display: flex; align-items: flex-start; gap: 15px;">
                       <img src="images/icons/サラリーマン.png" alt="サラリーマン"
-                        style="width: 32px; height: 32px; border-radius: 50%;">
-                      <span style="font-size: 0.95rem;"><strong>進行管理 / 企画補助</strong></span>
+                        style="width: 40px; height: 40px; border-radius: 50%; margin-top: 4px;">
+                      <div>
+                        <span style="font-size: 1rem; display: block;"><strong>進行管理 / 企画補助</strong></span>
+                        <span class="role-detail">制作スケジュールの管理、外部協力者との連絡調整、広報・プロモーションを支援。</span>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -658,96 +681,86 @@
             <p class="work-client">クライアント：株式会社バーチャルパーティー</p>
             <hr class="work-divider">
             <div class="work-details">
-              <p>VRChatの大型イベント「VirtualDiceParty」の展示会場として制作したワールド。<br>
+              <p>VRChatのボードゲーム展示イベント「バーチャルダイスパーティー」の会場として制作したワールド。<br>
                 <br>
                 クトゥルフ神話の海底都市“ルルイエ”をモチーフに、約60の展示エリアを持つ大規模構成を実現。
+                <br>
+                展示エリアの終わりには、潜水艦に乗り込み深海を探索するアトラクションを実装。
+                <br>
+
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- 2枚目：大規模構造 × 効率的モデリング -->
+      <!-- 2枚目：バーチャルダイスパーティー × 深海博物館ル・リエー -->
       <div class="work-detail-page section">
         <div class="container fade-in">
-          <h3 class="detail-page-title">60エリアを成立させるための設計</h3>
+          <h3 class="detail-page-title">イベント概要と制作意図</h3>
           <p class="text-center"
-            style="color: #4facfe; margin-top:-30px; margin-bottom:40px; font-weight:bold; letter-spacing:1px;">大規模構造 ×
-            効率的モデリング</p>
+            style="color: #4facfe; margin-top:-30px; margin-bottom:40px; font-weight:bold; letter-spacing:1px;">Virtual
+            Dice Party × 企画設計</p>
 
-          <!-- 図の見せる内容：3つの解説ブロック -->
-          <div class="abyssal-design-grid">
-            <!-- 設計の全体マップ or 構造図 -->
-            <div class="abyssal-design-item glass">
-              <h4>設計の全体マップ or 構造図</h4>
-              <div class="vertical-image-stack">
-                <img src="images/深海MAP.jpg" alt="全体マップ 構造図 1">
-                <img src="images/sinkai-768x432.jpg" alt="全体マップ 構造図 2">
+          <div class="detail-layout" style="display: flex; gap: 40px; align-items: stretch;">
+            <!-- 左カラム -->
+            <div style="flex: 1; display: flex; flex-direction: column; gap: 40px;">
+              <!-- バーチャルダイスパーティー (左上) -->
+              <div class="role-box glass" style="padding: 25px; border-left: 4px solid #4facfe;">
+                <h4 style="color: #4facfe; font-size: 1.2rem; margin-bottom: 20px;">
+                  <i data-feather="award" style="vertical-align: middle; margin-right: 10px;"></i>バーチャルダイスパーティー
+                </h4>
+                <div style="display: flex; gap: 20px; align-items: center;">
+                  <img src="images/VDP/2025キービジュアル.png" alt="バーチャルダイスパーティー"
+                    style="width: 140px; height: 100px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                  <p style="color: #ccc; font-size: 0.9rem; line-height: 1.6; flex: 1;">
+                    VRChat上で毎年開催されるボードゲームをテーマとした大型展示イベント。
+                    <br>
+                    多くのクリエイターが参加し、展示・体験・交流を目的としたワールドが集まります。
+                  </p>
+                </div>
+              </div>
+
+              <!-- 企画概要 (左下) -->
+              <div class="role-box glass" style="padding: 25px; border-left: 4px solid #00f2fe; flex: 1;">
+                <h4 style="color: #00f2fe; font-size: 1.2rem; margin-bottom: 15px;">
+                  <i data-feather="map" style="vertical-align: middle; margin-right: 10px;"></i>企画概要
+                </h4>
+                <p style="color: #eee; font-size: 0.95rem; line-height: 1.7;">
+                  本ワールド「深海博物館ル・リエー」は、イベントの展示会場として制作。<br>
+                  クトゥルフ神話の海底都市「ルルイエ」をモチーフに、来場者が展示を巡りながら探索体験を楽しめる空間として設計。
+                  <br>
+                  約60の展示エリアを持つ大規模構成の中で、効率的な制作と没入感の両立を目指しました。
+                </p>
               </div>
             </div>
 
-            <!-- 同一モジュールの繰り返し図 -->
-            <div class="abyssal-design-item glass">
-              <h4>同一モジュールの繰り返し図</h4>
-              <div class="vertical-image-stack">
-                <img src="images/sinkai-768x432.jpg" alt="リピートモジュール 1">
-                <img src="images/深海MAP.jpg" alt="リピートモジュール 2">
-              </div>
-            </div>
-
-            <!-- 軽量化・効率化の工夫 -->
-            <div class="abyssal-design-item glass">
-              <h4>軽量化・効率化の工夫</h4>
-              <div class="vertical-image-stack">
-                <img src="images/深海MAP.jpg" alt="軽量化・効率化 1">
-                <img src="images/sinkai-768x432.jpg" alt="軽量化・効率化 2">
-              </div>
-            </div>
-          </div>
-
-          <div class="tech-approach-cards">
-            <!-- 課題 -->
-            <div class="tech-card glass">
-              <div class="tech-card-header issue">
-                <i data-feather="alert-circle"></i>
-                <h4>【課題】</h4>
-              </div>
-              <div class="tech-card-body">
-                <p>60の展示エリアを持つ大規模空間において、<br>制作コストとパフォーマンスの両立が必要だった。</p>
-              </div>
-            </div>
-
-            <div class="tech-arrow"><i data-feather="arrow-right"></i></div>
-
-            <!-- 解決アプローチ -->
-            <div class="tech-card glass">
-              <div class="tech-card-header solution">
-                <i data-feather="cpu"></i>
-                <h4>【解決アプローチ】</h4>
-              </div>
-              <div class="tech-card-body">
-                <ul class="role-list">
-                  <li>展示エリアを“モジュール化”し共通構造として設計</li>
-                  <li>同一モデルの再利用による制作工数の大幅削減</li>
-                  <li>ライティング・配置の変化で印象差を演出</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="tech-arrow"><i data-feather="arrow-right"></i></div>
-
-            <!-- 結果 -->
-            <div class="tech-card glass">
-              <div class="tech-card-header result">
-                <i data-feather="check-circle"></i>
-                <h4>【結果】</h4>
-              </div>
-              <div class="tech-card-body">
-                <ul class="tech-result-list">
-                  <li>短期間で大規模ワールドを構築</li>
-                  <li>VRChat上での動作負荷を抑制</li>
-                  <li>イベント用途として安定運用を実現</li>
-                </ul>
+            <!-- 右カラム: 制作意図 -->
+            <div class="role-box glass"
+              style="flex: 1; padding: 30px; border-left: 4px solid #ffd700; display: flex; flex-direction: column;">
+              <h4 style="color: #ffd700; font-size: 1.3rem; margin-bottom: 20px;">
+                <i data-feather="compass" style="vertical-align: middle; margin-right: 10px;"></i>制作意図
+              </h4>
+              <p style="color: #fff; font-size: 1rem; margin-bottom: 20px; font-weight: bold;">
+                探索すること自体が体験になる空間を目指し、以下のように設計。
+              </p>
+              <ul class="role-list" style="color: #ccc; gap: 15px; flex: 1;">
+                <li style="display: flex; gap: 10px; margin-bottom: 15px;">
+                  <span style="color: #ffd700; font-weight: bold;">01.</span>
+                  <span>同一構造の繰り返しによる制作効率の向上</span>
+                </li>
+                <li style="display: flex; gap: 10px; margin-bottom: 15px;">
+                  <span style="color: #ffd700; font-weight: bold;">02.</span>
+                  <span>展示内容や空間演出を段階的に変化させる構成</span>
+                </li>
+                <li style="display: flex; gap: 10px; margin-bottom: 15px;">
+                  <span style="color: #ffd700; font-weight: bold;">03.</span>
+                  <span>安心感から違和感へと移行する心理的導線の設計</span>
+                </li>
+              </ul>
+              <div class="highlight-info"
+                style="margin-top: 20px; padding: 15px; border-left: 3px solid #ffd700; background: rgba(255, 215, 0, 0.05); font-size: 0.95rem;">
+                これにより、来場者が無意識に奥へ進みたくなるような空間に。
               </div>
             </div>
           </div>
@@ -818,7 +831,7 @@
         </div>
       </div>
 
-      <!-- 4枚目：ライド体験 × Timeline制御 -->
+      <!-- 4枚目：探索からアトラクションへ -->
       <div class="work-detail-page section">
         <div class="container fade-in">
           <h3 class="detail-page-title">探索からアトラクションへ</h3>
@@ -826,52 +839,83 @@
             style="color: #ffd700; margin-top:-30px; margin-bottom:40px; font-weight:bold; letter-spacing:1px;">ライド体験 ×
             Timeline制御</p>
 
-          <div class="four-page-layout">
-            <!-- 図のギャラリー：2x2グリッド 4枚 -->
-            <div class="four-col glass layout-left"
-              style="padding: 25px; align-items: stretch; justify-content: center;">
-              <div class="image-grid-2x2">
-                <img src="images/VDP/Ride1.png" alt="潜水艦ライドのカット">
-                <img src="images/VDP/Ride2.png" alt="タイムラインのスクショ">
-                <img src="images/VDP/Ride3.png" alt="演出の流れ 1">
-                <img src="images/VDP/Ride4.png" alt="演出の流れ 2">
-              </div>
-              <p style="color: #888; font-size: 0.85rem; margin-top: 15px; text-align: center;">潜水艦ライド / Timeline制御 /
-                演出フロー</p>
+          <div class="detail-layout" style="gap:40px; margin-bottom: 50px;">
+            <!-- コンセプト (左上に配置) -->
+            <div class="role-box glass" style="flex: 1; border-left: 4px solid #4facfe; padding: 30px;">
+              <h4 style="color: #4facfe; font-size: 1.3rem; margin-bottom: 20px;">
+                <i data-feather="compass" style="vertical-align: middle; margin-right: 10px;"></i>コンセプト
+              </h4>
+              <p style="color: #eee; line-height: 1.8; font-size: 1.05rem;">
+                最終エリアでは、潜水艦に乗り込み<br>
+                深海の沈没船を探索するライド型アトラクションを実装。<br>
+                プレイヤーは「クトゥルフの呪いを解くための財宝」を探す旅へと導かれる。
+              </p>
             </div>
 
-            <!-- 制御実装詳細 -->
-            <div class="four-col glass layout-right">
-              <div class="issue-grid">
-                <div class="issue-card" style="border-left: 3px solid #ffd700;">
-                  <div class="issue-content">
-                    <h5 style="color:#ffd700; font-size:1.2rem;">クライマックス設計</h5>
-                    <p style="color:#ccc; font-size:0.95rem; margin-top:10px; line-height:1.6;">
-                      最終エリアでは潜水艦ライドにより、<br>深海の沈没船を探索するアトラクションを実装。</p>
-                  </div>
+            <!-- Timelineによる演出制御 (右上に配置) -->
+            <div class="role-box glass" style="flex: 1.4; border-left: 4px solid #ffd700; padding: 30px;">
+              <h4 style="color: #ffd700; font-size: 1.3rem; margin-bottom: 20px;">
+                <i data-feather="clock" style="vertical-align: middle; margin-right: 10px;"></i>Timelineによる演出制御
+              </h4>
+              <div style="display: flex; gap: 20px; align-items: flex-start;">
+                <div style="flex: 1;">
+                  <ul class="role-list" style="font-size: 0.95rem; color: #ccc;">
+                    <li style="margin-bottom: 10px;">Unity Timelineを用いて演出を一括制御</li>
+                    <li style="margin-bottom: 10px;">潜水艦の移動、カメラ、エフェクト、音声を同期</li>
+                    <li style="margin-bottom: 10px;">シーン進行を時間軸ベースで管理</li>
+                  </ul>
                 </div>
-                <div class="issue-card" style="border-left: 3px solid #4facfe;">
-                  <div class="issue-content">
-                    <h5 style="color:#4facfe; font-size:1.2rem;">技術実装</h5>
-                    <ul style="margin-top:10px;">
-                      <li style="color:#ccc;">Unity Timelineによる演出制御</li>
-                      <li style="color:#ccc;">移動、カメラ、エフェクト、音響を同期</li>
-                      <li style="color:#ccc;">プレイヤー操作を排したシネマティック体験</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="issue-card" style="border-left: 3px solid #ff9a9e;">
-                  <div class="issue-content">
-                    <h5 style="color:#ff9a9e; font-size:1.2rem;">演出意図</h5>
-                    <ul style="margin-top:10px;">
-                      <li style="color:#ccc;">探索体験の“報酬”としての演出</li>
-                      <li style="color:#ccc;">世界観のピークを形成</li>
-                      <li style="color:#ccc;">印象に残るエンディングを設計</li>
-                    </ul>
-                  </div>
+                <div style="flex: 1.2;">
+                  <img src="images/VDP/vdp_timeline.png" alt="Timeline制御"
+                    style="width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 15px rgba(0,0,0,0.5);">
                 </div>
               </div>
             </div>
+          </div>
+
+          <!-- 演出設計 (下に配置) -->
+          <h4 style="color: #fff; margin-bottom: 30px; font-size: 1.5rem; text-align: center; letter-spacing: 2px;">演出設計
+          </h4>
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+            <!-- Step 1 -->
+            <div class="glass" style="padding: 15px; text-align: center; transition: transform 0.3s;"
+              onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+              <img src="images/VDP/vdp_step1.png" alt="潜航"
+                style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; margin-bottom: 15px;">
+              <p style="color: #4facfe; font-weight: bold; margin-bottom: 5px;">潜航</p>
+              <p style="font-size: 0.85rem; color: #aaa; line-height: 1.4;">潜水艦に乗り込み<br>深海へ潜航</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="glass" style="padding: 15px; text-align: center; transition: transform 0.3s;"
+              onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+              <img src="images/VDP/vdp_step2.png" alt="発見"
+                style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; margin-bottom: 15px;">
+              <p style="color: #00f2fe; font-weight: bold; margin-bottom: 5px;">沈没船の発見</p>
+              <p style="font-size: 0.85rem; color: #aaa; line-height: 1.4;">暗闇に包まれた<br>船内を進行</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="glass" style="padding: 15px; text-align: center; transition: transform 0.3s;"
+              onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+              <img src="images/VDP/vdp_step3.png" alt="財宝"
+                style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; margin-bottom: 15px;">
+              <p style="color: #ffd700; font-weight: bold; margin-bottom: 5px;">財宝の発見</p>
+              <p style="font-size: 0.85rem; color: #aaa; line-height: 1.4;">クトゥルフの財宝<br>一時の安堵</p>
+            </div>
+            <!-- Step 4 -->
+            <div class="glass" style="padding: 15px; text-align: center; transition: transform 0.3s;"
+              onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+              <img src="images/VDP/vdp_step4.png" alt="襲撃"
+                style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; margin-bottom: 15px;">
+              <p style="color: #ff6b6b; font-weight: bold; margin-bottom: 5px;">触手の襲撃</p>
+              <p style="font-size: 0.85rem; color: #aaa; line-height: 1.4;">突如発生する<br>未知の恐怖</p>
+            </div>
+          </div>
+
+          <!-- 感情の起伏設計 -->
+          <div class="highlight-info"
+            style="margin-top: 50px; text-align: center; border-left: none; border-bottom: 4px solid #ff6b6b; background: linear-gradient(0deg, rgba(255, 107, 107, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);">
+            <p style="font-size: 1.3rem; letter-spacing: 5px; color: #fff; font-weight: bold;">探索 → 発見 → 安堵 → 崩壊</p>
+            <p style="font-size: 1rem; color: #ccc; margin-top: 10px;">緩急のある構成で、感情の起伏を設計</p>
           </div>
         </div>
       </div>
@@ -2003,6 +2047,44 @@
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ILLUSTRATIONS ================= -->
+    <section id="work-illustrations" class="work-project-container">
+      <div class="work-page-section">
+        <div class="work-split-layout">
+          <div class="work-image-col fade-in delay-1">
+            <div class="work-main-image" style="background-image: url('images/Illustrations/illust1.png');">
+            </div>
+          </div>
+          <div class="work-text-col fade-in delay-2">
+            <h2 class="work-title">Illustrations<br>イラストレーション</h2>
+            <p class="work-period">2023.01 - </p>
+            <hr class="work-divider">
+            <div class="work-details">
+              <p>VR空間やキャラクター、コンセプトアートなどのデジタルイラストレーションを制作しています。<br>
+                <br>
+                自身のワールド制作におけるイメージボードや、SNSでの発信を目的とした作品制作を行っています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2枚目：ギャラリー -->
+      <div class="work-detail-page section">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">Gallery</h3>
+          <div class="illustration-gallery-grid">
+            <div class="gallery-item glass fade-in">
+              <img src="images/Illustrations/illust1.png" alt="Illustration 1">
+            </div>
+            <div class="gallery-item glass fade-in">
+              <img src="images/Illustrations/illust2.png" alt="Illustration 2">
             </div>
           </div>
         </div>
