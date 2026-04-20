@@ -145,7 +145,7 @@ a:hover {
   flex-direction: column;
   justify-content: flex-start;
   padding: 60px;
-  padding-top: 20vh;
+  padding-top: 15vh;
   /* Shifts text to be heavily top-aligned */
 }
 
@@ -315,14 +315,14 @@ a:hover {
 }
 
 .glass-btn {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   transition: all 0.3s;
 }
 
 .glass-btn:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(40, 40, 40, 0.6);
   transform: translateY(-2px);
 }
 
