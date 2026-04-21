@@ -512,87 +512,6 @@
       </div>
 
 
-      <!-- 3枚目：技術的アプローチ -->
-      <!-- <div class="work-detail-page dark-section">
-        <div class="container fade-in">
-          <h3 class="detail-page-title">技術的アプローチ</h3>
-
-          <div class="tech-approach-layout"
-            style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 40px; margin-top: 20px;"> -->
-      <!-- 左側：課題と方針 -->
-      <!-- <div class="tech-strategy">
-              <div class="tech-card glass" style="margin-bottom: 20px;">
-                <div class="tech-card-header issue">
-                  <i data-feather="alert-circle"></i>
-                  <h4>【課題】VRChatの制約</h4>
-                </div>
-                <div class="tech-card-body">
-                  <p style="font-size: 0.9rem;">・パーティクル頂点をC#から制御不可<br>・処理負荷に対する厳格な制約</p>
-                  <p style="margin-top: 10px; color: var(--accent-color); font-weight: bold;">→ 軽量かつ制御可能な演出手法が必要</p>
-                </div>
-              </div>
-              <div class="tech-card glass">
-                <div class="tech-card-header solution">
-                  <i data-feather="layers"></i>
-                  <h4>【方針】手法の使い分け</h4>
-                </div>
-                <div class="tech-card-body">
-                  <ul class="role-list" style="font-size: 0.85rem;">
-                    <li><strong>Node-based (Amplify Shader):</strong> 軽量な処理、Vertex/Fragシェーダーで完結する表現</li>
-                    <li><strong>HLSL (Geometry Shader):</strong> 点群表現や動的な粒子生成など、高度な制御が必要な処理</li>
-                  </ul>
-                </div>
-              </div>
-            </div> -->
-
-      <!-- 右側：実装フローと成果 -->
-      <!-- <div class="tech-implementation">
-              <div class="glass" style="padding: 25px; height: 100%;">
-                <h4
-                  style="color: #fff; margin-bottom: 20px; font-size: 1.1rem; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px;">
-                  【実装】演出制御処理フロー
-                </h4>
-                <div class="flow-diagram" style="display: flex; flex-direction: column; gap: 10px;">
-                  <div class="flow-step glass" style="padding: 10px 15px; border-left: 4px solid #fff;">
-                    <span style="font-size: 0.7rem; color: #888; display: block;">STEP 01</span>
-                    <p style="font-size: 0.9rem; font-weight: bold;">プレイヤー入力・リズム判定</p>
-                  </div>
-                  <div style="text-align: center; color: #888;"><i data-feather="arrow-down" style="width: 16px;"></i>
-                  </div>
-                  <div class="flow-step glass" style="padding: 10px 15px; border-left: 4px solid var(--accent-color);">
-                    <span style="font-size: 0.7rem; color: #888; display: block;">STEP 02</span>
-                    <p style="font-size: 0.9rem; font-weight: bold;">UdonSharp (C#) でイベント処理</p>
-                  </div>
-                  <div style="text-align: center; color: #888;"><i data-feather="arrow-down" style="width: 16px;"></i>
-                  </div>
-                  <div class="flow-step glass" style="padding: 10px 15px; border-left: 4px solid #ffd700;">
-                    <span style="font-size: 0.7rem; color: #888; display: block;">STEP 03</span>
-                    <p style="font-size: 0.9rem; font-weight: bold;">Shaderへパラメータ送信 (GPU)</p>
-                  </div>
-                  <div style="text-align: center; color: #888;"><i data-feather="arrow-down" style="width: 16px;"></i>
-                  </div>
-                  <div class="flow-step glass" style="padding: 10px 15px; border-left: 4px solid #ff9a9e;">
-                    <span style="font-size: 0.7rem; color: #888; display: block;">STEP 04</span>
-                    <p style="font-size: 0.9rem; font-weight: bold;">光粒子の色・動き・発光をリアルタイム制御</p>
-                  </div>
-                </div>
-
-                <div class="tech-result-box"
-                  style="margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
-                  <h5 style="color: #00f2fe; margin-bottom: 10px; font-size: 1rem;">【成果】</h5>
-                  <ul class="tech-result-list"
-                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.85rem;">
-                    <li>工数削減 (ノードベース活用)</li>
-                    <li>柔軟な表現力 (HLSL併用)</li>
-                    <li style="grid-column: span 2;">軽量かつリアルタイムな演出制御を実現</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
       <!-- 4枚目：企画の変更 -->
       <div class="work-detail-page dark-section">
         <div class="container fade-in">
@@ -784,44 +703,7 @@
         </div>
       </div>
 
-      <!-- 2枚目：演出設計と効率化 -->
-      <div class="work-detail-page section">
-        <div class="container fade-in">
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
-            <!-- 左カラム：Timelineの工夫 -->
-            <div class="glass" style="padding: 30px; border-top: 4px solid #00f2fe;">
-              <h4 style="color: #00f2fe; margin-bottom: 15px; font-size: 1.2rem;">① 長尺に対応するためのTimelineの工夫</h4>
-              <p style="font-size: 0.95rem; line-height: 1.8; color: #eee; margin-bottom: 25px;">
-                30分×2セットの長尺演出を成立させるため、Timelineの構成を整理し、制御しやすい形に最適化。
-                演出の切り替えや再利用をしやすくすることで、長時間でも破綻しない安定したライブ進行を実現。
-                素材の速度変更や色調整も組み込み、少ない素材でも展開に変化を出せる構成にした。
-              </p>
-              <div class="vertical-image-stack" style="gap: 10px;">
-                <img src="images/Delmin/bce53ba90fe4405d1efa9dbc87269586-kix.x25gctg9kiu5.webp" 
-                     style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);" alt="Timeline 1">
-                <img src="images/Delmin/bce53ba90fe4405d1efa9dbc87269586-kix.z5oy2q6h51k.webp" 
-                     style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);" alt="Timeline 2">
-              </div>
-            </div>
 
-            <!-- 右カラム：ペンライト同期 -->
-            <div class="glass" style="padding: 30px; border-top: 4px solid #ff9a9e;">
-              <h4 style="color: #ff9a9e; margin-bottom: 15px; font-size: 1.2rem;">② ペンライトを設置し、観客も参加できるライブに</h4>
-              <p style="font-size: 0.95rem; line-height: 1.8; color: #eee; margin-bottom: 25px;">
-                観客席にペンライトを配置し、Timelineと同期して発光を制御。
-                演者だけでなく観客席も演出の一部として機能させ、会場全体が一体となるライブ体験を設計。
-                VR空間ならではの“その場にいる感覚”を高める要素として活用した。
-              </p>
-              <div class="vertical-image-stack" style="gap: 10px;">
-                <img src="images/Delmin/bce53ba90fe4405d1efa9dbc87269586-kix.pst1lxahq6oe.webp" 
-                     style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);" alt="Penlight 1">
-                <img src="images/Delmin/bce53ba90fe4405d1efa9dbc87269586-kix.gyqo5y1aqot6.jpg" 
-                     style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);" alt="Penlight 2">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
       <!-- 3枚目：空間演出と技術表現 -->
       <div class="work-detail-page dark-section">
@@ -836,10 +718,12 @@
                 単なる“鏡面”ではなく、ライブ空間全体の光量感や奥行きを強調するための表現として活用した。
               </p>
               <div class="vertical-image-stack" style="gap: 10px;">
-                <img src="images/Delmin/bce53ba90fe4405d1efa9dbc87269586-kix.hkoggk9kpn0g-1.webp" 
-                     style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);" alt="Mirror 1">
-                <img src="images/Delmin/bce53ba90fe4405d1efa9dbc87269586-kix.gyqo5y1aqot6.webp" 
-                     style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);" alt="Mirror 2">
+                <img src="images/Delmin/Mirror1.png"
+                  style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);"
+                  alt="Mirror 1">
+                <img src="images/Delmin/Mirror2.png"
+                  style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);"
+                  alt="Mirror 2">
               </div>
             </div>
 
@@ -852,16 +736,59 @@
                 楽曲の盛り上がりに合わせて派手な視覚変化を挟み、観客を飽きさせない構成にした。
               </p>
               <div class="vertical-image-stack" style="gap: 10px;">
-                <img src="images/Delmin/bce53ba90fe4405d1efa9dbc87269586-kix.39i7ol7jbin9.webp" 
-                     style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);" alt="Particle 1">
-                <img src="images/Delmin/bce53ba90fe4405d1efa9dbc87269586-kix.pst1lxahq6oe.webp" 
-                     style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);" alt="Particle 2">
+                <img src="images/Delmin/Particle1.png"
+                  style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);"
+                  alt="Particle 1">
+                <img src="images/Delmin/Particle2.png"
+                  style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);"
+                  alt="Particle 2">
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- 2枚目：演出設計と効率化 -->
+      <div class="work-detail-page section">
+        <div class="container fade-in">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+            <!-- 左カラム：Timelineの工夫 -->
+            <div class="glass" style="padding: 30px; border-top: 4px solid #00f2fe;">
+              <h4 style="color: #00f2fe; margin-bottom: 15px; font-size: 1.2rem;">① 長尺に対応するためのTimelineの工夫</h4>
+              <p style="font-size: 0.95rem; line-height: 1.8; color: #eee; margin-bottom: 25px;">
+                30分×2セットの長尺演出を成立させるため、Timelineの構成を整理し、制御しやすい形に最適化。
+                演出の切り替えや再利用をしやすくすることで、長時間でも破綻しない安定したライブ進行を実現。
+                素材の速度変更や色調整も組み込み、少ない素材でも展開に変化を出せる構成にした。
+              </p>
+              <div class="vertical-image-stack" style="gap: 10px;">
+                <img src="images/Delmin/Timeline1.png"
+                  style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);"
+                  alt="Timeline 1">
+                <img src="images/Delmin/Timeline2.png"
+                  style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);"
+                  alt="Timeline 2">
+              </div>
+            </div>
 
+            <!-- 右カラム：ペンライト同期 -->
+            <div class="glass" style="padding: 30px; border-top: 4px solid #ff9a9e;">
+              <h4 style="color: #ff9a9e; margin-bottom: 15px; font-size: 1.2rem;">② ペンライトを設置し、観客も参加できるライブに</h4>
+              <p style="font-size: 0.95rem; line-height: 1.8; color: #eee; margin-bottom: 25px;">
+                観客席にペンライトを配置し、Timelineと同期して発光を制御。
+                演者だけでなく観客席も演出の一部として機能させ、会場全体が一体となるライブ体験を設計。
+                VR空間ならではの“その場にいる感覚”を高める要素として活用した。
+              </p>
+              <div class="vertical-image-stack" style="gap: 10px;">
+                <img src="images/Delmin/Penlight1.png"
+                  style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);"
+                  alt="Penlight 1">
+                <img src="images/Delmin/Penlight2.png"
+                  style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);"
+                  alt="Penlight 2">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- 4枚目：技術実装と空間設計 (旧3枚目) -->
       <div class="work-detail-page section">
         <div class="container fade-in">
@@ -1818,18 +1745,39 @@
             <div class="tech-card glass" style="border-top: 3px solid #4facfe;">
               <div class="tech-card-header solution" style="border-bottom: none; color: #4facfe;">
                 <i data-feather="edit-3"></i>
-                <h4 style="font-size: 1.1rem;">① 形状の再解釈（ビスチェの紐）</h4>
+                <h4 style="font-size: 1.1rem;">① 形状の再解釈</h4>
               </div>
-              <div class="tech-card-body">
+              <div class="tech-card-body" style="display: flex; flex-direction: column; flex: 1;">
                 <div style="background: rgba(0,0,0,0.3); padding: 10px; border-radius: 8px; margin-bottom: 15px;">
-                  <p style="color: #ff9a9e; font-size: 0.85rem; font-weight: bold;">【FB】編み紐は布の端と端をつなぐ構造として再現してほしい</p>
+                  <p style="color: #ff9a9e; font-size: 0.85rem; font-weight: bold;">デザイナーとのやり取りを通じて、<br>
+                    三面図だけでは解釈が難しい構造について認識をすり合わせながら形を決めました。</p>
                 </div>
                 <ul class="role-list" style="font-size: 0.9rem; color: #ccc;">
-                  <li>紐の配置を再設計し、布構造に基づいた配置に修正</li>
-                  <li>クロス本数や終端処理を調整し、違和感のない立体構造へ改善</li>
+                  <li>立体として違和感のない形状に</li>
+                  <li>イラストでは曖昧になりがちな構造を明確化し、</li>
                 </ul>
-                <div class="tech-sub-point" style="margin-top: 15px; border-left-color: #4facfe;">
-                  <p style="color: #fff; font-size: 0.9rem;"><b>結果:</b> 装飾ではなく「構造として成立するデザイン」へ</p>
+                <!-- <div class="tech-sub-point" style="margin-top: 15px; border-left-color: #4facfe;">
+                  <p style="color: #fff; font-size: 0.9rem;"></p>
+                </div> -->
+                <div class="spec-image-grid three-col" style="margin-top: auto; margin-bottom: 0;">
+                  <div class="spec-image-item">
+                    <img src="images/InnocentGardenDress/FB1-1.png" alt="モデル構造（ワイヤーフレーム）">
+                    <div
+                      style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: rgba(0,0,0,0.5); text-align: center; font-size: 0.9rem; color: #ccc; backdrop-filter: blur(5px);">
+                      元のスカート</div>
+                  </div>
+                  <div class="spec-image-item">
+                    <img src="images/InnocentGardenDress/FB1-2.png" alt="モデル構造（ソリッド面）">
+                    <div
+                      style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: rgba(0,0,0,0.5); text-align: center; font-size: 0.9rem; color: #ccc; backdrop-filter: blur(5px);">
+                      デザイナーからのフィードバック</div>
+                  </div>
+                  <div class="spec-image-item">
+                    <img src="images/InnocentGardenDress/FB1-3.png" alt="Unityでの確認">
+                    <div
+                      style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: rgba(0,0,0,0.5); text-align: center; font-size: 0.9rem; color: #ccc; backdrop-filter: blur(5px);">
+                      修正後のスカート</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1840,18 +1788,36 @@
                 <i data-feather="layers"></i>
                 <h4 style="font-size: 1.1rem;">② テクスチャ・質感の強化</h4>
               </div>
-              <div class="tech-card-body">
+              <div class="tech-card-body" style="display: flex; flex-direction: column; flex: 1;">
                 <div style="background: rgba(0,0,0,0.3); padding: 10px; border-radius: 8px; margin-bottom: 15px;">
                   <p style="color: #ff9a9e; font-size: 0.85rem; font-weight: bold;">【FB】テクスチャ表現をもう一段リッチにしたい</p>
                 </div>
                 <ul class="role-list" style="font-size: 0.85rem; color: #ccc;">
                   <li>グラデーション追加による金属感の強化</li>
-                  <li>ノーマルマップ追加による凹凸表現の強化</li>
-                  <li>ベルベット・レースなど素材ごとの質感差を調整</li>
-                  <li>模様や装飾を再設計し情報量を最適化</li>
+                  <li>ベルベット・レースなど素材ごとの質感を調整</li>
                 </ul>
                 <div class="tech-sub-point" style="margin-top: 15px; border-left-color: #ffd700;">
-                  <p style="color: #fff; font-size: 0.9rem;"><b>結果:</b> 「2Dではできない非常にリッチな表現」を実現</p>
+                  <p style="color: #fff; font-size: 0.9rem;"><b>結果:</b> 非常にリッチな質感を表現</p>
+                </div>
+                <div class="spec-image-grid three-col" style="margin-top: auto; margin-bottom: 0;">
+                  <div class="spec-image-item">
+                    <img src="images/InnocentGardenDress/FB2-1.png" alt="テクスチャの詳細（拡大図）">
+                    <div
+                      style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: rgba(0,0,0,0.5); text-align: center; font-size: 0.9rem; color: #ccc; backdrop-filter: blur(5px);">
+                      修正前</div>
+                  </div>
+                  <div class="spec-image-item">
+                    <img src="images/InnocentGardenDress/IMG_8264.png" alt="Substance Painter でのテクスチャ制作画面">
+                    <div
+                      style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: rgba(0,0,0,0.5); text-align: center; font-size: 0.9rem; color: #ccc; backdrop-filter: blur(5px);">
+                      フィードバック</div>
+                  </div>
+                  <div class="spec-image-item">
+                    <img src="images/InnocentGardenDress/Unity.png" alt="質感の検証">
+                    <div
+                      style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: rgba(0,0,0,0.5); text-align: center; font-size: 0.9rem; color: #ccc; backdrop-filter: blur(5px);">
+                      修正後の質感</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1865,28 +1831,43 @@
           <h3 class="detail-page-title">最終調整と完成</h3>
 
           <div class="four-page-layout">
-            <!-- 左カラム：③ 色改変・仕様設計 -->
+            <!-- 左カラム：③ ユーザーが編集しやすい仕様 -->
             <div class="four-col glass layout-left">
               <h5
                 style="color:#00f2fe; font-size:1.1rem; margin-bottom:20px; border-bottom:1px solid rgba(0,242,254,0.3); padding-bottom:10px;">
-                <i data-feather="settings" style="width:18px;vertical-align:middle;margin-right:8px;"></i>③ 色改変・仕様設計の調整
+                <i data-feather="settings" style="width:18px;vertical-align:middle;margin-right:8px;"></i>③
+                ユーザーが編集しやすい仕様
               </h5>
 
-              <div style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; margin-bottom: 20px;">
-                <p style="color: #ff9a9e; font-size: 0.85rem; font-weight: bold;">【FB】色変更の見え方の最適化・運用面も考慮</p>
-              </div>
+              <!-- <div style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; margin-bottom: 20px;">
+                <p style="color: #ff9a9e; font-size: 0.85rem; font-weight: bold;">ユーザーが編集しやすい仕様</p>
+              </div> -->
 
               <ul style="padding-left:15px; margin-bottom:20px;">
-                <li style="color:#ccc; margin-bottom:10px; font-size:0.9rem;">白黒テクスチャ＋マテリアルカラーによる色変更方式</li>
-                <li style="color:#ccc; margin-bottom:10px; font-size:0.9rem;">容量削減（4Kテクスチャ削減）を実現</li>
-                <li style="color:#ccc; font-size:0.9rem;">マテリアル分割によりパーツ単位で色変更可能に</li>
+                <li style="color:#ccc; margin-bottom:10px; font-size:0.9rem;">白黒テクスチャにマテリアルの設定により色変更できように</li>
+                <li style="color:#ccc; font-size:0.9rem;">パーツ単位でマテリアルを分け色変更を容易に</li>
               </ul>
 
               <div class="issue-card"
-                style="border-left: 3px solid #00f2fe; padding:20px; background:rgba(0, 242, 254, 0.05); margin-top: auto;">
+                style="border-left: 3px solid #00f2fe; padding:20px; background:rgba(0, 242, 254, 0.05); margin-bottom: 20px;">
                 <p style="color:#fff; font-size: 0.95rem; font-weight: bold;">
-                  品質・軽量化・カスタマイズ性を両立した設計を実現
+                  品質とカスタマイズ性を両立した設計を実現
                 </p>
+              </div>
+
+              <div class="spec-image-grid two-col" style="margin-top: auto; margin-bottom: 0;">
+                <div class="spec-image-item">
+                  <img src="images/InnocentGardenDress/Substance.png" alt="Substance Painter でのテクスチャ制作">
+                  <div
+                    style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: rgba(0,0,0,0.5); text-align: center; font-size: 0.9rem; color: #ccc; backdrop-filter: blur(5px);">
+                    Substance Painterでの白黒テクスチャ</div>
+                </div>
+                <div class="spec-image-item">
+                  <img src="images/InnocentGardenDress/5926a805-91a0-4138-ae60-4f14dd8ab7af.jpg" alt="Unity での仕様・色変更設定">
+                  <div
+                    style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: rgba(0,0,0,0.5); text-align: center; font-size: 0.9rem; color: #ccc; backdrop-filter: blur(5px);">
+                    カラーバリエーションの作成が容易に</div>
+                </div>
               </div>
             </div>
 
@@ -1895,10 +1876,10 @@
               <h5 style="color:#fff; font-size:1.1rem; margin-bottom:20px;">完成衣装ギャラリー</h5>
               <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; flex: 1;">
                 <div
-                  style="border-radius: 8px; overflow: hidden; background: url('images/InnocentGardenDress/56c00fcd-5757-4601-aa97-84cdc020dfad.jpg') center/cover; aspect-ratio: 1/1;">
+                  style="border-radius: 8px; overflow: hidden; background: url('images/InnocentGardenDress/70b4bab5-3aa1-460f-9003-bc069671b822.png') center/cover; aspect-ratio: 1/1;">
                 </div>
                 <div
-                  style="border-radius: 8px; overflow: hidden; background: url('images/InnocentGardenDress/5926a805-91a0-4138-ae60-4f14dd8ab7af.jpg') center/cover; aspect-ratio: 1/1;">
+                  style="border-radius: 8px; overflow: hidden; background: url('images/InnocentGardenDress/56c00fcd-5757-4601-aa97-84cdc020dfad.jpg') center/cover; aspect-ratio: 1/1;">
                 </div>
                 <div
                   style="border-radius: 8px; overflow: hidden; background: url('images/InnocentGardenDress/e111caf0-45cf-4a24-a3bb-e7ae2f346e06.jpg') center/cover; aspect-ratio: 1/1;">
