@@ -79,7 +79,8 @@ a:hover {
 /* Work Split Layout (Full Bleed) */
 .work-page-section {
   width: 100%;
-  height: 100vh; /* min-heightからheightに変更して厳密に1画面に収める */
+  height: 100vh;
+  /* min-heightからheightに変更して厳密に1画面に収める */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -152,7 +153,8 @@ a:hover {
 .work-title {
   font-family: "Times New Roman", Times, serif;
   font-size: 4rem;
-  margin-bottom: 30px; /* Reduced to accommodate period and divider */
+  margin-bottom: 30px;
+  /* Reduced to accommodate period and divider */
   font-weight: 400;
   line-height: 1.2;
   text-align: left;
@@ -180,7 +182,8 @@ a:hover {
 .work-divider {
   border: none;
   border-top: 1px solid rgba(255, 255, 255, 0.6);
-  width: 80%; /* Don't span full width to keep it elegant */
+  width: 80%;
+  /* Don't span full width to keep it elegant */
   margin-bottom: 40px;
   margin-left: 2vw;
 }
@@ -471,7 +474,8 @@ footer p {
 .detail-page-title {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 30px; /* Reduced from 50px */
+  margin-bottom: 30px;
+  /* Reduced from 50px */
   background: linear-gradient(90deg, #fff, #88cfef);
   -webkit-background-clip: text;
   background-clip: text;
@@ -882,29 +886,34 @@ footer p {
 .feedback-grid-split {
   display: flex;
   flex-direction: column;
-  gap: 25px; /* Reduced from 60px */
+  gap: 25px;
+  /* Reduced from 60px */
 }
 
 .feedback-top-row {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Reduced from 25px */
+  gap: 15px;
+  /* Reduced from 25px */
 }
 
 .feedback-bubble-list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Increased columns to reduce height */
+  grid-template-columns: repeat(3, 1fr);
+  /* Increased columns to reduce height */
   gap: 15px;
 }
 
 .feedback-bubble {
   background: rgba(255, 107, 107, 0.05);
   border-radius: 12px;
-  padding: 12px 15px; /* Reduced padding */
+  padding: 12px 15px;
+  /* Reduced padding */
   border-left: 4px solid #ff6b6b;
   display: flex;
   gap: 10px;
-  align-items: center; /* Center vertically for cleaner look */
+  align-items: center;
+  /* Center vertically for cleaner look */
 }
 
 .feedback-bubble i {
@@ -915,7 +924,8 @@ footer p {
 .feedback-bubble p {
   color: #eee;
   margin: 0;
-  font-size: 0.9rem; /* Reduced font size */
+  font-size: 0.9rem;
+  /* Reduced font size */
 }
 
 .changes-bottom-row {
@@ -927,7 +937,8 @@ footer p {
 .change-detailed-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px; /* Reduced from 30px */
+  gap: 20px;
+  /* Reduced from 30px */
 }
 
 .change-detailed-card {
@@ -956,19 +967,23 @@ footer p {
 }
 
 .change-card-content {
-  padding: 20px; /* Reduced from 25px */
+  padding: 20px;
+  /* Reduced from 25px */
 }
 
 .change-card-content h5 {
   color: #00f2fe;
-  font-size: 1.1rem; /* Reduced font size */
-  margin-bottom: 8px; /* Reduced margin */
+  font-size: 1.1rem;
+  /* Reduced font size */
+  margin-bottom: 8px;
+  /* Reduced margin */
   letter-spacing: 1px;
 }
 
 .change-card-content p {
   color: #ccc;
-  font-size: 0.85rem; /* Reduced font size */
+  font-size: 0.85rem;
+  /* Reduced font size */
   line-height: 1.5;
 }
 
@@ -976,21 +991,26 @@ footer p {
 .results-cross-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto; /* 高さはアスペクト比に任せる */
-  gap: 1px; /* 境界線（十字） */
-  background: rgba(255, 255, 255, 0.15); /* 十字線の色 */
+  grid-template-rows: auto auto;
+  /* 高さはアスペクト比に任せる */
+  gap: 1px;
+  /* 境界線（十字） */
+  background: rgba(255, 255, 255, 0.15);
+  /* 十字線の色 */
   overflow: hidden;
   border-radius: 12px;
 }
 
 .grid-cell {
-  background: rgba(20, 20, 20, 0.8); /* セルの背景 */
+  background: rgba(20, 20, 20, 0.8);
+  /* セルの背景 */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  aspect-ratio: 16 / 9; /* 16:9の比率を維持 */
+  aspect-ratio: 16 / 9;
+  /* 16:9の比率を維持 */
 }
 
 .text-cell {
@@ -1025,6 +1045,7 @@ footer p {
     grid-template-rows: auto;
     min-height: auto;
   }
+
   .grid-cell.img-cell {
     aspect-ratio: 16 / 9;
   }
@@ -1085,6 +1106,7 @@ footer p {
   .feedback-bubble-list {
     grid-template-columns: 1fr;
   }
+
   .change-detailed-grid {
     grid-template-columns: 1fr;
   }
@@ -1261,13 +1283,23 @@ footer p {
 }
 
 @keyframes marquee-scroll-right {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes marquee-scroll-left {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .marquee-overlay {
@@ -1276,7 +1308,7 @@ footer p {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, rgba(10,10,10,0.5) 0%, rgba(10,10,10,0.9) 100%);
+  background: radial-gradient(circle, rgba(10, 10, 10, 0.5) 0%, rgba(10, 10, 10, 0.9) 100%);
   z-index: 5;
 }
 
@@ -1362,7 +1394,8 @@ footer p {
 
 .abyssal-gallery-unit h4 {
   font-size: 1rem;
-  color: #ff9a9e; /* Section theme color (Pink/Red) */
+  color: #ff9a9e;
+  /* Section theme color (Pink/Red) */
   border-left: 3px solid #ff9a9e;
   padding-left: 12px;
   margin-bottom: 5px;
@@ -1430,6 +1463,7 @@ footer p {
   justify-content: center;
   filter: drop-shadow(0 0 5px rgba(255, 154, 158, 0.3));
 }
+
 /* Illustration Gallery */
 .illustration-gallery-grid {
   display: grid;
@@ -1455,7 +1489,7 @@ footer p {
   object-fit: cover;
   display: block;
 }
- 
+
 .gallery-description {
   padding: 15px 20px;
   color: #ccc;
@@ -1476,7 +1510,7 @@ footer p {
     grid-auto-flow: dense;
     align-items: start;
   }
-  
+
   .gallery-item.portrait {
     grid-row: span 2;
   }
@@ -1547,7 +1581,7 @@ footer p {
   width: 100%;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
 }
 
@@ -1581,10 +1615,12 @@ footer p {
     grid-template-rows: auto auto auto auto;
     gap: 20px;
   }
+
   .lime-arrow {
     transform: rotate(90deg);
     margin: 0 auto;
   }
+
   .lime-bottom {
     grid-column: 1;
   }
@@ -1634,3 +1670,45 @@ footer p {
   }
 }
 
+
+/* ================= WORK DETAIL GRID (RESPONSIVE) ================= */
+.work-detail-grid {
+  display: grid;
+  align-items: start;
+  width: 100%;
+}
+
+.work-detail-grid.two-col {
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.work-detail-grid.three-col {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Tablet: 3 columns -> 2 columns */
+@media (max-width: 1100px) {
+  .work-detail-grid.three-col {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Mobile: Stack to 1 column */
+@media (max-width: 800px) {
+
+  .work-detail-grid.two-col,
+  .work-detail-grid.three-col {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+/* Hover Zoom Effect */
+.hover-zoom:hover {
+  transform: scale(1.05);
+  border-color: rgba(0, 242, 254, 0.5) !important;
+  z-index: 10;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}

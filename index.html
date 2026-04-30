@@ -705,31 +705,45 @@
 
 
 
-      <!-- 3枚目：空間演出と技術表現 -->
+      <!-- 2枚目：企画概要とVR空間演出 -->
       <div class="work-detail-page dark-section">
         <div class="container fade-in">
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
-            <!-- 左カラム：鏡張り空間 -->
-            <div class="glass" style="padding: 30px; border-top: 4px solid #ffd700;">
-              <h4 style="color: #ffd700; margin-bottom: 15px; font-size: 1.2rem;">① 会場を鏡張りにして、映像やレーザーをより美しく演出</h4>
-              <p style="font-size: 0.95rem; line-height: 1.8; color: #eee; margin-bottom: 25px;">
-                会場を鏡張りにすることで、映像やレーザーの光が空間全体へ広がるような演出を設計。
-                Reflection Probeをリアルタイム更新しつつ、テクスチャサイズを抑えることで、負荷を調整しながら反射表現を実現。
-                単なる“鏡面”ではなく、ライブ空間全体の光量感や奥行きを強調するための表現として活用した。
+          <h3 class="detail-page-title">企画概要とVR空間演出</h3>
+          <div class="work-detail-grid two-col">
+            <!-- 左カラム：企画概要 -->
+            <div class="role-box glass" style="padding: 30px; border-left: 4px solid #00f2fe;">
+              <h4 style="color: #00f2fe; margin-bottom: 20px; font-size: 1.3rem;">
+                <i data-feather="map" style="vertical-align: middle; margin-right: 10px;"></i>企画概要
+              </h4>
+              <!-- 画像 world1 -->
+              <div style="margin-bottom: 20px;">
+                <img src="images/Delmin/world1.webp"
+                  style="width: 100%; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover; box-shadow: 0 10px 30px rgba(0,0,0,0.3);"
+                  alt="SHOW BY ROCK !! WORLD 1">
+              </div>
+              <!-- タイトル -->
+              <h5 style="color: #fff; font-size: 1.25rem; margin-bottom: 15px; font-weight: bold; letter-spacing: 1px;">
+                SHOW BY ROCK !! WORLD</h5>
+              <!-- 文章 -->
+              <p style="font-size: 1.05rem; line-height: 1.8; color: #eee; margin-bottom: 25px;">
+                SHOW BY ROCK!!の舞台である音楽都市MIDICITYをVR空間に再現した、公式ワールドプロジェクトです。<br><br>
+                ユーザーは広大な都市を探索しながら、キャラクターライブやDJショーなど、VRならではの没入感溢れる多彩なエンターテインメントを体験できます。<br><br>
+                本プロジェクトにおいて、私は地下ライブハウスで開催されたDJライブの演出制作（照明・パーティクル・Timeline設計）を担当しました。
               </p>
-              <div class="vertical-image-stack" style="gap: 10px;">
-                <img src="images/Delmin/Mirror1.png"
-                  style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);"
-                  alt="Mirror 1">
-                <img src="images/Delmin/Mirror2.png"
-                  style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);"
-                  alt="Mirror 2">
+              <!-- 画像 world2, world3 -->
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <img src="images/Delmin/world2.webp"
+                  style="width: 100%; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover; transition: transform 0.3s ease;"
+                  alt="SHOW BY ROCK !! WORLD 2" class="hover-zoom">
+                <img src="images/Delmin/world3.webp"
+                  style="width: 100%; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover; transition: transform 0.3s ease;"
+                  alt="SHOW BY ROCK !! WORLD 3" class="hover-zoom">
               </div>
             </div>
 
             <!-- 右カラム：全面パーティクル -->
             <div class="glass" style="padding: 30px; border-top: 4px solid #4facfe;">
-              <h4 style="color: #4facfe; margin-bottom: 15px; font-size: 1.2rem;">② VRならではの壁を取り払い、全面にパーティクルを展開</h4>
+              <h4 style="color: #4facfe; margin-bottom: 15px; font-size: 1.2rem;">① VRならではの壁を取り払い、全面にパーティクルを展開</h4>
               <p style="font-size: 0.95rem; line-height: 1.8; color: #eee; margin-bottom: 25px;">
                 現実のライブ会場では難しい、視界全体を覆うようなパーティクル演出を実装。
                 前後左右・天井方向まで空間全体を使うことで、VRならではのスケール感と没入感を演出。
@@ -747,17 +761,32 @@
           </div>
         </div>
       </div>
-      <!-- 2枚目：演出設計と効率化 -->
+      <!-- 3枚目：ライブ体験の向上と効率化 -->
       <div class="work-detail-page section">
         <div class="container fade-in">
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
-            <!-- 左カラム：Timelineの工夫 -->
-            <div class="glass" style="padding: 30px; border-top: 4px solid #00f2fe;">
-              <h4 style="color: #00f2fe; margin-bottom: 15px; font-size: 1.2rem;">③ 長尺に対応するためのTimelineの工夫</h4>
-              <p style="font-size: 0.95rem; line-height: 1.8; color: #eee; margin-bottom: 25px;">
-                30分×2セットの長尺演出を成立させるため、Timelineの構成を整理し、制御しやすい形に最適化。
-                演出の切り替えや再利用をしやすくすることで、長時間でも破綻しない安定したライブ進行を実現。
-                素材の速度変更や色調整も組み込み、少ない素材でも展開に変化を出せる構成にした。
+          <h3 class="detail-page-title">ライブ体験の向上と効率化</h3>
+          <div class="work-detail-grid three-col">
+            <!-- 左カラム：鏡張り演出 -->
+            <div class="glass" style="padding: 25px; border-top: 4px solid #ffd700;">
+              <h4 style="color: #ffd700; margin-bottom: 15px; font-size: 1.1rem;">② 会場を鏡張りにして、映像やレーザーをより美しく演出</h4>
+              <p style="font-size: 0.85rem; line-height: 1.7; color: #eee; margin-bottom: 20px;">
+                会場を鏡張りにすることで、光が空間全体へ広がる演出を設計。負荷を調整しながら反射表現を実現しました。
+              </p>
+              <div class="vertical-image-stack" style="gap: 10px;">
+                <img src="images/Delmin/Mirror1.png"
+                  style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);"
+                  alt="Mirror 1">
+                <img src="images/Delmin/Mirror2.png"
+                  style="width: 100%; border-radius: 8px; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,0.1);"
+                  alt="Mirror 2">
+              </div>
+            </div>
+
+            <!-- 中央カラム：Timelineの工夫 -->
+            <div class="glass" style="padding: 25px; border-top: 4px solid #00f2fe;">
+              <h4 style="color: #00f2fe; margin-bottom: 15px; font-size: 1.1rem;">③ 長尺に対応するためのTimelineの工夫</h4>
+              <p style="font-size: 0.85rem; line-height: 1.7; color: #eee; margin-bottom: 20px;">
+                30分×2セットの演出を成立させるため、Timeline構成を整理。再利用しやすい形で効率化を実現しました。
               </p>
               <div class="vertical-image-stack" style="gap: 10px;">
                 <img src="images/Delmin/Timeline1.png"
@@ -770,12 +799,10 @@
             </div>
 
             <!-- 右カラム：ペンライト同期 -->
-            <div class="glass" style="padding: 30px; border-top: 4px solid #ff9a9e;">
-              <h4 style="color: #ff9a9e; margin-bottom: 15px; font-size: 1.2rem;">④ ペンライトを設置し、観客も参加できるライブに</h4>
-              <p style="font-size: 0.95rem; line-height: 1.8; color: #eee; margin-bottom: 25px;">
-                観客席にペンライトを配置し、Timelineと同期して発光を制御。
-                演者だけでなく観客席も演出の一部として機能させ、会場全体が一体となるライブ体験を設計。
-                VR空間ならではの“その場にいる感覚”を高める要素として活用した。
+            <div class="glass" style="padding: 25px; border-top: 4px solid #ff9a9e;">
+              <h4 style="color: #ff9a9e; margin-bottom: 15px; font-size: 1.1rem;">④ ペンライトを設置し、観客も参加できるライブに</h4>
+              <p style="font-size: 0.85rem; line-height: 1.7; color: #eee; margin-bottom: 20px;">
+                観客席にペンライトを配置し、Timelineと同期制御。会場全体が一体となる体験を設計しました。
               </p>
               <div class="vertical-image-stack" style="gap: 10px;">
                 <img src="images/Delmin/Penlight1.png"
@@ -2350,6 +2377,17 @@
               </div>
             </div>
             <!-- 4枚目 (Right - Bottom) -->
+            <div class="gallery-item portrait glass fade-in">
+              <img src="images/Illustrations/Moliere.jpg" alt="デッサン モリエール">
+              <div class="gallery-description">
+                <h1>デッサン モリエール</h1>
+                <p>2019年<br>
+                  <br>
+                  自室にあるミニチュアのモリエール胸像のデッサンです。<br>
+                </p>
+              </div>
+            </div>
+            <!-- 5枚目 (Right - Bottom) -->
             <div class="gallery-item glass fade-in">
               <img src="images/Illustrations/forest.jpg" alt="Forest Illustration">
               <div class="gallery-description">
@@ -2357,7 +2395,7 @@
                 <p>2019年<br>
                   <br>
                   自作ゲーム用のコンセプトアート<br>
-                  自然に侵食されつつある遺跡を舞台に、「森に還る聖域」というテーマで描いたコンセプトイラスト。
+                  自然に侵食されつつある遺跡を舞台に、「森に還る聖域」というテーマで描いたコンセプトイラスト。<br>
                 </p>
               </div>
             </div>
