@@ -1,4 +1,4 @@
-﻿// アイコンの初期化
+// アイコンの初期化
 feather.replace();
 // --- スクロール連動のアニメーション（Intersection Observer） ---
 const fadeElements = document.querySelectorAll('.fade-in');
@@ -110,5 +110,66 @@ if (menuToggle && sidebar) {
 
   });
 
+}
+
+// --- Image Modal Logic ---
+const modal = document.getElementById('image-modal');
+const modalImg = document.getElementById('modal-img');
+const captionText = document.getElementById('modal-caption');
+
+// 拡大対象とするセレクタのリスト
+const zoomableSelectors = '.spec-image-item, .lime-column img, .zoomable';
+const zoomableElements = document.querySelectorAll(zoomableSelectors);
+
+if (modal && modalImg && captionText) {
+  zoomableElements.forEach(el => {
+    el.addEventListener('click', function () {
+      let src = "";
+      let alt = "";
+
+      if (this.tagName.toLowerCase() === 'img') {
+        src = this.src;
+        alt = this.alt;
+      } else {
+        const img = this.querySelector('img');
+        if (img) {
+          src = img.src;
+          alt = img.alt;
+        } else {
+          // 背景画像からURLを抽出
+          const bg = window.getComputedStyle(this).backgroundImage;
+          if (bg && bg !== 'none') {
+            src = bg.slice(4, -1).replace(/"/g, "");
+          }
+        }
+      }
+
+      if (src) {
+        modal.style.display = "block";
+        modalImg.src = src;
+        captionText.innerHTML = alt || "";
+        document.body.style.overflow = 'hidden';
+      }
+    });
+  });
+
+  const closeModal = () => {
+    modal.style.display = "none";
+    document.body.style.overflow = 'auto'; // 背景スクロールを再開
+  };
+
+  // モーダルの背景または閉じボタンクリックで閉じる
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal || e.target.classList.contains('modal-close')) {
+      closeModal();
+    }
+  });
+
+  // ESCキーで閉じる
+  document.addEventListener('keydown', (e) => {
+    if (e.key === "Escape" && modal.style.display === "block") {
+      closeModal();
+    }
+  });
 }
 

@@ -1631,26 +1631,62 @@ footer p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .lime-column img {
   width: 100%;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease;
+  display: block;
+  transition: transform 0.4s ease;
+  cursor: pointer;
 }
 
-.lime-column img:hover {
-  transform: translateY(-5px);
-  border-color: var(--accent-color);
+.lime-column:hover img {
+  transform: scale(1.05);
+}
+
+/* Generic Image Overlay Label */
+.image-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  margin: 0;
+  letter-spacing: 1px;
+  pointer-events: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 2;
 }
 
 .lime-column p {
-  color: #888;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
+  /* .image-labelと同じスタイルを適用するためのエイリアス（HTML側の修正を減らすため） */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  margin: 0;
+  letter-spacing: 2px;
+  pointer-events: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .lime-bottom {
@@ -1707,6 +1743,7 @@ footer p {
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .spec-image-item img {
@@ -1720,6 +1757,94 @@ footer p {
   transform: translateY(-5px);
   border-color: var(--accent-color);
   box-shadow: 0 10px 20px rgba(0, 242, 254, 0.2);
+}
+
+.spec-image-item:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* ================= IMAGE MODAL ================= */
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 0 30px rgba(0, 242, 254, 0.2);
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 10001;
+}
+
+.modal-close:hover {
+  color: var(--accent-color);
+  transform: scale(1.1);
+}
+
+#modal-caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 20px 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+/* Animations */
+.modal-content, #modal-caption {
+  animation: zoom 0.3s ease-out;
+}
+
+@keyframes zoom {
+  from {transform:scale(0.8); opacity: 0;}
+  to {transform:scale(1); opacity: 1;}
+}
+
+/* Zoomable Image Utility */
+.zoomable {
+  cursor: pointer;
+  transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+.zoom-wrapper {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+}
+
+.zoom-wrapper .zoomable:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
 }
 
 @media (max-width: 600px) {
