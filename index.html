@@ -903,7 +903,9 @@
             <p class="work-period">制作期間：約3か月 (2024.03 - 2024.05)</p>
             <hr class="work-divider">
             <div class="work-details">
-              <p>VRChat向けの商用クラブアセット「Club4D」のシステム設計およびシェーダーの作成を担当。<br>
+              <p>VRChat向けの商用のDJクラブアセット「Club4D」のシステム設計およびシェーダーの作成を担当。<br>
+                <br>
+                ライティングの自動化により、誰でも簡単に操作できるオペレーション設計を目指しました。<br>
                 <br>
                 高価格帯ながら多くのユーザーに支持され、VRChat内での利用にとどまらず、<br>
                 地上波テレビ番組やアーティストのMVなど、<br>
@@ -942,8 +944,9 @@
               <div class="role-box glass" style="border-left: 3px solid #00f2fe; padding: 30px;">
                 <h4 style="color: #00f2fe; margin-bottom: 20px;">企画概要</h4>
                 <p style="color: #eee; line-height: 1.8; font-size: 1.05rem;">
-                  既存のクラブワールドでは、操作の複雑さや人員依存の高さが課題となっており、より少人数でも直感的に運用できる環境が求められていた。<br><br>
-                  本プロジェクトは、Boothでの販売を前提とした商用アセットとして開発され、ユーザーが実際に運用可能な設計を重視している。
+                  Boothでの販売を前提としたDJ/ライブ用途向けのクラブ型商用アセット。<br>
+                  既存のクラブワールドでは、操作の複雑さや人員依存の高さが課題となっていたため、少人数でも直感的に運用できる設計し。<br>
+                  実際のイベント運用を想定し、ライティングや演出の制御を簡略化しつつ、パフォーマンス性を損なわない実用性の高い環境を目指しました。
                 </p>
 
                 <div style="margin-top: 40px;">
@@ -992,6 +995,9 @@
 
                 <div style="margin-bottom: 25px;">
                   <h5 style="color: #fff; font-size: 1.1rem; margin-bottom: 8px;">① 音楽とライティングの調和</h5>
+                  <p style="color: #ccc; font-size: 0.95rem; margin-bottom: 10px;">
+                    楽曲のビートに合わせたライティングが求められた。
+                  </p>
                 </div>
 
                 <div style="margin-bottom: 25px;">
@@ -1054,7 +1060,9 @@
                 <div class="change-detailed-card" style="display: flex; flex-direction: column; height: 100%;">
                   <div class="change-card-content" style="margin-bottom: 20px; flex: 1;">
                     <h5>音楽と連動するシェーダー</h5>
-                    <p>AudioLinkライブラリを使用し、特定の周波数と連動して発光、変形するシェーダーの作成。</p>
+                    <p>AudioLinkライブラリを使用し、音の周波数を解析し、低音・中音・高音ごとにライティングの挙動を帰られるシェーダーを作成。<br>
+                      キックやスネア、シンセの変化に応じて光の強度や色を制御することで、音楽と一体化した演出を実現した。
+                    </p>
                   </div>
                   <div class="change-card-img"
                     style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: auto;">
@@ -1125,11 +1133,11 @@
                   <div class="change-card-img"
                     style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: auto;">
                     <div style="grid-column: span 2; position: relative; overflow: hidden; border-radius: 6px;">
-                      <img src="images/Club4D/VRChat_2024-04-26_21-25-26.532_3840x2160-768x432.webp" alt="リアルタイム制御 1"
+                      <img src="images/Club4D/HC9pyYpbkAAuUzD.jpg" alt="リアルタイム制御 1"
                         style="width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover;">
                       <p
                         style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.6); backdrop-filter: blur(4px); color: #fff; margin: 0; padding: 5px; font-size: 0.75rem; text-align: center;">
-                        実際の演出風景</p>
+                        実際の演出風景(引用:</p>
                     </div>
                     <div style="position: relative; overflow: hidden; border-radius: 6px;">
                       <img src="images/Club4D/LightOff.png" alt="リアルタイム制御 2"
