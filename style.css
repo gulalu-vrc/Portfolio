@@ -1,3 +1,4 @@
+img { max-width: 100%; height: auto; }
 :root {
   --bg-color: #0d0d0d;
   --text-color: #f2f2f2;
@@ -79,12 +80,10 @@ a:hover {
 /* Work Split Layout (Full Bleed) */
 .work-page-section {
   width: 100%;
-  height: 100vh;
-  /* min-heightからheightに変更して厳密に1画面に収める */
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .work-split-layout {
@@ -92,7 +91,7 @@ a:hover {
   flex-direction: row;
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   gap: 0;
   align-items: stretch;
   justify-content: flex-end;
@@ -276,7 +275,7 @@ a:hover {
   width: 130px;
   height: 130px;
   background-color: rgba(0, 0, 0, 0.85);
-  /* 1pxの隙間から画像が漏れないよう、土台を暗くする */
+  /* 1px縺ｮ髫咎俣縺九ｉ逕ｻ蜒上′貍上ｌ縺ｪ縺・ｈ縺・∝悄蜿ｰ繧呈囓縺上☆繧・*/
   background-clip: padding-box;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -291,7 +290,7 @@ a:hover {
   padding-bottom: 12px;
   flex-shrink: 0;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 1);
-  /* 最下端の1pxを物理的に塗りつぶす */
+  /* 譛荳狗ｫｯ縺ｮ1px繧堤黄逅・噪縺ｫ蝪励ｊ縺､縺ｶ縺・*/
 }
 
 .works-item:hover {
@@ -550,7 +549,7 @@ footer p {
 }
 
 .role-list li::before {
-  content: "・";
+  content: "繝ｻ";
   position: absolute;
   left: 0;
   color: #00f2fe;
@@ -671,7 +670,7 @@ footer p {
 }
 
 .tech-result-list li::before {
-  content: "・";
+  content: "繝ｻ";
   position: absolute;
   left: 0;
   color: #00f2fe;
@@ -987,30 +986,30 @@ footer p {
   line-height: 1.5;
 }
 
-/* 十字区切りグリッド */
+/* 蜊∝ｭ怜玄蛻・ｊ繧ｰ繝ｪ繝・ラ */
 .results-cross-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  /* 高さはアスペクト比に任せる */
+  /* 鬮倥＆縺ｯ繧｢繧ｹ繝壹け繝域ｯ斐↓莉ｻ縺帙ｋ */
   gap: 1px;
-  /* 境界線（十字） */
+  /* 蠅・阜邱夲ｼ亥香蟄暦ｼ・*/
   background: rgba(255, 255, 255, 0.15);
-  /* 十字線の色 */
+  /* 蜊∝ｭ礼ｷ壹・濶ｲ */
   overflow: hidden;
   border-radius: 12px;
 }
 
 .grid-cell {
   background: rgba(20, 20, 20, 0.8);
-  /* セルの背景 */
+  /* 繧ｻ繝ｫ縺ｮ閭梧勹 */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   aspect-ratio: 16 / 9;
-  /* 16:9の比率を維持 */
+  /* 16:9縺ｮ豈皮紫繧堤ｶｭ謖・*/
 }
 
 .text-cell {
@@ -1137,7 +1136,28 @@ footer p {
   -webkit-backdrop-filter: blur(20px);
   background-color: rgba(10, 15, 25, 0.85);
   overflow: hidden;
-  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-toggle-btn {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1100;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.menu-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .sidebar:hover {
@@ -1272,12 +1292,12 @@ footer p {
   border-right: 4px solid #000;
 }
 
-/* 上段：右方向へ */
+/* 荳頑ｮｵ・壼承譁ｹ蜷代∈ */
 .marquee-row.upper .marquee-content {
   animation: marquee-scroll-right 80s linear infinite;
 }
 
-/* 下段：左方向へ */
+/* 荳区ｮｵ・壼ｷｦ譁ｹ蜷代∈ */
 .marquee-row.lower .marquee-content {
   animation: marquee-scroll-left 80s linear infinite;
 }
@@ -1312,7 +1332,7 @@ footer p {
   z-index: 5;
 }
 
-/* モバイル対応：速度調整 */
+/* 繝｢繝舌う繝ｫ蟇ｾ蠢懶ｼ夐溷ｺｦ隱ｿ謨ｴ */
 @media (max-width: 768px) {
   .marquee-content img {
     min-width: 60vw;
@@ -1324,9 +1344,22 @@ footer p {
     transform: translateX(-100%);
   }
 
+  .sidebar.open {
+    transform: translateX(0);
+    width: 260px;
+  }
+
+  .sidebar.open .sidebar-text {
+    opacity: 1;
+  }
+
   .main-content {
     margin-left: 0;
     width: 100%;
+  }
+
+  .menu-toggle-btn {
+    display: flex;
   }
 }
 
@@ -1712,3 +1745,79 @@ footer p {
   z-index: 10;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
+
+/* Global Overflow Fix */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Responsive Grid Utility */
+.responsive-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 900px) {
+  .responsive-grid-2 {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .work-text-col {
+    min-width: 0 !important;
+  }
+}
+
+.responsive-grid-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+@media (max-width: 600px) {
+  .responsive-grid-inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Global Fixes */
+section {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.main-content {
+  overflow-x: hidden;
+}
+
+@media (max-width: 1050px) {
+  .main-content {
+    padding-top: 60px; /* Space for menu button */
+  }
+}
+
+
+.responsive-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+@media (max-width: 1000px) {
+  .responsive-grid-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .responsive-grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+

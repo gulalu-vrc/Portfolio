@@ -1,0 +1,16 @@
+- [x] サイドバーのモバイル対応 (Hamburger Menu)
+    - [x] `index.html` にハンバーガーメニューボタンを追加
+    - [x] `style.css` にメニューボタンとサイドバー開閉のスタイルを追加
+    - [x] `script.js` にサイドバー開閉のロジックを追加
+- [x] 文章の切り欠き修正
+    - [x] `style.css` の `.work-page-section` と `.work-split-layout` を `min-height: 100vh` に変更
+    - [x] `style.css` の `.work-page-section` から `overflow: hidden` を削除
+    - [x] `style.css` の `.work-text-col` のスタイル微調整
+- [ ] モバイル表示の横幅オーバーフロー修正
+    - [ ] `.work-text-col` の `min-width` リセット
+    - [ ] `index.html` のインライン Grid スタイルのレスポンシブ化
+    - [ ] ボタンコンテナの `flex-wrap: wrap` 化
+- [/] 動作確認
+    - [x] 1050px未満でメニューボタンが表示され、サイドバーが開閉できることを確認
+    - [x] 文章が切れていた箇所がスクロール可能になっていることを確認
+    - [ ] 375px幅で横スクロールが発生しないことを確認

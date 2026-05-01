@@ -76,3 +76,36 @@ const spyObserver = new IntersectionObserver((entries) => {
 }, spyOptions);
 
 workSections.forEach(sec => spyObserver.observe(sec));
+
+// --- サイドバーのモバイル開閉制御 ---
+const menuToggle = document.getElementById('menu-toggle');
+const sidebar = document.querySelector('.sidebar');
+const sidebarLinksMobile = document.querySelectorAll('.sidebar-link');
+
+if (menuToggle && sidebar) {
+  // ボタンクリックでトグル
+  menuToggle.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+    
+    // アイコンの切り替え（menu -> x）
+    const icon = menuToggle.querySelector('i');
+    if (sidebar.classList.contains('open')) {
+      icon.setAttribute('data-feather', 'x');
+    } else {
+      icon.setAttribute('data-feather', 'menu');
+    }
+    feather.replace(); // featherアイコンを再描画
+  });
+
+  // リンククリック時にサイドバーを閉じる（モバイル用）
+  sidebarLinksMobile.forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 1050) {
+        sidebar.classList.remove('open');
+        const icon = menuToggle.querySelector('i');
+        icon.setAttribute('data-feather', 'menu');
+        feather.replace();
+      }
+    });
+  });
+}

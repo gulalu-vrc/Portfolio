@@ -13,6 +13,11 @@
 
 <body>
 
+  <!-- ハンバーガーメニューボタン（モバイル用） -->
+  <button id="menu-toggle" class="menu-toggle-btn glass">
+    <i data-feather="menu"></i>
+  </button>
+  
   <!-- 左サイドバー（展開式ナビゲーション） -->
   <aside class="sidebar glass">
     <div class="sidebar-header">
@@ -75,7 +80,7 @@
 
           <!-- 左側：キャッチコピー -->
           <div
-            style="flex: 1; min-width: 300px; text-align: left; display: flex; flex-direction: column; justify-content: center;">
+            style="flex: 1; max-width: 100%; text-align: left; display: flex; flex-direction: column; justify-content: center;">
             <h1
               style="font-size: clamp(2rem, 3.5vw, 3.5rem); letter-spacing: 5px; line-height: 1.6; text-shadow: 0 4px 20px rgba(0,0,0,0.8); margin: 0; color: rgba(255,255,255,0.75); font-weight: 700;">
               光と音で、<br>感情が動く瞬間を<br>デザインする
@@ -84,7 +89,7 @@
 
           <!-- 右側：プロフィールカード -->
           <div class="glass"
-            style="flex: 1; min-width: 350px; max-width: 650px; padding: 40px; border-radius: 12px; text-align: left; background: rgba(20,20,20,0.65); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1);">
+            style="flex: 1; max-width: 100%; padding: 40px; border-radius: 12px; text-align: left; background: rgba(20,20,20,0.65); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1);">
 
             <h2 style="color:#fff; margin-bottom: 5px; font-size: 2.2rem; letter-spacing: 2px;">ぐらる</h2>
             <h3
@@ -291,7 +296,7 @@
                 サンリオのIP(マイメロディ＆クロミ)を活用したアニメーションも必見です。
               </p>
               <div style="margin-top: 30px; display: flex; flex-direction: column; gap: 10px;">
-                <div style="display: flex; gap: 10px; flex-wrap: nowrap;">
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
                   <a href="https://www.4gamer.net/games/794/G079439/20250214049/" target="_blank" class="btn glass-btn"
                     style="color: #fff; padding: 10px 12px; font-size: 0.85rem; letter-spacing: 1px; display: inline-flex; align-items: center; white-space: nowrap; flex: 1; justify-content: center;">
                     <i data-feather="file-text" style="margin-right: 6px; width: 16px; height: 16px;"></i>紹介記事(4Gamer)
@@ -317,7 +322,7 @@
       <!-- 2枚目：企画概要とチームメンバー -->
       <div class="work-detail-page dark-section">
         <div class="container fade-in">
-          <div class="results-container-split" style="grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: start;">
+          <div class="results-container-split responsive-grid-2" style="align-items: start;">
             <!-- 左側：企画概要 -->
             <div class="overview-col">
               <h3 class="detail-page-title" style="text-align: left; margin-bottom: 20px;">プロジェクト詳細</h3>
@@ -332,7 +337,7 @@
                     その後、株式会社サンリオより開発費・キャラクター3Dモデル・ボイス収録の提供を受け、正式コンテンツとして制作。
                   </p>
                   <!-- 企画概要 補足画像 -->
-                  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px;">
+                  <div class="responsive-grid-inner" style="margin-top: 20px;">
                     <img src="images/PreciousHarmony/GSKwXwbagAAmZwL.jpg"
                       style="width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover;"
                       alt="企画概要 補足 1">
@@ -441,8 +446,8 @@
       <div class="work-detail-page section">
         <div class="container fade-in">
           <h3 class="detail-page-title">ゲームシステム・演出設計</h3>
-          <div class="results-container-split"
-            style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; display: grid;">
+          <div class="results-container-split responsive-grid-2"
+            style="align-items: start; display: grid;">
             <!-- 左側：音楽との同期 -->
             <div class="overview-col">
               <h4
@@ -479,11 +484,11 @@
                 <p style="color: #ddd; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;">
                   ゲームの根幹であるプレイヤーがクリスタルを叩いた時の気持ちよさを最大化するために。叩いた時のエフェクトや効果音をこだわりました。
                 </p>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                <div class="responsive-grid-inner">
                   <div class="role-box glass" style="padding: 15px; border-top: 2px solid #ff9a9e;">
                     <p style="color: #ff9a9e; font-weight: bold; font-size: 1.1rem;">パーティクル(エフェクト)</p>
                     <h5 style="color: #fff; margin-bottom: 8px; font-size: 0.9rem;">全4ステージ ×クリスタル毎に3種のパーティクル</h5>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px;">
+                    <div class="responsive-grid-inner" style="margin-top: 10px;">
                       <div style="display: flex; flex-direction: column; gap: 10px;">
                         <img src="images/PreciousHarmony/Particle1.png"
                           style="width: 100%; border-radius: 4px; aspect-ratio: 1/1; object-fit: cover;" alt="パーティクル 1">
@@ -731,7 +736,7 @@
                 本プロジェクトにおいて、私は地下ライブハウスで開催されたDJライブの演出制作（照明・パーティクル・Timeline設計）を担当しました。
               </p>
               <!-- 画像 world2, world3 -->
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+              <div class="responsive-grid-inner">
                 <img src="images/Delmin/world2.webp"
                   style="width: 100%; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 16/9; object-fit: cover; transition: transform 0.3s ease;"
                   alt="SHOW BY ROCK !! WORLD 2" class="hover-zoom">
@@ -1064,8 +1069,8 @@
                       キックやスネア、シンセの変化に応じて光の強度や色を制御することで、音楽と一体化した演出を実現した。
                     </p>
                   </div>
-                  <div class="change-card-img"
-                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: auto;">
+                  <div class="change-card-img responsive-grid-inner"
+                    style="margin-top: auto;">
                     <div style="grid-column: span 2; position: relative; overflow: hidden; border-radius: 6px;">
                       <img src="images/Club4D/Spectrum.png" alt="BPM連動シェーダー 1"
                         style="width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover;">
@@ -1097,8 +1102,8 @@
                       ライトの強さに合わせて、会場中のスポットライトも動き出す！
                     </p>
                   </div>
-                  <div class="change-card-img"
-                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: auto;">
+                  <div class="change-card-img responsive-grid-inner"
+                    style="margin-top: auto;">
                     <div style="grid-column: span 2; position: relative; overflow: hidden; border-radius: 6px;">
                       <img src="images/Club4D/Controller.png" alt="UI設計 1"
                         style="width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover;">
@@ -1130,8 +1135,8 @@
                       手を下げればライトを消せる
                     </p>
                   </div>
-                  <div class="change-card-img"
-                    style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: auto;">
+                  <div class="change-card-img responsive-grid-inner"
+                    style="margin-top: auto;">
                     <div style="grid-column: span 2; position: relative; overflow: hidden; border-radius: 6px;">
                       <img src="images/Club4D/HC9pyYpbkAAuUzD.jpg" alt="リアルタイム制御 1"
                         style="width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover;">
@@ -1165,7 +1170,7 @@
         <div class="container fade-in">
           <h3 class="detail-page-title">実運用プロダクトとしての実績</h3>
 
-          <div class="results-container-split" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: start;">
+          <div class="results-container-split responsive-grid-2" style="align-items: start;">
             <!-- 左側：販売実績 -->
             <div class="overview-col">
               <div class="achievement-section">
@@ -1177,7 +1182,7 @@
                   <p style="font-size: 0.9rem; color: #ccc;">多くのユーザーに継続的に使用されている信頼のプロダクト</p>
                 </div>
                 <!-- 販売実績画像3枚 -->
-                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 20px;">
+                <div class="responsive-grid-3" style="margin-top: 20px;">
                   <img src="images/Club4D/mip.jpg"
                     style="width: 100%; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1); aspect-ratio: 1/1; object-fit: cover;"
                     alt="販売実績1">
@@ -1269,7 +1274,7 @@
             style="color: #4facfe; margin-top:-30px; margin-bottom:40px; font-weight:bold; letter-spacing:1px;">空間設計・演出
           </p>
 
-          <div class="detail-layout" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+          <div class="detail-layout responsive-grid-2">
             <!-- 左上: 統合と導線 -->
             <div class="role-box glass"
               style="border-left: 4px solid #4facfe; padding: 40px; display: flex; flex-direction: column; justify-content: center;">
@@ -1389,7 +1394,7 @@
             style="color: #00f2fe; margin-top:-30px; margin-bottom:40px; font-weight:bold; letter-spacing:1px; font-size: 1.5rem;">
             多環境対応の中でも、印象的な光表現を実現</p>
 
-          <div class="four-page-layout" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
+          <div class="four-page-layout responsive-grid-2">
             <!-- 左上: 技術解説 -->
             <div class="role-box glass"
               style="padding: 40px; display: flex; flex-direction: column; justify-content: center; border-left: 4px solid #00f2fe;">
@@ -1662,7 +1667,7 @@
           <!-- 演出設計 (下に配置) -->
           <h4 style="color: #fff; margin-bottom: 30px; font-size: 1.5rem; text-align: center; letter-spacing: 2px;">演出設計
           </h4>
-          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+          <div class="responsive-grid-inner" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
             <!-- Step 1 -->
             <div class="glass" style="padding: 15px; text-align: center; transition: transform 0.3s;"
               onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
@@ -2182,13 +2187,12 @@
           </div>
         </div>
       </div>
-      </div>
 
       <!-- 2枚目：代表商品 ＆ 技術プロジェクト -->
       <div class="work-detail-page section">
         <div class="container fade-in">
           <h3 class="detail-page-title">代表商品</h3>
-          <div class="results-container-split" style="grid-template-columns: 1fr 1fr; gap: 40px; align-items: stretch;">
+          <div class="results-container-split responsive-grid-2" style="align-items: stretch;">
             <!-- 左カラム：代表商品｜花鳥風月巫女ドレス -->
             <div class="overview-col" style="display: flex; flex-direction: column;">
               <h3 class="detail-page-title"
@@ -2200,7 +2204,7 @@
                     style="width: 12px; height: 12px; vertical-align: middle; margin-right: 4px;"></i>BOOTH URL
                 </a>
               </h3>
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
+              <div class="responsive-grid-inner" style="margin-bottom: 25px;">
                 <div class="glass"
                   style="aspect-ratio: 1/1; overflow: hidden; border-radius: 12px; border: 1px solid rgba(255,154,158,0.3);">
                   <img src="images/AtelierPanda/4.png" alt="花鳥風月巫女ドレス1"
@@ -2246,7 +2250,7 @@
                     style="width: 12px; height: 12px; vertical-align: middle; margin-right: 4px;"></i>BOOTH URL
                 </a>
               </h3>
-              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px;">
+              <div class="responsive-grid-inner" style="margin-bottom: 25px;">
                 <div class="glass"
                   style="aspect-ratio: 1/1; overflow: hidden; border-radius: 12px; border: 1px solid rgba(0,242,254,0.3);">
                   <img src="images/AtelierPanda/3.png" alt="デスクトップフルトラ1"
