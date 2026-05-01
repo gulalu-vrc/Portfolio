@@ -4,7 +4,6 @@ img { max-width: 100%; height: auto; }
   --text-color: #f2f2f2;
   --accent-color: #00f2fe;
   --bg-darker: #111;
-
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   line-height: 1.5;
   color: var(--text-color);
@@ -43,8 +42,6 @@ a:hover {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
 }
-
-
 
 /* Sections */
 .section {
@@ -202,7 +199,6 @@ a:hover {
   line-height: 1.8;
 }
 
-
 @media (max-width: 900px) {
   .work-page-section {
     height: auto;
@@ -225,6 +221,7 @@ a:hover {
     width: 100%;
     padding: 40px;
   }
+
 }
 
 /* Hero */
@@ -275,7 +272,7 @@ a:hover {
   width: 130px;
   height: 130px;
   background-color: rgba(0, 0, 0, 0.85);
-  /* 1px縺ｮ髫咎俣縺九ｉ逕ｻ蜒上′貍上ｌ縺ｪ縺・ｈ縺・∝悄蜿ｰ繧呈囓縺上☆繧・*/
+  /* 1pxの隙間から画像が漏れないように∝悄蜿ｰ繧呈囓縺上☆繧・*/
   background-clip: padding-box;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -290,7 +287,7 @@ a:hover {
   padding-bottom: 12px;
   flex-shrink: 0;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 1);
-  /* 譛荳狗ｫｯ縺ｮ1px繧堤黄逅・噪縺ｫ蝪励ｊ縺､縺ｶ縺・*/
+  /* 譛荳狗ｫｯの1pxを物理的に塗りつぶす*/
 }
 
 .works-item:hover {
@@ -549,7 +546,7 @@ footer p {
 }
 
 .role-list li::before {
-  content: "繝ｻ";
+  content: "\30FB";
   position: absolute;
   left: 0;
   color: #00f2fe;
@@ -578,6 +575,7 @@ footer p {
   .role-grid {
     flex-direction: column;
   }
+
 }
 
 /* Technical Approach Page (3rd Page) */
@@ -670,7 +668,7 @@ footer p {
 }
 
 .tech-result-list li::before {
-  content: "繝ｻ";
+  content: "\30FB";
   position: absolute;
   left: 0;
   color: #00f2fe;
@@ -698,6 +696,7 @@ footer p {
     transform: rotate(90deg);
     margin: 10px 0;
   }
+
 }
 
 /* Page 4: Issues & Redesign / Results & Tech Stack */
@@ -986,30 +985,30 @@ footer p {
   line-height: 1.5;
 }
 
-/* 蜊∝ｭ怜玄蛻・ｊ繧ｰ繝ｪ繝・ラ */
+/* 十字区切りグリッド */
 .results-cross-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
   /* 鬮倥＆縺ｯ繧｢繧ｹ繝壹け繝域ｯ斐↓莉ｻ縺帙ｋ */
   gap: 1px;
-  /* 蠅・阜邱夲ｼ亥香蟄暦ｼ・*/
+  /* 境界線（十字） */
   background: rgba(255, 255, 255, 0.15);
-  /* 蜊∝ｭ礼ｷ壹・濶ｲ */
+  /* 十字線の色 */
   overflow: hidden;
   border-radius: 12px;
 }
 
 .grid-cell {
   background: rgba(20, 20, 20, 0.8);
-  /* 繧ｻ繝ｫ縺ｮ閭梧勹 */
+  /* 繧ｻ繝ｫの閭梧勹 */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   aspect-ratio: 16 / 9;
-  /* 16:9縺ｮ豈皮紫繧堤ｶｭ謖・*/
+  /* 16:9の豈皮紫繧堤ｶｭ謖・*/
 }
 
 .text-cell {
@@ -1048,6 +1047,7 @@ footer p {
   .grid-cell.img-cell {
     aspect-ratio: 16 / 9;
   }
+
 }
 
 /* Results Section (Original) */
@@ -1099,6 +1099,7 @@ footer p {
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
 }
 
 @media (max-width: 900px) {
@@ -1109,14 +1110,14 @@ footer p {
   .change-detailed-grid {
     grid-template-columns: 1fr;
   }
+
 }
-
-
 
 @media (max-width: 900px) {
   .four-page-layout {
     flex-direction: column;
   }
+
 }
 
 /* Sidebar Navigation */
@@ -1292,12 +1293,12 @@ footer p {
   border-right: 4px solid #000;
 }
 
-/* 荳頑ｮｵ・壼承譁ｹ蜷代∈ */
+/* 上段：右方向へ */
 .marquee-row.upper .marquee-content {
   animation: marquee-scroll-right 80s linear infinite;
 }
 
-/* 荳区ｮｵ・壼ｷｦ譁ｹ蜷代∈ */
+/* 下段：左方向へ */
 .marquee-row.lower .marquee-content {
   animation: marquee-scroll-left 80s linear infinite;
 }
@@ -1310,6 +1311,7 @@ footer p {
   100% {
     transform: translateX(0);
   }
+
 }
 
 @keyframes marquee-scroll-left {
@@ -1320,6 +1322,7 @@ footer p {
   100% {
     transform: translateX(-100%);
   }
+
 }
 
 .marquee-overlay {
@@ -1337,6 +1340,7 @@ footer p {
   .marquee-content img {
     min-width: 60vw;
   }
+
 }
 
 @media (max-width: 1050px) {
@@ -1361,6 +1365,7 @@ footer p {
   .menu-toggle-btn {
     display: flex;
   }
+
 }
 
 /* ================= ABYSSAL MUSEUM DESIGN GRID ================= */
@@ -1415,6 +1420,7 @@ footer p {
     grid-template-columns: 1fr;
     gap: 25px;
   }
+
 }
 
 /* ================= ABYSSAL MUSEUM 2x2 GALLERY & FLOW ================= */
@@ -1497,6 +1503,21 @@ footer p {
   filter: drop-shadow(0 0 5px rgba(255, 154, 158, 0.3));
 }
 
+.gallery-column-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ff9a9e;
+  text-align: center;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  padding: 8px 15px;
+  background: rgba(255, 154, 158, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 154, 158, 0.2);
+  width: 100%;
+  backdrop-filter: blur(5px);
+}
+
 /* Illustration Gallery */
 .illustration-gallery-grid {
   display: grid;
@@ -1551,18 +1572,21 @@ footer p {
   .gallery-item.portrait img {
     aspect-ratio: 3 / 4.45;
   }
+
 }
 
 @media (max-width: 899px) and (min-width: 601px) {
   .illustration-gallery-grid {
     grid-template-columns: 1fr 1fr;
   }
+
 }
 
 @media (max-width: 600px) {
   .illustration-gallery-grid {
     grid-template-columns: 1fr;
   }
+
 }
 
 .role-detail {
@@ -1657,6 +1681,7 @@ footer p {
   .lime-bottom {
     grid-column: 1;
   }
+
 }
 
 /* ================= INNOCENT GARDEN SPEC IMAGES ================= */
@@ -1701,8 +1726,8 @@ footer p {
   .spec-image-grid {
     grid-template-columns: 1fr;
   }
-}
 
+}
 
 /* ================= WORK DETAIL GRID (RESPONSIVE) ================= */
 .work-detail-grid {
@@ -1726,16 +1751,17 @@ footer p {
   .work-detail-grid.three-col {
     grid-template-columns: 1fr 1fr;
   }
+
 }
 
 /* Mobile: Stack to 1 column */
 @media (max-width: 800px) {
-
   .work-detail-grid.two-col,
   .work-detail-grid.three-col {
     grid-template-columns: 1fr;
     gap: 30px;
   }
+
 }
 
 /* Hover Zoom Effect */
@@ -1765,10 +1791,11 @@ html, body {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  
+
   .work-text-col {
     min-width: 0 !important;
   }
+
 }
 
 .responsive-grid-inner {
@@ -1781,6 +1808,7 @@ html, body {
   .responsive-grid-inner {
     grid-template-columns: 1fr;
   }
+
 }
 
 /* Global Fixes */
@@ -1797,8 +1825,8 @@ section {
   .main-content {
     padding-top: 60px; /* Space for menu button */
   }
-}
 
+}
 
 .responsive-grid-3 {
   display: grid;
@@ -1810,14 +1838,13 @@ section {
   .responsive-grid-3 {
     grid-template-columns: 1fr 1fr;
   }
+
 }
 
 @media (max-width: 600px) {
   .responsive-grid-3 {
     grid-template-columns: 1fr;
   }
+
 }
-
-
-
 
