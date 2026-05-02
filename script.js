@@ -118,7 +118,7 @@ const modalImg = document.getElementById('modal-img');
 const captionText = document.getElementById('modal-caption');
 
 // 拡大対象とするセレクタのリスト
-const zoomableSelectors = '.spec-image-item, .lime-column img, .zoomable';
+const zoomableSelectors = '.spec-image-item, .lime-column img, .zoomable, .work-project-container img';
 const zoomableElements = document.querySelectorAll(zoomableSelectors);
 
 if (modal && modalImg && captionText) {
