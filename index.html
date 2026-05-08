@@ -799,7 +799,7 @@
       <!-- 3枚目：ライブ体験の向上と効率化 -->
       <div class="work-detail-page section">
         <div class="container fade-in">
-          <h3 class="detail-page-title">ライブ体験の向上と効率化</h3>
+          <h3 class="detail-page-title">フィードバックを受けての改善</h3>
           <div class="feedback-grid-split">
 
             <!-- 上段：フィードバック -->
@@ -1982,7 +1982,7 @@
       <!-- 3枚目：フィードバックと改善 (1・2) -->
       <div class="work-detail-page dark-section">
         <div class="container fade-in">
-          <h3 class="detail-page-title">クリエイターフィードバックと改善</h3>
+          <h3 class="detail-page-title">フィードバックと改善</h3>
           <div class="tech-approach-cards" style="margin-top: 40px;">
 
             <!-- ① 形状の再解釈 -->
@@ -2072,7 +2072,82 @@
         </div>
       </div>
 
-      <!-- 4枚目：最終調整と完成 -->
+      <!-- 4枚目：リギングと揺れ物 -->
+      <div class="work-detail-page section">
+        <div class="container fade-in">
+          <h3 class="detail-page-title">リギングと揺れ物</h3>
+          <div class="four-page-layout">
+
+            <!-- 左カラム：リギング・揺れ物設定 -->
+            <div class="four-col glass layout-left">
+              <h5
+                style="color:#00f2fe; font-size:1.1rem; margin-bottom:20px; border-bottom:1px solid rgba(0,242,254,0.3); padding-bottom:10px;">
+                <i data-feather="box" style="width:18px;vertical-align:middle;margin-right:8px;"></i>リギング・揺れ物設定
+              </h5>
+              <div class="spec-image-grid two-col" style="margin-top: 10px;">
+                <!-- 左上：文章 -->
+                <div class="spec-image-item"
+                  style="display: flex; align-items: center; justify-content: center;  padding: 15px; background: rgba(0, 242, 254, 0.05); border-color: rgba(0, 242, 254, 0.2);">
+                  <p style="color:#ccc; font-size:1rem; line-height:1.6;">
+                    プレーヤーが動くたびに楽しくなるようにできるだけ多く揺れものを実装。<br><br>
+                    負荷の観点からクロスシュミレーションを使わず、ボーンでの揺れのみの実装にした。<br><br>
+                    スカート、フリル、蝶の飾り、が揺れるように 計17もの親ボーンに揺れものを設定。<br><br>
+                    素材に合わせてパラメーターも調整した。
+                  </p>
+                </div>
+                <!-- 右上：BoneFront -->
+                <div class="spec-image-item zoom-wrapper">
+                  <img src="images/InnocentGardenDress/BoneFront.png" alt="ボーン構造">
+                  <div class="image-label">Humanoidボーン</div>
+                </div>
+                <!-- 左下：YureSide -->
+                <div class="spec-image-item zoom-wrapper">
+                  <img src="images/InnocentGardenDress/YureSide.png" alt="揺れ設定(側面)">
+                  <div class="image-label">揺れ設定(側面)</div>
+                </div>
+                <!-- 右下：YureFront -->
+                <div class="spec-image-item zoom-wrapper">
+                  <img src="images/InnocentGardenDress/YureFront.png" alt="揺れ設定(前面)">
+                  <div class="image-label">揺れ設定(前面)</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 右カラム：スカートの貫通対策 -->
+            <div class="four-col glass layout-right">
+              <h5
+                style="color:#fff; font-size:1.1rem; margin-bottom:20px; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:10px;">
+                <i data-feather="shield" style="width:18px;vertical-align:middle;margin-right:8px;"></i>スカートの貫通対策
+              </h5>
+              <div class="spec-image-grid two-col" style="margin-top: 10px;">
+                <!-- 上段左：文章 -->
+                <div class="spec-image-item"
+                  style="display: flex; align-items: center; justify-content: center; padding: 20px; background: rgba(0, 242, 254, 0.05); border-color: rgba(0, 242, 254, 0.2);">
+                  <p style="color:#ccc; font-size:1rem; line-height:1.6;">
+                    VRで動いているプレイヤーがどんなポーズをとってもスカートが脚を貫通するのを防止する必要があった。<br><br>
+                    コライダーとコンストレイントを組み合わせた貫通対策を実施。<br><br>
+                    スカートの後ろ側は、コライダーを使い、脚との接触判定により貫通を対策し<br><br>
+                    スカートの前側は、コライダーをすり抜けてしまうためコンストレイントを使い、両脚のボーンと回転をリンクさせることで脚を前に出した時、座った時の脚の貫通を防止した。
+                  </p>
+                </div>
+                <!-- 上段右：Collider -->
+                <div class="spec-image-item zoom-wrapper">
+                  <img src="images/InnocentGardenDress/Collider.png" alt="コライダー設定">
+                  <div class="image-label">コライダー設定</div>
+                </div>
+                <!-- 下段中央：Constraint (全幅) -->
+                <div class="spec-image-item zoom-wrapper" style="grid-column: span 2; aspect-ratio: 21 / 9;">
+                  <img src="images/InnocentGardenDress/Constraint.png" alt="コンストレイント設定"
+                    style="width: 100%; height: 100%; object-fit: cover;">
+                  <div class="image-label">コンストレイント設定</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5枚目：最終調整と完成 -->
       <div class="work-detail-page section">
         <div class="container fade-in">
           <h3 class="detail-page-title">最終調整と完成</h3>
