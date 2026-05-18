@@ -1,0 +1,19 @@
+- [x] `images/Sugar3` ディレクトリの作成
+- [x] 各セクション用画像の生成
+    - [x] `hero.png`
+    - [x] `standing.png`
+    - [x] `music_production.png`
+    - [x] `vocal_edit.png`
+    - [x] `mv_shooting.png`
+    - [x] `video_edit.png`
+    - [x] `live_avatar.png`
+    - [x] `live_penlight.png`
+- [x] `index.html` の修正
+    - [x] サイドバーにリンクを追加
+    - [x] ヒーローセクションの「主な実績」にバナーを追加
+    - [x] Sugar*3 の3ページ構成セクションを追加
+- [x] 最後の動画プレイヤーを2つにして横に並べる
+- [x] 動作確認
+    - [x] ブラウザでのレイアウト確認
+    - [x] モーダル動作確認
+    - [x] サイドバーリンク動作確認
